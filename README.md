@@ -9,6 +9,7 @@ memorial day notification <br>
 
 ##log:
 ####Feb 5
-    1. Initial a basic framework of this APP as a universal APP
-    2. Add 
+    1. Definite the requirement of the project
+    2. Initial a basic framework of this APP as a universal APP
+    3. Add Collaborators to the project
 
