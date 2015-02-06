@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		172D524C1A84488B0049166C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172D524B1A84488B0049166C /* AppDelegate.swift */; };
+		172D524E1A84488B0049166C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172D524D1A84488B0049166C /* ViewController.swift */; };
+		172D52511A84488B0049166C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 172D524F1A84488B0049166C /* Main.storyboard */; };
+		172D52531A84488C0049166C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 172D52521A84488C0049166C /* Images.xcassets */; };
+		172D52561A84488C0049166C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 172D52541A84488C0049166C /* LaunchScreen.xib */; };
+		172D52621A84488C0049166C /* AmoureuxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172D52611A84488C0049166C /* AmoureuxTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		172D525C1A84488C0049166C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 172D523E1A84488B0049166C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 172D52451A84488B0049166C;
+			remoteInfo = Amoureux;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		172D52461A84488B0049166C /* Amoureux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Amoureux.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		172D524A1A84488B0049166C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		172D524B1A84488B0049166C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		172D524D1A84488B0049166C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		172D52501A84488B0049166C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		172D52521A84488C0049166C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		172D52551A84488C0049166C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		172D525B1A84488C0049166C /* AmoureuxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmoureuxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		172D52601A84488C0049166C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		172D52611A84488C0049166C /* AmoureuxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmoureuxTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		172D52431A84488B0049166C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		172D52581A84488C0049166C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		172D523D1A84488B0049166C = {
+			isa = PBXGroup;
+			children = (
+				172D52481A84488B0049166C /* Amoureux */,
+				172D525E1A84488C0049166C /* AmoureuxTests */,
+				172D52471A84488B0049166C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		172D52471A84488B0049166C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				172D52461A84488B0049166C /* Amoureux.app */,
+				172D525B1A84488C0049166C /* AmoureuxTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		172D52481A84488B0049166C /* Amoureux */ = {
+			isa = PBXGroup;
+			children = (
+				172D524B1A84488B0049166C /* AppDelegate.swift */,
+				172D524D1A84488B0049166C /* ViewController.swift */,
+				172D524F1A84488B0049166C /* Main.storyboard */,
+				172D52521A84488C0049166C /* Images.xcassets */,
+				172D52541A84488C0049166C /* LaunchScreen.xib */,
+				172D52491A84488B0049166C /* Supporting Files */,
+			);
+			path = Amoureux;
+			sourceTree = "<group>";
+		};
+		172D52491A84488B0049166C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				172D524A1A84488B0049166C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		172D525E1A84488C0049166C /* AmoureuxTests */ = {
+			isa = PBXGroup;
+			children = (
+				172D52611A84488C0049166C /* AmoureuxTests.swift */,
+				172D525F1A84488C0049166C /* Supporting Files */,
+			);
+			path = AmoureuxTests;
+			sourceTree = "<group>";
+		};
+		172D525F1A84488C0049166C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				172D52601A84488C0049166C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		172D52451A84488B0049166C /* Amoureux */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 172D52651A84488C0049166C /* Build configuration list for PBXNativeTarget "Amoureux" */;
+			buildPhases = (
+				172D52421A84488B0049166C /* Sources */,
+				172D52431A84488B0049166C /* Frameworks */,
+				172D52441A84488B0049166C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Amoureux;
+			productName = Amoureux;
+			productReference = 172D52461A84488B0049166C /* Amoureux.app */;
+			productType = "com.apple.product-type.application";
+		};
+		172D525A1A84488C0049166C /* AmoureuxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 172D52681A84488C0049166C /* Build configuration list for PBXNativeTarget "AmoureuxTests" */;
+			buildPhases = (
+				172D52571A84488C0049166C /* Sources */,
+				172D52581A84488C0049166C /* Frameworks */,
+				172D52591A84488C0049166C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				172D525D1A84488C0049166C /* PBXTargetDependency */,
+			);
+			name = AmoureuxTests;
+			productName = AmoureuxTests;
+			productReference = 172D525B1A84488C0049166C /* AmoureuxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		172D523E1A84488B0049166C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = NYU;
+				TargetAttributes = {
+					172D52451A84488B0049166C = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					172D525A1A84488C0049166C = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 172D52451A84488B0049166C;
+					};
+				};
+			};
+			buildConfigurationList = 172D52411A84488B0049166C /* Build configuration list for PBXProject "Amoureux" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 172D523D1A84488B0049166C;
+			productRefGroup = 172D52471A84488B0049166C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				172D52451A84488B0049166C /* Amoureux */,
+				172D525A1A84488C0049166C /* AmoureuxTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		172D52441A84488B0049166C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				172D52511A84488B0049166C /* Main.storyboard in Resources */,
+				172D52561A84488C0049166C /* LaunchScreen.xib in Resources */,
+				172D52531A84488C0049166C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		172D52591A84488C0049166C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		172D52421A84488B0049166C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				172D524E1A84488B0049166C /* ViewController.swift in Sources */,
+				172D524C1A84488B0049166C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		172D52571A84488C0049166C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				172D52621A84488C0049166C /* AmoureuxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		172D525D1A84488C0049166C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 172D52451A84488B0049166C /* Amoureux */;
+			targetProxy = 172D525C1A84488C0049166C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		172D524F1A84488B0049166C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				172D52501A84488B0049166C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		172D52541A84488C0049166C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				172D52551A84488C0049166C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		172D52631A84488C0049166C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		172D52641A84488C0049166C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		172D52661A84488C0049166C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Amoureux/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		172D52671A84488C0049166C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Amoureux/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		172D52691A84488C0049166C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AmoureuxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Amoureux.app/Amoureux";
+			};
+			name = Debug;
+		};
+		172D526A1A84488C0049166C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AmoureuxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Amoureux.app/Amoureux";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		172D52411A84488B0049166C /* Build configuration list for PBXProject "Amoureux" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				172D52631A84488C0049166C /* Debug */,
+				172D52641A84488C0049166C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		172D52651A84488C0049166C /* Build configuration list for PBXNativeTarget "Amoureux" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				172D52661A84488C0049166C /* Debug */,
+				172D52671A84488C0049166C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		172D52681A84488C0049166C /* Build configuration list for PBXNativeTarget "AmoureuxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				172D52691A84488C0049166C /* Debug */,
+				172D526A1A84488C0049166C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 172D523E1A84488B0049166C /* Project object */;
+}
