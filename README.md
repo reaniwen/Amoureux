@@ -12,4 +12,6 @@ We design to achieve these functions:<br>
     1. Definite the requirement of the project
     2. Initial a basic framework of this APP as a universal APP
     3. Add Collaborators to the project
+####Feb 6
+    applied AmoureuxInLove.com as domain to save all the content we will need
 
