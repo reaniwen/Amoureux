@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var usernameLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func viewDidAppear(animated: Bool) {
+        self.performSegueWithIdentifier("gotoLogin", sender: self)
+    }
 
+    @IBAction func logoutButton(sender: UIButton) {
+        self.performSegueWithIdentifier("gotoLogin", sender: self)
+    }
 }
 

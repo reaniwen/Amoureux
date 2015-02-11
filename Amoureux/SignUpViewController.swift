@@ -9,6 +9,9 @@
 import UIKit
 
 class SignUpViewController: UIViewController {
+    @IBOutlet weak var newUserName: UITextField!
+    @IBOutlet weak var newPassWord: UITextField!
+    @IBOutlet weak var conPassword: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +24,11 @@ class SignUpViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func signupButton(sender: UIButton) {
+    }
+    @IBAction func backtoLoginButton(sender: UIButton) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation

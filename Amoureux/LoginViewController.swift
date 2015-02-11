@@ -9,6 +9,8 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    @IBOutlet weak var txtUserName: UITextField!
+    @IBOutlet weak var txtPassWord: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +23,8 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func loginButton(sender: UIButton) {
+    }
 
     /*
     // MARK: - Navigation
