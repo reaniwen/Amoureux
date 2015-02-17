@@ -86,9 +86,17 @@
 				172D524F1A84488B0049166C /* Main.storyboard */,
 				172D52521A84488C0049166C /* Images.xcassets */,
 				172D52541A84488C0049166C /* LaunchScreen.xib */,
-				172D52491A84488B0049166C /* Supporting Files */,
 				17DFC6721A885D1A006E2F6D /* LoginViewController.swift */,
 				17DFC6741A885D26006E2F6D /* SignUpViewController.swift */,
+				3F518C601A940577001E3F78 /* po */,
+				3F518C631A940624001E3F78 /* dao */,
+				3F518C651A940657001E3F78 /* daoimpl */,
+				3F518C641A94062F001E3F78 /* service */,
+				3F518C661A940662001E3F78 /* serviceimpl */,
+				3F518C611A9405B2001E3F78 /* vo */,
+				3F518C671A940697001E3F78 /* exception */,
+				3F518C621A9405B9001E3F78 /* util */,
+				172D52491A84488B0049166C /* Supporting Files */,
 			);
 			path = Amoureux;
 			sourceTree = "<group>";
@@ -116,6 +124,62 @@
 				172D52601A84488C0049166C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3F518C601A940577001E3F78 /* po */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = po;
+			sourceTree = "<group>";
+		};
+		3F518C611A9405B2001E3F78 /* vo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = vo;
+			sourceTree = "<group>";
+		};
+		3F518C621A9405B9001E3F78 /* util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = util;
+			sourceTree = "<group>";
+		};
+		3F518C631A940624001E3F78 /* dao */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = dao;
+			sourceTree = "<group>";
+		};
+		3F518C641A94062F001E3F78 /* service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = service;
+			sourceTree = "<group>";
+		};
+		3F518C651A940657001E3F78 /* daoimpl */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = daoimpl;
+			sourceTree = "<group>";
+		};
+		3F518C661A940662001E3F78 /* serviceimpl */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = serviceimpl;
+			sourceTree = "<group>";
+		};
+		3F518C671A940697001E3F78 /* exception */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = exception;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
