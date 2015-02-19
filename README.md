@@ -25,3 +25,6 @@ We design to achieve these functions:<br>
     2. Connect the views together
 
 
+
+Readme modify tutorial
+http://blog.csdn.net/kaitiren/article/details/38513715
