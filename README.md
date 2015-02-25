@@ -23,6 +23,11 @@ We design to achieve these functions:<br>
 ####Feb 10
     1. Put button and Label in the place to test function
     2. Connect the views together
+    
+####Feb 25
+    1. Add a slide panel on the left side as navigator.
+    2. Connect new controlviews into current views connection.
+    3. Test partial function of login and display architecture.
 
 
 
