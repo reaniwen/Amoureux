@@ -29,6 +29,9 @@ We design to achieve these functions:<br>
     2. Connect new controlviews into current views connection.
     3. Test partial function of login and display architecture.
 
+####Mar 10
+    1. build prototype on invision
+        http://invis.io/PU2ERF9GF
 
 
 Readme modify tutorial
