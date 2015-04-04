@@ -8,13 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UserViewControllerDelegate{
     
     @IBOutlet weak var usernameLabel: UILabel!
+    var flag : Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    func logout(flag: Int) {
+        self.flag = flag
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,15 +32,11 @@ class ViewController: UIViewController {
         
         let prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
         let isLoggedIn:Int = prefs.integerForKey("ISLOGGEDIN") as Int
-        if (isLoggedIn != 1) {
+        if (isLoggedIn != 1  || self.flag == -1) {
             self.performSegueWithIdentifier("gotoLogin", sender: self)
         } else {
-            self.usernameLabel.text = prefs.valueForKey("USERNAME") as NSString
+            
         }
-    }
-
-    @IBAction func logoutButton(sender: UIButton) {
-        self.performSegueWithIdentifier("gotoLogin", sender: self)
     }
 }
 

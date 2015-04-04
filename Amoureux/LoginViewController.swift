@@ -90,8 +90,7 @@ class LoginViewController: UIViewController {
                         prefs.setObject(username, forKey: "USERNAME")
                         prefs.setInteger(1, forKey: "ISLOGGEDIN")
                         prefs.synchronize()
-                        
-                        self.dismissViewControllerAnimated(true, completion: nil)
+                        self.performSegueWithIdentifier("java", sender: self)
                     } else {
                         var error_msg:NSString
                         
