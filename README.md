@@ -36,3 +36,8 @@ We design to achieve these functions:<br>
 
 Readme modify tutorial
 http://blog.csdn.net/kaitiren/article/details/38513715
+
+####Apirl 5
+    1. Side menu revised
+    2. Chat module added(twitter app engine)
+    3. Use Firebase for user message data storage
