@@ -1,9 +1,9 @@
 //
-//  ContainerViewController.swift
-//  SlideOutNavigation
+//  ViewController.swift
+//  Amoureux
 //
-//  Created by James Frost on 03/08/2014.
-//  Copyright (c) 2014 James Frost. All rights reserved.
+//  Created by Rean on 2/5/15.
+//  Copyright (c) 2015 NYU. All rights reserved.
 //
 
 import UIKit

@@ -1,9 +1,9 @@
 //
-//  TabBarController.swift
-//  FrostedSidebar
+//  ViewController.swift
+//  Amoureux
 //
-//  Created by Evan Dekhayser on 8/28/14.
-//  Copyright (c) 2014 Evan Dekhayser. All rights reserved.
+//  Created by Rean on 2/5/15.
+//  Copyright (c) 2015 NYU. All rights reserved.
 //
 
 import UIKit

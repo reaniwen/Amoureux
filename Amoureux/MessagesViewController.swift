@@ -1,9 +1,9 @@
 //
-//  MessagesViewController.swift
-//  FireChat-Swift
+//  ViewController.swift
+//  Amoureux
 //
-//  Created by Katherine Fang on 8/13/14.
-//  Copyright (c) 2014 Firebase. All rights reserved.
+//  Created by Rean on 2/5/15.
+//  Copyright (c) 2015 NYU. All rights reserved.
 //
 
 import UIKit

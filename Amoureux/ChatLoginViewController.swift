@@ -1,9 +1,9 @@
 //
-//  LoginViewController.swift
-//  FireChat-Swift
+//  ViewController.swift
+//  Amoureux
 //
-//  Created by David on 8/15/14.
-//  Copyright (c) 2014 Firebase. All rights reserved.
+//  Created by Rean on 2/5/15.
+//  Copyright (c) 2015 NYU. All rights reserved.
 //
 
 import Foundation
