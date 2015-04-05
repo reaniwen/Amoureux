@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  SlideOutNavigation
+//  FireChat-Swift
 //
-//  Created by James Frost on 03/08/2014.
-//  Copyright (c) 2014 James Frost. All rights reserved.
+//  Created by Katherine Fang on 8/13/14.
+//  Copyright (c) 2014 Firebase. All rights reserved.
 //
 
 import UIKit
@@ -13,7 +13,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                             
     var window: UIWindow?
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+
+    func application(application: UIApplication!, didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool {
         // Override point for customization after application launch.
         return true
     }

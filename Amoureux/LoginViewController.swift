@@ -23,6 +23,10 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+        self.view.endEditing(true)
+    }
+    
     @IBAction func loginButton(sender: UIButton) {
         var username:NSString = txtUserName.text
         var password:NSString = txtPassWord.text
@@ -85,7 +89,6 @@ class LoginViewController: UIViewController {
                     if(success == 1)
                     {
                         NSLog("Login SUCCESS");
-                        
                         var prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
                         prefs.setObject(username, forKey: "USERNAME")
                         prefs.setInteger(1, forKey: "ISLOGGEDIN")

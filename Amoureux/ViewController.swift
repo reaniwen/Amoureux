@@ -26,6 +26,10 @@ class ViewController: UIViewController, UserViewControllerDelegate{
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+        self.view.endEditing(true)
+    }
 
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)

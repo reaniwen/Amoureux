@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Amoureux.xcscheme</key>
+		<key>FireChat-Swift.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>172D52451A84488B0049166C</key>
+		<key>5FFF76B8199C191F00AE0269</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>172D525A1A84488C0049166C</key>
+		<key>5FFF76CA199C191F00AE0269</key>
 		<dict>
 			<key>primary</key>
 			<true/>
