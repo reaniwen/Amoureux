@@ -74,7 +74,7 @@ class ChatLoginViewController : UIViewController, UIActionSheetDelegate {
     }
     
     @IBAction func backBar(sender: UIBarButtonItem) {
-        (tabBarController as TabBarController).sidebar.showInViewController(self, animated: true)
+        dismissViewControllerAnimated(true, completion: nil)
     }
     func actionSheet(actionSheet: UIActionSheet!, clickedButtonAtIndex buttonIndex: Int) {
         let currentTwitterHandle = actionSheet.buttonTitleAtIndex(buttonIndex)

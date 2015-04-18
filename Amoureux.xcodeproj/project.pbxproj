@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4401682F1AE1D6F900BBFAFE /* OtherNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4401682E1AE1D6F900BBFAFE /* OtherNavController.swift */; };
+		440168311AE1D91D00BBFAFE /* TimelineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440168301AE1D91D00BBFAFE /* TimelineCell.swift */; };
+		440168331AE1D9F000BBFAFE /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440168321AE1D9F000BBFAFE /* NavigationViewController.swift */; };
+		440168351AE1DA3C00BBFAFE /* NavigationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440168341AE1DA3C00BBFAFE /* NavigationCell.swift */; };
+		440168371AE1DA7D00BBFAFE /* TransitionOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440168361AE1DA7D00BBFAFE /* TransitionOperator.swift */; };
+		4401683A1AE1DDD500BBFAFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 440168381AE1DDD500BBFAFE /* Main.storyboard */; };
 		449869741AD1D877001603F8 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498696A1AD1D877001603F8 /* Animal.swift */; };
 		449869751AD1D877001603F8 /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498696B1AD1D877001603F8 /* CenterViewController.swift */; };
 		449869761AD1D877001603F8 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498696C1AD1D877001603F8 /* ContainerViewController.swift */; };
@@ -29,11 +35,11 @@
 		449869931AD1D99C001603F8 /* profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 449869871AD1D99C001603F8 /* profile@2x.png */; };
 		449869941AD1D99C001603F8 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 449869881AD1D99C001603F8 /* star.png */; };
 		449869951AD1D99C001603F8 /* star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 449869891AD1D99C001603F8 /* star@2x.png */; };
+		44B715911AE1EB3100D9FE3B /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B715901AE1EB3100D9FE3B /* TimelineViewController.swift */; };
 		5F19222719D9D3D900D5C772 /* TwitterAuthHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F19222619D9D3D900D5C772 /* TwitterAuthHelper.m */; };
 		5FCB62C1199E7C19008B93DB /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCB62C0199E7C19008B93DB /* MessagesViewController.swift */; };
 		5FF98CB219A51B8E0041E81A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF98CB119A51B8E0041E81A /* Message.swift */; };
 		5FFF76BF199C191F00AE0269 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFF76BE199C191F00AE0269 /* AppDelegate.swift */; };
-		5FFF76C4199C191F00AE0269 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FFF76C2199C191F00AE0269 /* Main.storyboard */; };
 		5FFF76C6199C191F00AE0269 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FFF76C5199C191F00AE0269 /* Images.xcassets */; };
 		5FFF76D2199C191F00AE0269 /* FireChat_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFF76D1199C191F00AE0269 /* FireChat_SwiftTests.swift */; };
 		5FFF76DC199C192600AE0269 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FFF76DB199C192600AE0269 /* libc++.dylib */; };
@@ -112,6 +118,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4401682E1AE1D6F900BBFAFE /* OtherNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherNavController.swift; sourceTree = "<group>"; };
+		440168301AE1D91D00BBFAFE /* TimelineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineCell.swift; sourceTree = "<group>"; };
+		440168321AE1D9F000BBFAFE /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		440168341AE1DA3C00BBFAFE /* NavigationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationCell.swift; sourceTree = "<group>"; };
+		440168361AE1DA7D00BBFAFE /* TransitionOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionOperator.swift; sourceTree = "<group>"; };
+		440168391AE1DDD500BBFAFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4498696A1AD1D877001603F8 /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		4498696B1AD1D877001603F8 /* CenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterViewController.swift; sourceTree = "<group>"; };
 		4498696C1AD1D877001603F8 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +146,7 @@
 		449869871AD1D99C001603F8 /* profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile@2x.png"; sourceTree = "<group>"; };
 		449869881AD1D99C001603F8 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 		449869891AD1D99C001603F8 /* star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star@2x.png"; sourceTree = "<group>"; };
+		44B715901AE1EB3100D9FE3B /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		5F19222619D9D3D900D5C772 /* TwitterAuthHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterAuthHelper.m; sourceTree = "<group>"; };
 		5F19222819D9DA1500D5C772 /* TwitterAuthHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwitterAuthHelper.h; sourceTree = "<group>"; };
 		5FCB62C0199E7C19008B93DB /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
@@ -141,7 +154,6 @@
 		5FFF76B9199C191F00AE0269 /* Amoureux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Amoureux.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FFF76BD199C191F00AE0269 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FFF76BE199C191F00AE0269 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5FFF76C3199C191F00AE0269 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5FFF76C5199C191F00AE0269 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5FFF76CB199C191F00AE0269 /* AmoureuxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmoureuxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FFF76D0199C191F00AE0269 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -312,6 +324,7 @@
 		5FFF76BB199C191F00AE0269 /* Amoureux */ = {
 			isa = PBXGroup;
 			children = (
+				440168381AE1DDD500BBFAFE /* Main.storyboard */,
 				4498696A1AD1D877001603F8 /* Animal.swift */,
 				4498696B1AD1D877001603F8 /* CenterViewController.swift */,
 				4498696C1AD1D877001603F8 /* ContainerViewController.swift */,
@@ -323,7 +336,6 @@
 				449869721AD1D877001603F8 /* UserViewController.swift */,
 				449869731AD1D877001603F8 /* ViewController.swift */,
 				5FFF76BE199C191F00AE0269 /* AppDelegate.swift */,
-				5FFF76C2199C191F00AE0269 /* Main.storyboard */,
 				5FFF76C5199C191F00AE0269 /* Images.xcassets */,
 				5FFF76BC199C191F00AE0269 /* Supporting Files */,
 				5FCB62C0199E7C19008B93DB /* MessagesViewController.swift */,
@@ -331,6 +343,12 @@
 				5FF98CB119A51B8E0041E81A /* Message.swift */,
 				5F19222619D9D3D900D5C772 /* TwitterAuthHelper.m */,
 				5F19222819D9DA1500D5C772 /* TwitterAuthHelper.h */,
+				4401682E1AE1D6F900BBFAFE /* OtherNavController.swift */,
+				440168301AE1D91D00BBFAFE /* TimelineCell.swift */,
+				440168321AE1D9F000BBFAFE /* NavigationViewController.swift */,
+				440168341AE1DA3C00BBFAFE /* NavigationCell.swift */,
+				440168361AE1DA7D00BBFAFE /* TransitionOperator.swift */,
+				44B715901AE1EB3100D9FE3B /* TimelineViewController.swift */,
 			);
 			path = Amoureux;
 			sourceTree = "<group>";
@@ -626,7 +644,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FFF76C4199C191F00AE0269 /* Main.storyboard in Resources */,
 				5FFF76C6199C191F00AE0269 /* Images.xcassets in Resources */,
 				5FFF77DB199C1F6C00AE0269 /* bubble_min_tailless.png in Resources */,
 				449869941AD1D99C001603F8 /* star.png in Resources */,
@@ -644,6 +661,7 @@
 				449869921AD1D99C001603F8 /* profile.png in Resources */,
 				5FFF77E2199C1F6C00AE0269 /* bubble_tailless@2x.png in Resources */,
 				5FFF7803199C1F6C00AE0269 /* JSQMessagesLoadEarlierHeaderView.xib in Resources */,
+				4401683A1AE1DDD500BBFAFE /* Main.storyboard in Resources */,
 				4498698E1AD1D99C001603F8 /* gear.png in Resources */,
 				5FFF77E7199C1F6C00AE0269 /* message_received.aiff in Resources */,
 				449869951AD1D99C001603F8 /* star@2x.png in Resources */,
@@ -684,6 +702,7 @@
 				449869781AD1D877001603F8 /* LoginViewController.swift in Sources */,
 				4498697C1AD1D877001603F8 /* UserViewController.swift in Sources */,
 				5FCB62C1199E7C19008B93DB /* MessagesViewController.swift in Sources */,
+				440168331AE1D9F000BBFAFE /* NavigationViewController.swift in Sources */,
 				5FFF77EC199C1F6C00AE0269 /* UIImage+JSQMessages.m in Sources */,
 				5FFF77F4199C1F6C00AE0269 /* JSQMessagesToolbarButtonFactory.m in Sources */,
 				449869791AD1D877001603F8 /* SidePanelViewController.swift in Sources */,
@@ -696,7 +715,11 @@
 				449869771AD1D877001603F8 /* FrostedSidebar.swift in Sources */,
 				5FFF7804199C1F6C00AE0269 /* JSQMessagesToolbarContentView.m in Sources */,
 				5FFF77ED199C1F6C00AE0269 /* UIView+JSQMessages.m in Sources */,
+				440168351AE1DA3C00BBFAFE /* NavigationCell.swift in Sources */,
+				440168311AE1D91D00BBFAFE /* TimelineCell.swift in Sources */,
+				440168371AE1DA7D00BBFAFE /* TransitionOperator.swift in Sources */,
 				5FFF77FB199C1F6C00AE0269 /* JSQMessagesCollectionViewCellIncoming.m in Sources */,
+				4401682F1AE1D6F900BBFAFE /* OtherNavController.swift in Sources */,
 				5FFF77E9199C1F6C00AE0269 /* JSQSystemSoundPlayer+JSQMessages.m in Sources */,
 				5FF98CB219A51B8E0041E81A /* Message.swift in Sources */,
 				63891100199E968100B8998F /* ChatLoginViewController.swift in Sources */,
@@ -717,6 +740,7 @@
 				5FFF7802199C1F6C00AE0269 /* JSQMessagesLoadEarlierHeaderView.m in Sources */,
 				5FFF77FF199C1F6C00AE0269 /* JSQMessagesComposerTextView.m in Sources */,
 				449869761AD1D877001603F8 /* ContainerViewController.swift in Sources */,
+				44B715911AE1EB3100D9FE3B /* TimelineViewController.swift in Sources */,
 				5FFF77F5199C1F6C00AE0269 /* JSQMessagesCollectionViewFlowLayout.m in Sources */,
 				5FFF77EA199C1F6C00AE0269 /* NSString+JSQMessages.m in Sources */,
 				449869751AD1D877001603F8 /* CenterViewController.swift in Sources */,
@@ -744,10 +768,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5FFF76C2199C191F00AE0269 /* Main.storyboard */ = {
+		440168381AE1DDD500BBFAFE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5FFF76C3199C191F00AE0269 /* Base */,
+				440168391AE1DDD500BBFAFE /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

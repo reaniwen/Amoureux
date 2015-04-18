@@ -8,12 +8,9 @@
 
 import UIKit
 
-protocol UserViewControllerDelegate{
-    func logout(flag : Int)
-}
 
 class UserViewController: UIViewController {
-	var delegate:UserViewControllerDelegate?
+	//var delegate:UserViewControllerDelegate?
 	override func viewDidLoad() {
 		super.viewDidLoad()
 	}
@@ -23,7 +20,7 @@ class UserViewController: UIViewController {
     }
     
     @IBAction func logoutButton(sender: UIButton) {
-        delegate?.logout(-1)
+        //delegate?.logout(-1)
         var prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
         prefs.setInteger(-1, forKey: "ISLOGGEDIN")
         self.performSegueWithIdentifier("gotoLogin", sender: self)
