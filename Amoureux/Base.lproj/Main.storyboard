@@ -19,9 +19,6 @@
             <string>Libertad</string>
             <string>Libertad</string>
             <string>Libertad</string>
-            <string>Libertad</string>
-            <string>Libertad</string>
-            <string>Libertad</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -1054,15 +1051,6 @@
                                             <outletCollection property="gestureRecognizers" destination="Qux-fX-WcC" appends="YES" id="5zY-QZ-4we"/>
                                         </connections>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ou-zf-E9H">
-                                        <rect key="frame" x="254" y="25" width="40" height="40"/>
-                                        <state key="normal" backgroundImage="button-user">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="userButtonDidPress:" destination="4xD-hf-WtU" eventType="touchUpInside" id="pHo-ZK-XqI"/>
-                                        </connections>
-                                    </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQ7-Xm-ULF">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
@@ -1073,45 +1061,6 @@
                                             <action selector="maskButtonDidPress:" destination="4xD-hf-WtU" eventType="touchUpInside" id="ibf-k1-inp"/>
                                         </connections>
                                     </button>
-                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Bu-Hh-IeF">
-                                        <rect key="frame" x="135" y="73" width="170" height="141"/>
-                                        <subviews>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="popover-bg" translatesAutoresizingMaskIntoConstraints="NO" id="B8n-gx-dXu">
-                                                <rect key="frame" x="0.0" y="0.0" width="170" height="141"/>
-                                            </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYH-OU-tUX">
-                                                <rect key="frame" x="0.0" y="14" width="170" height="42"/>
-                                                <fontDescription key="fontDescription" name="Libertad" family="Libertad" pointSize="18"/>
-                                                <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <inset key="titleEdgeInsets" minX="10" minY="2" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="Profile" image="popover-profile">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cp-C5-hsf">
-                                                <rect key="frame" x="0.0" y="55" width="170" height="42"/>
-                                                <fontDescription key="fontDescription" name="Libertad" family="Libertad" pointSize="18"/>
-                                                <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <inset key="titleEdgeInsets" minX="10" minY="2" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="Favorites" image="popover-favorites">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXr-2d-m9B">
-                                                <rect key="frame" x="0.0" y="96" width="170" height="42"/>
-                                                <fontDescription key="fontDescription" name="Libertad" family="Libertad" pointSize="18"/>
-                                                <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <inset key="titleEdgeInsets" minX="10" minY="2" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="Share" image="popover-shares">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="4xD-hf-WtU" kind="push" id="6BX-ij-AOZ"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    </view>
                                     <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rc8-QD-j12">
                                         <rect key="frame" x="0.0" y="368" width="320" height="200"/>
                                         <subviews>
@@ -1190,13 +1139,11 @@
                         <outlet property="likeButton" destination="rj7-ZA-J5T" id="XCl-CS-9Xu"/>
                         <outlet property="maskButton" destination="tQ7-Xm-ULF" id="OT6-9r-2aP"/>
                         <outlet property="panRecognizer" destination="Qux-fX-WcC" id="Gm3-PZ-N0y"/>
-                        <outlet property="popoverView" destination="1Bu-Hh-IeF" id="nmb-Un-vK0"/>
                         <outlet property="shareButton" destination="mPt-bs-7P0" id="LoL-Il-8dZ"/>
                         <outlet property="shareLabelsView" destination="SI2-Mw-RaZ" id="0gW-f5-vsT"/>
                         <outlet property="shareView" destination="rc8-QD-j12" id="tb0-i4-F74"/>
                         <outlet property="titleLabel" destination="iGW-5A-Lbn" id="zwo-r6-z9e"/>
                         <outlet property="twitterButton" destination="nc1-vt-yEo" id="JnG-52-Zv5"/>
-                        <outlet property="userButton" destination="9ou-zf-E9H" id="Bks-ab-Aso"/>
                         <segue destination="bfD-8w-297" kind="modal" identifier="homeToDetail" animates="NO" id="Zlv-dX-SbC"/>
                     </connections>
                 </viewController>
@@ -1282,17 +1229,12 @@ Behance</string>
         <image name="avatar" width="160" height="160"/>
         <image name="backbutton" width="41" height="41"/>
         <image name="burger" width="19" height="17"/>
-        <image name="button-user" width="40" height="40"/>
         <image name="dialog-favorites" width="38" height="38"/>
         <image name="enter-pink" width="640" height="120"/>
         <image name="heart" width="394" height="310"/>
         <image name="image" width="800" height="600"/>
         <image name="like" width="24" height="22"/>
         <image name="menu" width="22" height="22"/>
-        <image name="popover-bg" width="170" height="141"/>
-        <image name="popover-favorites" width="22" height="22"/>
-        <image name="popover-profile" width="22" height="22"/>
-        <image name="popover-shares" width="22" height="22"/>
         <image name="share" width="19" height="27"/>
         <image name="share-bg" width="320" height="200"/>
         <image name="share-email" width="90" height="90"/>
@@ -1301,7 +1243,4 @@ Behance</string>
         <image name="title" width="307" height="67"/>
         <image name="toleft" width="26" height="23"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="vFH-6F-dhP"/>
-    </inferredMetricsTieBreakers>
 </document>
