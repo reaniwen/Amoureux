@@ -112,6 +112,7 @@
 		E039A5E71AE30473008AF130 /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E039A5E21AE30473008AF130 /* SpringAnimation.swift */; };
 		E039A5EA1AE30481008AF130 /* PhotoDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E039A5E81AE30481008AF130 /* PhotoDetail.swift */; };
 		E039A5EB1AE30481008AF130 /* Photowall.swift in Sources */ = {isa = PBXBuildFile; fileRef = E039A5E91AE30481008AF130 /* Photowall.swift */; };
+		E039A5EF1AE30576008AF130 /* Amoureux.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E039A5ED1AE30576008AF130 /* Amoureux.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -264,6 +265,7 @@
 		E039A5E81AE30481008AF130 /* PhotoDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetail.swift; sourceTree = "<group>"; };
 		E039A5E91AE30481008AF130 /* Photowall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photowall.swift; sourceTree = "<group>"; };
 		E039A5EC1AE3048E008AF130 /* TipoType - Libertad.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TipoType - Libertad.otf"; path = "font/TipoType - Libertad.otf"; sourceTree = "<group>"; };
+		E039A5EE1AE30576008AF130 /* Amoureux.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Amoureux.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -368,6 +370,7 @@
 				44B715901AE1EB3100D9FE3B /* TimelineViewController.swift */,
 				5FFF76C5199C191F00AE0269 /* Images.xcassets */,
 				5FFF76BC199C191F00AE0269 /* Supporting Files */,
+				E039A5ED1AE30576008AF130 /* Amoureux.xcdatamodeld */,
 			);
 			path = Amoureux;
 			sourceTree = "<group>";
@@ -756,6 +759,7 @@
 				449869771AD1D877001603F8 /* FrostedSidebar.swift in Sources */,
 				E039A5E51AE30473008AF130 /* DesignableView.swift in Sources */,
 				5FFF7804199C1F6C00AE0269 /* JSQMessagesToolbarContentView.m in Sources */,
+				E039A5EF1AE30576008AF130 /* Amoureux.xcdatamodeld in Sources */,
 				5FFF77ED199C1F6C00AE0269 /* UIView+JSQMessages.m in Sources */,
 				440168351AE1DA3C00BBFAFE /* NavigationCell.swift in Sources */,
 				440168311AE1D91D00BBFAFE /* TimelineCell.swift in Sources */,
@@ -1008,6 +1012,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E039A5ED1AE30576008AF130 /* Amoureux.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E039A5EE1AE30576008AF130 /* Amoureux.xcdatamodel */,
+			);
+			currentVersion = E039A5EE1AE30576008AF130 /* Amoureux.xcdatamodel */;
+			path = Amoureux.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5FFF76B1199C191F00AE0269 /* Project object */;
 }
