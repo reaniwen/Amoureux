@@ -106,13 +106,15 @@
 		63891102199EB21D00B8998F /* FirebaseSimpleLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63891101199EB21D00B8998F /* FirebaseSimpleLogin.framework */; };
 		63891104199EB24200B8998F /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63891103199EB24200B8998F /* Accounts.framework */; };
 		63891106199EB24800B8998F /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63891105199EB24800B8998F /* Social.framework */; };
+		E010B5911AE34BEE005EA4BE /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E010B5901AE34BEE005EA4BE /* Photo.swift */; };
+		E010B5931AE356C2005EA4BE /* Phototest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E010B5921AE356C2005EA4BE /* Phototest.swift */; };
 		E039A5E31AE30473008AF130 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E039A5DE1AE30473008AF130 /* BlurView.swift */; };
 		E039A5E41AE30473008AF130 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E039A5DF1AE30473008AF130 /* Data.swift */; };
 		E039A5E51AE30473008AF130 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E039A5E01AE30473008AF130 /* DesignableView.swift */; };
 		E039A5E61AE30473008AF130 /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = E039A5E11AE30473008AF130 /* Misc.swift */; };
 		E039A5E71AE30473008AF130 /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E039A5E21AE30473008AF130 /* SpringAnimation.swift */; };
 		E039A5EA1AE30481008AF130 /* PhotoDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E039A5E81AE30481008AF130 /* PhotoDetail.swift */; };
-		E039A5EB1AE30481008AF130 /* Photowall.swift in Sources */ = {isa = PBXBuildFile; fileRef = E039A5E91AE30481008AF130 /* Photowall.swift */; };
+		E039A5EB1AE30481008AF130 /* PhotoWall.swift in Sources */ = {isa = PBXBuildFile; fileRef = E039A5E91AE30481008AF130 /* PhotoWall.swift */; };
 		E039A5EF1AE30576008AF130 /* Amoureux.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E039A5ED1AE30576008AF130 /* Amoureux.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
@@ -258,13 +260,15 @@
 		63891101199EB21D00B8998F /* FirebaseSimpleLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseSimpleLogin.framework; sourceTree = "<group>"; };
 		63891103199EB24200B8998F /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		63891105199EB24800B8998F /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		E010B5901AE34BEE005EA4BE /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		E010B5921AE356C2005EA4BE /* Phototest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Phototest.swift; sourceTree = "<group>"; };
 		E039A5DE1AE30473008AF130 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlurView.swift; path = font/Spring/BlurView.swift; sourceTree = "<group>"; };
 		E039A5DF1AE30473008AF130 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Data.swift; path = font/Spring/Data.swift; sourceTree = "<group>"; };
 		E039A5E01AE30473008AF130 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DesignableView.swift; path = font/Spring/DesignableView.swift; sourceTree = "<group>"; };
 		E039A5E11AE30473008AF130 /* Misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Misc.swift; path = font/Spring/Misc.swift; sourceTree = "<group>"; };
 		E039A5E21AE30473008AF130 /* SpringAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpringAnimation.swift; path = font/Spring/SpringAnimation.swift; sourceTree = "<group>"; };
 		E039A5E81AE30481008AF130 /* PhotoDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetail.swift; sourceTree = "<group>"; };
-		E039A5E91AE30481008AF130 /* Photowall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photowall.swift; sourceTree = "<group>"; };
+		E039A5E91AE30481008AF130 /* PhotoWall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoWall.swift; sourceTree = "<group>"; };
 		E039A5EC1AE3048E008AF130 /* TipoType - Libertad.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TipoType - Libertad.otf"; path = "font/TipoType - Libertad.otf"; sourceTree = "<group>"; };
 		E039A5EE1AE30576008AF130 /* Amoureux.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Amoureux.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -346,7 +350,9 @@
 				E00352351AE2D7FC009788FA /* Spring */,
 				440168381AE1DDD500BBFAFE /* Main.storyboard */,
 				E039A5E81AE30481008AF130 /* PhotoDetail.swift */,
-				E039A5E91AE30481008AF130 /* Photowall.swift */,
+				E039A5E91AE30481008AF130 /* PhotoWall.swift */,
+				E010B5901AE34BEE005EA4BE /* Photo.swift */,
+				E010B5921AE356C2005EA4BE /* Phototest.swift */,
 				4498696A1AD1D877001603F8 /* Animal.swift */,
 				4498696B1AD1D877001603F8 /* CenterViewController.swift */,
 				4498696C1AD1D877001603F8 /* ContainerViewController.swift */,
@@ -743,6 +749,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E010B5931AE356C2005EA4BE /* Phototest.swift in Sources */,
+				E010B5911AE34BEE005EA4BE /* Photo.swift in Sources */,
 				449869781AD1D877001603F8 /* LoginViewController.swift in Sources */,
 				4498697C1AD1D877001603F8 /* UserViewController.swift in Sources */,
 				5FCB62C1199E7C19008B93DB /* MessagesViewController.swift in Sources */,
@@ -784,7 +792,7 @@
 				4498697A1AD1D877001603F8 /* SignUpViewController.swift in Sources */,
 				4498697B1AD1D877001603F8 /* TabBarController.swift in Sources */,
 				E039A5E31AE30473008AF130 /* BlurView.swift in Sources */,
-				E039A5EB1AE30481008AF130 /* Photowall.swift in Sources */,
+				E039A5EB1AE30481008AF130 /* PhotoWall.swift in Sources */,
 				5FFF77EE199C1F6C00AE0269 /* JSQMessagesKeyboardController.m in Sources */,
 				5FFF7801199C1F6C00AE0269 /* JSQMessagesLabel.m in Sources */,
 				449869741AD1D877001603F8 /* Animal.swift in Sources */,

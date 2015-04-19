@@ -1004,10 +1004,10 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </imageView>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dialog-favorites" translatesAutoresizingMaskIntoConstraints="NO" id="6BM-qp-Ohv">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="timeline-photo" translatesAutoresizingMaskIntoConstraints="NO" id="6BM-qp-Ohv">
                                                         <rect key="frame" x="229" y="10" width="40" height="40"/>
                                                     </imageView>
-                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSY-Pj-Cmx">
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSY-Pj-Cmx">
                                                         <rect key="frame" x="239" y="19" width="20" height="11"/>
                                                         <fontDescription key="fontDescription" name="Libertad" family="Libertad" pointSize="12"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -1020,7 +1020,7 @@
                                                 <rect key="frame" x="0.0" y="209" width="140" height="61"/>
                                                 <fontDescription key="fontDescription" name="Libertad" family="Libertad" pointSize="20"/>
                                                 <inset key="imageEdgeInsets" minX="-15" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="Like" image="like">
+                                                <state key="normal" title="Edit" image="list">
                                                     <color key="titleColor" red="0.23921568630000001" green="0.25882352939999997" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -1052,7 +1052,7 @@
                                             <outletCollection property="gestureRecognizers" destination="Qux-fX-WcC" appends="YES" id="5zY-QZ-4we"/>
                                         </connections>
                                     </view>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQ7-Xm-ULF">
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQ7-Xm-ULF">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
                                         <state key="normal">
@@ -1119,7 +1119,7 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cb3-DI-Fdo">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cb3-DI-Fdo">
                                         <rect key="frame" x="14" y="21" width="40" height="40"/>
                                         <state key="normal" backgroundImage="backbutton">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1233,7 +1233,7 @@ Behance</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pN6-k2-UVQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1638" y="-530"/>
+            <point key="canvasLocation" x="1619" y="-649"/>
         </scene>
     </scenes>
     <resources>
@@ -1243,17 +1243,17 @@ Behance</string>
         <image name="avatar1" width="160" height="160"/>
         <image name="backbutton" width="41" height="41"/>
         <image name="burger" width="19" height="17"/>
-        <image name="dialog-favorites" width="38" height="38"/>
         <image name="enter-pink" width="640" height="120"/>
         <image name="heart" width="394" height="310"/>
         <image name="image1" width="800" height="600"/>
-        <image name="like" width="24" height="22"/>
+        <image name="list" width="22" height="22"/>
         <image name="menu" width="22" height="22"/>
         <image name="share" width="19" height="27"/>
         <image name="share-bg" width="320" height="200"/>
         <image name="share-email" width="90" height="90"/>
         <image name="share-facebook" width="90" height="90"/>
         <image name="share-twitter" width="90" height="90"/>
+        <image name="timeline-photo" width="36" height="36"/>
         <image name="title" width="307" height="67"/>
         <image name="toleft" width="26" height="23"/>
     </resources>
