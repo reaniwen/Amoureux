@@ -36,6 +36,7 @@
 		449869941AD1D99C001603F8 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 449869881AD1D99C001603F8 /* star.png */; };
 		449869951AD1D99C001603F8 /* star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 449869891AD1D99C001603F8 /* star@2x.png */; };
 		44B715911AE1EB3100D9FE3B /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B715901AE1EB3100D9FE3B /* TimelineViewController.swift */; };
+		44B715921AE3074400D9FE3B /* TipoType - Libertad.otf in Resources */ = {isa = PBXBuildFile; fileRef = E039A5EC1AE3048E008AF130 /* TipoType - Libertad.otf */; };
 		5F19222719D9D3D900D5C772 /* TwitterAuthHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F19222619D9D3D900D5C772 /* TwitterAuthHelper.m */; };
 		5FCB62C1199E7C19008B93DB /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCB62C0199E7C19008B93DB /* MessagesViewController.swift */; };
 		5FF98CB219A51B8E0041E81A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF98CB119A51B8E0041E81A /* Message.swift */; };
@@ -686,6 +687,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44B715921AE3074400D9FE3B /* TipoType - Libertad.otf in Resources */,
 				5FFF76C6199C191F00AE0269 /* Images.xcassets in Resources */,
 				5FFF77DB199C1F6C00AE0269 /* bubble_min_tailless.png in Resources */,
 				449869941AD1D99C001603F8 /* star.png in Resources */,

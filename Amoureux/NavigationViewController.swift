@@ -71,6 +71,8 @@ class NavigationViewController : UIViewController, UITableViewDelegate, UITableV
         
         if (indexPath.row == 1){
             performSegueWithIdentifier("chatview", sender: self)
+        }else if(indexPath.row == 2){
+            performSegueWithIdentifier("photowall", sender: self)
         }else if(indexPath.row % 2 == 0) {
             performSegueWithIdentifier("listview", sender: self)
         }else{

@@ -162,6 +162,11 @@ class Home: UIViewController {
     var gravityBehaviour : UIGravityBehavior!
     var snapBehavior : UISnapBehavior!
     
+    
+    @IBAction func BackMenu(sender: UIButton) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     @IBOutlet var panRecognizer: UIPanGestureRecognizer!
     
     @IBAction func handleGesture(sender: AnyObject) {
