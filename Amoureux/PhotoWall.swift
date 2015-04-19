@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import MobileCoreServices
 
-class Home: UIViewController {
+class Home: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var backgroundMaskView: UIView!
@@ -26,6 +27,12 @@ class Home: UIViewController {
     @IBOutlet weak var twitterButton: UIButton!
     @IBOutlet weak var facebookButton: UIButton!
     @IBOutlet weak var shareLabelsView: UIView!
+    @IBOutlet weak var save: UIButton!
+    @IBOutlet weak var back: UIButton!
+    
+    var oldnumber = -1
+    var newMedia: Bool?
+    
     
     @IBAction func maskButtonDidPress(sender: AnyObject) {
         spring(0.5) {
@@ -41,34 +48,65 @@ class Home: UIViewController {
         }
     }
     @IBAction func likeButtonDidPress(sender: AnyObject) {
-        
+        likeButton.hidden = true
+        shareButton.hidden = true
+        save.hidden = false
+        back.hidden = false
+    }
+
+
+    @IBAction func BackPress(sender: AnyObject) {
+        likeButton.hidden = false
+        shareButton.hidden = false
+        save.hidden = true
+        back.hidden = true
+    }
+
+    
+    
+    @IBAction func SavePress(sender: AnyObject) {
     }
     @IBAction func shareButtonDidPress(sender: AnyObject) {
-        shareView.hidden = false
-        showMask()
-        shareView.transform = CGAffineTransformMakeTranslation(0, 200)
-        emailButton.transform = CGAffineTransformMakeTranslation(0, 200)
-        twitterButton.transform = CGAffineTransformMakeTranslation(0, 200)
-        facebookButton.transform = CGAffineTransformMakeTranslation(0, 200)
-        shareLabelsView.alpha = 0
-        
-        spring(0.5) {
-            self.shareView.transform = CGAffineTransformMakeTranslation(0, 0)
-            self.dialogView.transform = CGAffineTransformMakeScale(0.8, 0.8)
+        if UIImagePickerController.isSourceTypeAvailable(
+            UIImagePickerControllerSourceType.SavedPhotosAlbum) {
+                let imagePicker = UIImagePickerController()
+                
+                imagePicker.delegate = self
+                imagePicker.sourceType =
+                    UIImagePickerControllerSourceType.PhotoLibrary
+                imagePicker.mediaTypes = [kUTTypeImage as NSString]
+                imagePicker.allowsEditing = false
+                self.presentViewController(imagePicker, animated: true,
+                    completion: nil)
+                newMedia = false
         }
-        springWithDelay(0.5, 0.05, {
-            self.emailButton.transform = CGAffineTransformMakeTranslation(0, 0)
-            })
-        springWithDelay(0.5, 0.10, {
-            self.twitterButton.transform = CGAffineTransformMakeTranslation(0, 0)
-            })
-        springWithDelay(0.5, 0.15, {
-            self.facebookButton.transform = CGAffineTransformMakeTranslation(0, 0)
-            })
-        springWithDelay(0.5, 0.2, {
-            self.shareLabelsView.alpha = 1
-            })
     }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+        
+        let mediaType = info[UIImagePickerControllerMediaType] as NSString
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
+        
+        if mediaType.isEqualToString(kUTTypeImage as NSString) {
+            let image = info[UIImagePickerControllerOriginalImage]
+                as UIImage
+            
+            
+            imageButton.setImage(image, forState: UIControlState.Normal)
+            backgroundImageView.image = image
+            
+            
+            if (newMedia == true) {
+                UIImageWriteToSavedPhotosAlbum(image, self,
+                    "image:didFinishSavingWithError:contextInfo:", nil)
+            } else if mediaType.isEqualToString(kUTTypeMovie as NSString) {
+                // Code to support video here
+            }
+            
+        }
+    }
+    
     func hideShareView() {
         spring(0.5) {
             self.shareView.transform = CGAffineTransformMakeTranslation(0, 0)
@@ -79,40 +117,14 @@ class Home: UIViewController {
     
     @IBAction func userButtonDidPress(sender: AnyObject) {
         
-        let scale = CGAffineTransformMakeScale(0.3, 0.3)
-        let translate = CGAffineTransformMakeTranslation(50, -50)
-        
-        showMask()
-        
-        spring(0.5) {
-            let scale = CGAffineTransformMakeScale(1, 1)
-            let translate = CGAffineTransformMakeTranslation(0, 0)
-        }
+
     }
     
     @IBAction func imageButtonDidPress(sender: AnyObject) {
         
-        springWithCompletion(0.7, {
-            
-            self.dialogView.frame = CGRectMake(0, 0, 320, 568)
-            self.dialogView.layer.cornerRadius = 0
-            self.imageButton.frame = CGRectMake(0, 0, 320, 240)
-            self.likeButton.alpha = 0
-            self.shareButton.alpha = 0
-            self.headerView.alpha = 0
-            
-            }, { finished in
-                self.performSegueWithIdentifier("homeToDetail", sender: self)
-            })
+
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        if segue.identifier == "homeToDetail" {
-            let controller = segue.destinationViewController as Detail
-            controller.data = data
-            controller.number = number
-        }
-    }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.LightContent
@@ -130,28 +142,33 @@ class Home: UIViewController {
         animator = UIDynamicAnimator(referenceView: view)
         
         dialogView.alpha = 0
-        
+        save.hidden = true
+        back.hidden = true
         println("hello")
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(Bool())
         
-        let scale = CGAffineTransformMakeScale(0.5, 0.5)
-        let translate = CGAffineTransformMakeTranslation(0, -200)
-        dialogView.transform = CGAffineTransformConcat(scale, translate)
         
-        spring(0.5) {
-            let scale = CGAffineTransformMakeScale(1, 1)
-            let translate = CGAffineTransformMakeTranslation(0, 0)
-            self.dialogView.transform = CGAffineTransformConcat(scale, translate)
+        if (number != oldnumber){
+            let scale = CGAffineTransformMakeScale(0.5, 0.5)
+            let translate = CGAffineTransformMakeTranslation(0, -200)
+            dialogView.transform = CGAffineTransformConcat(scale, translate)
+            spring(0.5) {
+                let scale = CGAffineTransformMakeScale(1, 1)
+                let translate = CGAffineTransformMakeTranslation(0, 0)
+                self.dialogView.transform = CGAffineTransformConcat(scale, translate)
+            }
+            
+            avatarImageView.image = UIImage(named: data[number]["avatar"]!)
+            imageButton.setImage(UIImage(named: data[number]["image"]!), forState: UIControlState.Normal)
+            backgroundImageView.image = UIImage(named: data[number]["image"]!)
+            authorLabel.text = data[number]["author"]
+            titleLabel.text = data[number]["title"]
+            dialogView.alpha = 1
+            oldnumber = number
         }
-        
-        avatarImageView.image = UIImage(named: data[number]["avatar"]!)
-        imageButton.setImage(UIImage(named: data[number]["image"]!), forState: UIControlState.Normal)
-        backgroundImageView.image = UIImage(named: data[number]["image"]!)
-        authorLabel.text = data[number]["author"]
-        titleLabel.text = data[number]["title"]
         
         dialogView.alpha = 1
     }

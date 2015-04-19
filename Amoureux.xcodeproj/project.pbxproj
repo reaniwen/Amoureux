@@ -113,7 +113,6 @@
 		E039A5E51AE30473008AF130 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E039A5E01AE30473008AF130 /* DesignableView.swift */; };
 		E039A5E61AE30473008AF130 /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = E039A5E11AE30473008AF130 /* Misc.swift */; };
 		E039A5E71AE30473008AF130 /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E039A5E21AE30473008AF130 /* SpringAnimation.swift */; };
-		E039A5EA1AE30481008AF130 /* PhotoDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E039A5E81AE30481008AF130 /* PhotoDetail.swift */; };
 		E039A5EB1AE30481008AF130 /* PhotoWall.swift in Sources */ = {isa = PBXBuildFile; fileRef = E039A5E91AE30481008AF130 /* PhotoWall.swift */; };
 		E039A5EF1AE30576008AF130 /* Amoureux.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E039A5ED1AE30576008AF130 /* Amoureux.xcdatamodeld */; };
 /* End PBXBuildFile section */
@@ -267,7 +266,6 @@
 		E039A5E01AE30473008AF130 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DesignableView.swift; path = font/Spring/DesignableView.swift; sourceTree = "<group>"; };
 		E039A5E11AE30473008AF130 /* Misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Misc.swift; path = font/Spring/Misc.swift; sourceTree = "<group>"; };
 		E039A5E21AE30473008AF130 /* SpringAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpringAnimation.swift; path = font/Spring/SpringAnimation.swift; sourceTree = "<group>"; };
-		E039A5E81AE30481008AF130 /* PhotoDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetail.swift; sourceTree = "<group>"; };
 		E039A5E91AE30481008AF130 /* PhotoWall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoWall.swift; sourceTree = "<group>"; };
 		E039A5EC1AE3048E008AF130 /* TipoType - Libertad.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TipoType - Libertad.otf"; path = "font/TipoType - Libertad.otf"; sourceTree = "<group>"; };
 		E039A5EE1AE30576008AF130 /* Amoureux.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Amoureux.xcdatamodel; sourceTree = "<group>"; };
@@ -349,7 +347,6 @@
 				E0BCEEAA1AE2F8DF00562290 /* font */,
 				E00352351AE2D7FC009788FA /* Spring */,
 				440168381AE1DDD500BBFAFE /* Main.storyboard */,
-				E039A5E81AE30481008AF130 /* PhotoDetail.swift */,
 				E039A5E91AE30481008AF130 /* PhotoWall.swift */,
 				E010B5901AE34BEE005EA4BE /* Photo.swift */,
 				E010B5921AE356C2005EA4BE /* Phototest.swift */,
@@ -765,7 +762,6 @@
 				5FFF7800199C1F6C00AE0269 /* JSQMessagesInputToolbar.m in Sources */,
 				E039A5E41AE30473008AF130 /* Data.swift in Sources */,
 				5FFF77F2199C1F6C00AE0269 /* JSQMessagesBubbleImageFactory.m in Sources */,
-				E039A5EA1AE30481008AF130 /* PhotoDetail.swift in Sources */,
 				449869771AD1D877001603F8 /* FrostedSidebar.swift in Sources */,
 				E039A5E51AE30473008AF130 /* DesignableView.swift in Sources */,
 				5FFF7804199C1F6C00AE0269 /* JSQMessagesToolbarContentView.m in Sources */,

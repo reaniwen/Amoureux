@@ -1032,12 +1032,36 @@
                                                 <rect key="frame" x="140" y="209" width="140" height="61"/>
                                                 <fontDescription key="fontDescription" name="Libertad" family="Libertad" pointSize="20"/>
                                                 <inset key="imageEdgeInsets" minX="-15" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="Share" image="share">
+                                                <state key="normal" title="Album" image="share">
                                                     <color key="titleColor" red="0.23921568630000001" green="0.25882352939999997" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="shareButtonDidPress:" destination="4xD-hf-WtU" eventType="touchUpInside" id="btL-X5-9Ob"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fF3-xB-0mE">
+                                                <rect key="frame" x="0.0" y="209" width="140" height="61"/>
+                                                <fontDescription key="fontDescription" name="Libertad" family="Libertad" pointSize="20"/>
+                                                <inset key="imageEdgeInsets" minX="-15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="Save" image="like">
+                                                    <color key="titleColor" red="0.23921568630000001" green="0.25882352939999997" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="SavePress:" destination="4xD-hf-WtU" eventType="touchUpInside" id="2N9-KU-Kpj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ts5-87-cQC">
+                                                <rect key="frame" x="140" y="209" width="140" height="61"/>
+                                                <fontDescription key="fontDescription" name="Libertad" family="Libertad" pointSize="20"/>
+                                                <inset key="imageEdgeInsets" minX="-15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="Back" image="toleft">
+                                                    <color key="titleColor" red="0.23921568630000001" green="0.25882352939999997" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="BackPress:" destination="4xD-hf-WtU" eventType="touchUpInside" id="nWy-o5-tY7"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1052,7 +1076,7 @@
                                             <outletCollection property="gestureRecognizers" destination="Qux-fX-WcC" appends="YES" id="5zY-QZ-4we"/>
                                         </connections>
                                     </view>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQ7-Xm-ULF">
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQ7-Xm-ULF">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
                                         <state key="normal">
@@ -1119,7 +1143,7 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cb3-DI-Fdo">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cb3-DI-Fdo">
                                         <rect key="frame" x="14" y="21" width="40" height="40"/>
                                         <state key="normal" backgroundImage="backbutton">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1142,6 +1166,7 @@
                     <connections>
                         <outlet property="authorLabel" destination="Y6k-0w-4dl" id="tr1-GL-wqb"/>
                         <outlet property="avatarImageView" destination="0cw-kt-YNl" id="eoG-qE-mcM"/>
+                        <outlet property="back" destination="Ts5-87-cQC" id="bX6-v6-7KO"/>
                         <outlet property="backgroundImageView" destination="gYp-m2-Cvs" id="TM6-AO-JCA"/>
                         <outlet property="backgroundMaskView" destination="bVA-dS-J24" id="ZbU-cq-VpC"/>
                         <outlet property="dialogView" destination="6RO-y0-rMb" id="wx1-Ct-nwv"/>
@@ -1153,12 +1178,12 @@
                         <outlet property="likeButton" destination="rj7-ZA-J5T" id="XCl-CS-9Xu"/>
                         <outlet property="maskButton" destination="tQ7-Xm-ULF" id="OT6-9r-2aP"/>
                         <outlet property="panRecognizer" destination="Qux-fX-WcC" id="Gm3-PZ-N0y"/>
+                        <outlet property="save" destination="fF3-xB-0mE" id="oJu-b5-KaB"/>
                         <outlet property="shareButton" destination="mPt-bs-7P0" id="LoL-Il-8dZ"/>
                         <outlet property="shareLabelsView" destination="SI2-Mw-RaZ" id="0gW-f5-vsT"/>
                         <outlet property="shareView" destination="rc8-QD-j12" id="tb0-i4-F74"/>
                         <outlet property="titleLabel" destination="iGW-5A-Lbn" id="zwo-r6-z9e"/>
                         <outlet property="twitterButton" destination="nc1-vt-yEo" id="JnG-52-Zv5"/>
-                        <segue destination="bfD-8w-297" kind="modal" identifier="homeToDetail" animates="NO" id="Zlv-dX-SbC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IJI-nS-B4h" sceneMemberID="firstResponder"/>
@@ -1169,71 +1194,6 @@
                 </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="912" y="-649"/>
-        </scene>
-        <!--Detail-->
-        <scene sceneID="WdK-tP-N9b">
-            <objects>
-                <viewController id="bfD-8w-297" customClass="Detail" customModule="Amoureux" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="eMq-Uf-U8w"/>
-                        <viewControllerLayoutGuide type="bottom" id="hcd-HL-gYZ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Lfu-EI-38Y">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="UFP-0b-0Qw">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1P-at-A24">
-                                <rect key="frame" x="20" y="20" width="40" height="40"/>
-                                <state key="normal" backgroundImage="backbutton">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="backButtonDidPress:" destination="bfD-8w-297" eventType="touchUpInside" id="8de-eJ-MxI"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="avatar1" translatesAutoresizingMaskIntoConstraints="NO" id="O5H-ba-9o0">
-                                <rect key="frame" x="20" y="260" width="30" height="30"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mike | Creative Mints" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FiE-ba-eSz">
-                                <rect key="frame" x="65" y="268" width="178" height="19"/>
-                                <fontDescription key="fontDescription" name="Libertad" family="Libertad" pointSize="20"/>
-                                <color key="textColor" red="0.20392156859999999" green="0.63921568630000003" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6ow-7C-vWC">
-                                <rect key="frame" x="20" y="305" width="280" height="240"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">You guys, the new "How To Draw: drawing and sketching objects and environments from your imagination" book by S. Robertson is just amazing! I spent the whole weekend gobbling it up and of course I couldn't help but take the watercolors myself! :)
-
-Fill up the gas tank and go check out the attachment!
-
-Behance</string>
-                                <fontDescription key="fontDescription" name="Libertad" family="Libertad" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="authorLabel" destination="FiE-ba-eSz" id="z8K-pc-RG1"/>
-                        <outlet property="avatarImageView" destination="O5H-ba-9o0" id="7Qq-rP-L52"/>
-                        <outlet property="backButton" destination="t1P-at-A24" id="BDa-7r-qGd"/>
-                        <outlet property="descriptionTextView" destination="6ow-7C-vWC" id="nF3-iX-s2U"/>
-                        <outlet property="imageView" destination="UFP-0b-0Qw" id="O1T-F3-kOP"/>
-                        <segue destination="4xD-hf-WtU" kind="modal" identifier="detailToHome" animates="NO" id="vFH-6F-dhP"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pN6-k2-UVQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1619" y="-649"/>
         </scene>
     </scenes>
     <resources>
@@ -1246,6 +1206,7 @@ Behance</string>
         <image name="enter-pink" width="640" height="120"/>
         <image name="heart" width="394" height="310"/>
         <image name="image1" width="800" height="600"/>
+        <image name="like" width="24" height="22"/>
         <image name="list" width="22" height="22"/>
         <image name="menu" width="22" height="22"/>
         <image name="share" width="19" height="27"/>
@@ -1257,7 +1218,4 @@ Behance</string>
         <image name="title" width="307" height="67"/>
         <image name="toleft" width="26" height="23"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="vFH-6F-dhP"/>
-    </inferredMetricsTieBreakers>
 </document>
