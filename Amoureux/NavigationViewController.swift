@@ -38,9 +38,9 @@ class NavigationViewController : UIViewController, UITableViewDelegate, UITableV
         dimmerView.backgroundColor = UIColor(white: 0.0, alpha: 0.3)
         bgImage.image = UIImage(named: "nav-bg")
         
-        let item1 = NavigationModel(title: "MY ACCOUNT", icon: "icon-home")
-        let item2 = NavigationModel(title: "COMMENTS", icon: "icon-chat", count: "3")
-        let item3 = NavigationModel(title: "FAVORITES", icon: "icon-star")
+        let item1 = NavigationModel(title: "TimeLine", icon: "icon-home")
+        let item2 = NavigationModel(title: "Chat", icon: "icon-chat", count: "3")
+        let item3 = NavigationModel(title: "Gallery", icon: "icon-star")
         let item4 = NavigationModel(title: "SETTINGS", icon: "icon-filter")
         let item5 = NavigationModel(title: "ABOUT", icon: "icon-info")
         
@@ -74,9 +74,9 @@ class NavigationViewController : UIViewController, UITableViewDelegate, UITableV
         }else if(indexPath.row == 2){
             performSegueWithIdentifier("photowall", sender: self)
         }else if(indexPath.row == 3) {
-            performSegueWithIdentifier("timelineView", sender: self)
+            performSegueWithIdentifier("othernav", sender: self)
         }else if(indexPath.row % 2 == 0) {
-            performSegueWithIdentifier("listview", sender: self)
+            performSegueWithIdentifier("timelineView", sender: self)
         }else{
             performSegueWithIdentifier("othernav", sender: self)
         }

@@ -21,7 +21,6 @@ class OtherNavController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        label.text = "This is another ViewController. Tap the button above to dismiss it and show the navigation."
     }
     
     override func viewDidAppear(animated: Bool) {
