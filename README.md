@@ -46,3 +46,8 @@ http://blog.csdn.net/kaitiren/article/details/38513715
     1. UI refine
     2. TimeLine module added
     3. Improve system stability.
+    
+####Apirl 20
+    1. improving the login and signup function using Parse.
+    2. Loading new status updates in asynchronous manner.
+    3. Improving timeline stability.
