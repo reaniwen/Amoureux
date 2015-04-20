@@ -3,6 +3,8 @@
 // Copyright (c) 2014 Firebase. All rights reserved.
 //
 
+
+#import <Foundation/Foundation.h>
 #import <Social/Social.h>
 #import "TwitterAuthHelper.h"
 

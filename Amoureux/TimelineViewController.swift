@@ -65,6 +65,9 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     @IBAction func logoutBtn(sender: UIBarButtonItem) {
+        PFUser.logOut()
+        //
+        //        self.navigationController?.popToRootViewControllerAnimated(true)
         delegate?.logout(-1)
         var prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
         prefs.setInteger(-1, forKey: "ISLOGGEDIN")

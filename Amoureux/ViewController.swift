@@ -8,39 +8,54 @@
 
 import UIKit
 
-class ViewController: UIViewController, UserViewControllerDelegate{
+class ViewController: UIViewController {
     
-    @IBOutlet weak var usernameLabel: UILabel!
-    var flag : Int = 0
-
+    
+    @IBOutlet weak var emailTxt: UITextField!
+    @IBOutlet weak var passwordTxt: UITextField!
+    @IBOutlet weak var signinBtn: UIButton!
+    @IBOutlet weak var signupBtn: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let theWidth = view.frame.size.width
+        let theHeight = view.frame.size.height
+        
+        emailTxt.frame = CGRectMake(40, 200, theWidth-80, 30)
+        passwordTxt.frame = CGRectMake(40, 240, theWidth-80, 30)
+        signinBtn.center = CGPointMake(theWidth/2, 330)
+        signupBtn.center = CGPointMake(theWidth/2, theHeight-40)
+        
     }
     
-    func logout(flag: Int) {
-        self.flag = flag
-    }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        self.view.endEditing(true)
-    }
-
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(true)
+    
+    @IBAction func signInBtn(sender: AnyObject) {
         
-        let prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
-        let isLoggedIn:Int = prefs.integerForKey("ISLOGGEDIN") as Int
-        if (isLoggedIn != 1  || self.flag == -1) {
-            self.performSegueWithIdentifier("gotoLogin", sender: self)
-        } else {
+        PFUser.logInWithUsernameInBackground(emailTxt.text, password: passwordTxt.text) {
+            (user:PFUser!, error:NSError!) -> Void in
+            
+            if error == nil {
+                
+                println("logIn")
+                self.performSegueWithIdentifier("gotoMainVCFromSigninVC", sender: self)
+                
+            } else {
+                
+                println("error")
+            }
             
         }
+        
     }
+    
+    
 }
 
