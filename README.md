@@ -56,3 +56,6 @@ http://blog.csdn.net/kaitiren/article/details/38513715
     1. improving the TimeLine UI.
     2. New photowall function has been published.
     3. Refine design structure.
+
+##Apirl 21
+##Till now, all main functions have been all implemented. The follow-on work will focus on wether widget and some UI refine.
