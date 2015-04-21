@@ -30,8 +30,12 @@ class Home: UIViewController, UIImagePickerControllerDelegate, UINavigationContr
     @IBOutlet weak var save: UIButton!
     @IBOutlet weak var back: UIButton!
     
+    var followArray = [String]()
     var oldnumber = -1
     var newMedia: Bool?
+    var resulltsImageFiles = [PFFile]()
+    var resultsHasImageArray = [String]()
+    var resultsTweetImageFiles = [PFFile?]()
     
     
     @IBAction func maskButtonDidPress(sender: AnyObject) {
@@ -147,9 +151,61 @@ class Home: UIViewController, UIImagePickerControllerDelegate, UINavigationContr
         println("hello")
     }
     
+    override func viewWillAppear(animated: Bool) {
+        refresh()
+    }
+    
+    func refresh() {
+        followArray.removeAll(keepCapacity: false)
+        //        resultsNameArray.removeAll(keepCapacity: false)
+        //        resulltsImageFiles.removeAll(keepCapacity: false)
+        //        resultsTweetArray.removeAll(keepCapacity: false)
+        resultsHasImageArray.removeAll(keepCapacity: false)
+        resultsTweetImageFiles.removeAll(keepCapacity: false)
+        
+        var followQuery = PFQuery(className: "follow")
+        followQuery.whereKey("user", equalTo: PFUser.currentUser().username)
+        println(PFUser.currentUser().username)
+        followQuery.addDescendingOrder("createdAt")
+        
+        var objects = followQuery.findObjects()
+        
+        for object in objects {
+            
+            self.followArray.append(object.objectForKey("userToFollow") as String)
+            
+        }
+        
+        var query = PFQuery(className: "tweets")
+        query.whereKey("userName", containedIn: followArray)
+        query.addDescendingOrder("createdAt")
+        query.findObjectsInBackgroundWithBlock {
+            (objects:[AnyObject]!, error:NSError!) -> Void in
+            
+            if error == nil {
+                
+                for object in objects {
+                    
+                    //                    self.resultsNameArray.append(object.objectForKey("profileName") as String)
+                    //                    self.resulltsImageFiles.append(object.objectForKey("photo") as PFFile)
+                    //                    self.resultsTweetArray.append(object.objectForKey("tweet") as String)
+                    self.resultsHasImageArray.append(object.objectForKey("hasImage") as String)
+                    if object.objectForKey("hasImage") as String == "yes" {
+                        self.resulltsImageFiles.append(object.objectForKey("photo") as PFFile)
+                        self.resultsTweetImageFiles.append(object.objectForKey("tweetImage") as? PFFile)
+                    }
+                    
+                    
+                }
+                
+                
+            }
+        }
+
+    }
+    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(Bool())
-        
         
         if (number != oldnumber){
             let scale = CGAffineTransformMakeScale(0.5, 0.5)
@@ -161,11 +217,38 @@ class Home: UIViewController, UIImagePickerControllerDelegate, UINavigationContr
                 self.dialogView.transform = CGAffineTransformConcat(scale, translate)
             }
             
-            avatarImageView.image = UIImage(named: data[number]["avatar"]!)
-            imageButton.setImage(UIImage(named: data[number]["image"]!), forState: UIControlState.Normal)
-            backgroundImageView.image = UIImage(named: data[number]["image"]!)
-            authorLabel.text = data[number]["author"]
-            titleLabel.text = data[number]["title"]
+            var image = UIImage()
+            
+            resulltsImageFiles[number].getDataInBackgroundWithBlock {
+                (imageData:NSData!, error:NSError!) -> Void in
+                
+                
+                if error == nil {
+                    
+                    self.avatarImageView.image = UIImage(data: imageData)
+                    //cell.imgView.image = image
+                    
+                }
+                
+            }
+            //avatarImageView.image = UIImage(named: data[number]["avatar"]!)
+                
+                resultsTweetImageFiles[number]?.getDataInBackgroundWithBlock({
+                    (imageData:NSData!, error:NSError!) -> Void in
+                    
+                    if error == nil {
+                        
+                        image = UIImage(data: imageData)!
+                        self.imageButton.setImage(image, forState: UIControlState.Normal)
+                        //cell.tweetImg.image = image
+                        
+                    }
+                    
+                })
+            
+            //backgroundImageView.image = UIImage(named: data[number]["image"]!)
+            //authorLabel.text = data[number]["author"]
+            //titleLabel.text = data[number]["title"]
             dialogView.alpha = 1
             oldnumber = number
         }
@@ -225,10 +308,11 @@ class Home: UIViewController, UIImagePickerControllerDelegate, UINavigationContr
     
     func refreshView() {
         number++
-        if number > 3 {
+        if number >= self.resultsTweetImageFiles.count {
+            println(self.resultsTweetImageFiles.count)
             number = 0
         }
-        
+        println(self.resultsTweetImageFiles.count)
         animator.removeAllBehaviors()
         
         snapBehavior = UISnapBehavior(item: dialogView, snapToPoint: view.center)
