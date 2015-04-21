@@ -51,3 +51,8 @@ http://blog.csdn.net/kaitiren/article/details/38513715
     1. improving the login and signup function using Parse.
     2. Loading new status updates in asynchronous manner.
     3. Improving timeline stability.
+    
+####Apirl 21
+    1. improving the TimeLine UI.
+    2. New photowall function has been published.
+    3. Refine design structure.
