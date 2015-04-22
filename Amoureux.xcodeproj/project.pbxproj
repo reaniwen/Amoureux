@@ -18,7 +18,6 @@
 		4493D5481AE4A04B002136CB /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4493D5421AE4A04B002136CB /* libsqlite3.dylib */; };
 		4493D5491AE4A04B002136CB /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4493D5431AE4A04B002136CB /* libz.dylib */; };
 		4493D54A1AE4A04B002136CB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4493D5441AE4A04B002136CB /* MobileCoreServices.framework */; };
-		4493D54B1AE4A04B002136CB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4493D5451AE4A04B002136CB /* StoreKit.framework */; };
 		4493D54E1AE4A0B1002136CB /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4493D54C1AE4A0B1002136CB /* Bolts.framework */; };
 		4493D54F1AE4A0B1002136CB /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4493D54D1AE4A0B1002136CB /* Parse.framework */; };
 		4493D5561AE4A462002136CB /* usersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4493D5501AE4A462002136CB /* usersCell.swift */; };
@@ -52,6 +51,7 @@
 		449869951AD1D99C001603F8 /* star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 449869891AD1D99C001603F8 /* star@2x.png */; };
 		44B715911AE1EB3100D9FE3B /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B715901AE1EB3100D9FE3B /* TimelineViewController.swift */; };
 		44B715921AE3074400D9FE3B /* TipoType - Libertad.otf in Resources */ = {isa = PBXBuildFile; fileRef = E039A5EC1AE3048E008AF130 /* TipoType - Libertad.otf */; };
+		58D8F0961AE7121100B7CE89 /* whisper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 58D8F0951AE7121100B7CE89 /* whisper.jpg */; };
 		5F19222719D9D3D900D5C772 /* TwitterAuthHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F19222619D9D3D900D5C772 /* TwitterAuthHelper.m */; };
 		5FCB62C1199E7C19008B93DB /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCB62C0199E7C19008B93DB /* MessagesViewController.swift */; };
 		5FF98CB219A51B8E0041E81A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF98CB119A51B8E0041E81A /* Message.swift */; };
@@ -154,7 +154,6 @@
 		4493D5421AE4A04B002136CB /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		4493D5431AE4A04B002136CB /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		4493D5441AE4A04B002136CB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		4493D5451AE4A04B002136CB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		4493D54C1AE4A0B1002136CB /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		4493D54D1AE4A0B1002136CB /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		4493D5501AE4A462002136CB /* usersCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = usersCell.swift; sourceTree = "<group>"; };
@@ -187,6 +186,7 @@
 		449869881AD1D99C001603F8 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 		449869891AD1D99C001603F8 /* star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star@2x.png"; sourceTree = "<group>"; };
 		44B715901AE1EB3100D9FE3B /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		58D8F0951AE7121100B7CE89 /* whisper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = whisper.jpg; sourceTree = "<group>"; };
 		5F19222619D9D3D900D5C772 /* TwitterAuthHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterAuthHelper.m; sourceTree = "<group>"; };
 		5F19222819D9DA1500D5C772 /* TwitterAuthHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwitterAuthHelper.h; sourceTree = "<group>"; };
 		5FCB62C0199E7C19008B93DB /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
@@ -308,7 +308,6 @@
 			files = (
 				4493D54E1AE4A0B1002136CB /* Bolts.framework in Frameworks */,
 				4493D54F1AE4A0B1002136CB /* Parse.framework in Frameworks */,
-				4493D54B1AE4A04B002136CB /* StoreKit.framework in Frameworks */,
 				4493D5461AE4A04B002136CB /* CoreGraphics.framework in Frameworks */,
 				4493D5471AE4A04B002136CB /* CoreLocation.framework in Frameworks */,
 				4493D5481AE4A04B002136CB /* libsqlite3.dylib in Frameworks */,
@@ -349,7 +348,6 @@
 				4493D5421AE4A04B002136CB /* libsqlite3.dylib */,
 				4493D5431AE4A04B002136CB /* libz.dylib */,
 				4493D5441AE4A04B002136CB /* MobileCoreServices.framework */,
-				4493D5451AE4A04B002136CB /* StoreKit.framework */,
 				63891105199EB24800B8998F /* Social.framework */,
 				63891103199EB24200B8998F /* Accounts.framework */,
 				63891101199EB21D00B8998F /* FirebaseSimpleLogin.framework */,
@@ -442,6 +440,7 @@
 				449869821AD1D99C001603F8 /* gear.png */,
 				449869831AD1D99C001603F8 /* gear@2x.png */,
 				449869841AD1D99C001603F8 /* globe.png */,
+				58D8F0951AE7121100B7CE89 /* whisper.jpg */,
 				449869851AD1D99C001603F8 /* globe@2x.png */,
 				449869861AD1D99C001603F8 /* profile.png */,
 				449869871AD1D99C001603F8 /* profile@2x.png */,
@@ -712,6 +711,12 @@
 				TargetAttributes = {
 					5FFF76B8199C191F00AE0269 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 6QN349HHUB;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 					5FFF76CA199C191F00AE0269 = {
 						CreatedOnToolsVersion = 6.0;
@@ -770,6 +775,7 @@
 				4498698D1AD1D99C001603F8 /* click.gif in Resources */,
 				5FFF77E1199C1F6C00AE0269 /* bubble_tailless.png in Resources */,
 				4498698C1AD1D99C001603F8 /* burger@2x.png in Resources */,
+				58D8F0961AE7121100B7CE89 /* whisper.jpg in Resources */,
 				5FFF77DF199C1F6C00AE0269 /* bubble_stroked_tailless.png in Resources */,
 				4498698A1AD1D99C001603F8 /* Background.jpg in Resources */,
 				5FFF77DE199C1F6C00AE0269 /* bubble_stroked@2x.png in Resources */,
@@ -978,6 +984,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -987,6 +995,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = Amoureux;
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Amoureux/FireChat-Swift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -999,6 +1008,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1008,6 +1019,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = Amoureux;
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Amoureux/FireChat-Swift-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
