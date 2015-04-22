@@ -104,6 +104,10 @@ class signUpVC: UIViewController, UINavigationControllerDelegate, UIImagePickerC
         
     }
     
+    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+        self.view.endEditing(true)
+    }
+    
     
 
 }
