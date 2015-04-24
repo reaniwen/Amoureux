@@ -9,11 +9,15 @@
 import Foundation
 import Foundation
 import UIKit
+import CoreLocation
 
 class NavigationViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    @IBOutlet var bgImageView : UIImageView!
+    @IBOutlet weak var location1: UILabel!
+    @IBOutlet weak var temperature1: UILabel!
+    @IBOutlet weak var icon1: UIImageView!
     
+    @IBOutlet var bgImageView : UIImageView!
     @IBOutlet var tview: UITableView!
     @IBOutlet var tableview: UITableView!
 

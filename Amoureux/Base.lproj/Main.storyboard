@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="r5Y-Lo-wKv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="r5Y-Lo-wKv">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -882,6 +881,21 @@
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="avatar1" translatesAutoresizingMaskIntoConstraints="NO" id="lVY-F9-Mxp">
+                                        <rect key="frame" x="26" y="21" width="81" height="50"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwY-or-dpa">
+                                        <rect key="frame" x="83" y="71" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMx-ew-HjW">
+                                        <rect key="frame" x="15" y="71" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -904,7 +918,10 @@
                         <outlet property="bgImageView" destination="bBm-zn-5YP" id="0ZV-U6-LWW"/>
                         <outlet property="dimmerView" destination="Yu1-8V-abG" id="B86-c9-KzS"/>
                         <outlet property="dimmeruiview" destination="f04-sg-ahn" id="9JA-hF-ygK"/>
+                        <outlet property="icon1" destination="lVY-F9-Mxp" id="bpc-BY-tV7"/>
+                        <outlet property="location1" destination="RMx-ew-HjW" id="wus-px-b7Q"/>
                         <outlet property="tableview" destination="gpJ-55-9cA" id="pp4-NV-w78"/>
+                        <outlet property="temperature1" destination="fwY-or-dpa" id="iQM-5S-dif"/>
                         <outlet property="tview" destination="gpJ-55-9cA" id="Q90-jN-jhM"/>
                         <segue destination="9KM-t7-GyZ" kind="custom" identifier="chatview" id="Myp-BB-6qP"/>
                         <segue destination="1cK-z0-okU" kind="custom" identifier="listview" id="DW7-kt-nTb"/>
@@ -915,7 +932,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UrU-sg-PVE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="346" y="299"/>
+            <point key="canvasLocation" x="345.5" y="298.5"/>
         </scene>
         <!--Home-->
         <scene sceneID="C8W-2k-pe0">
