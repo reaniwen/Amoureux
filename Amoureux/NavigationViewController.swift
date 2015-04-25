@@ -10,9 +10,12 @@ import Foundation
 import Foundation
 import UIKit
 import CoreLocation
+import AFNetworking
 
-class NavigationViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
+class NavigationViewController : UIViewController, UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate {
     
+    //add by Xiao
+    let locationManager:CLLocationManager = CLLocationManager()
     @IBOutlet weak var location1: UILabel!
     @IBOutlet weak var temperature1: UILabel!
     @IBOutlet weak var icon1: UIImageView!
@@ -33,6 +36,14 @@ class NavigationViewController : UIViewController, UITableViewDelegate, UITableV
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //add by Xiao
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        if ( ios8() ) {
+            locationManager.requestAlwaysAuthorization()
+        }
+        locationManager.startUpdatingLocation()
         
         tview.delegate = self
         tview.dataSource = self
@@ -101,6 +112,219 @@ class NavigationViewController : UIViewController, UITableViewDelegate, UITableV
         self.modalPresentationStyle = UIModalPresentationStyle.Custom
         toViewController.transitioningDelegate = self.transitionOperator
     }
+    
+    //add by Xiao
+    func updateWeatherInfo(latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
+        let manager = AFHTTPRequestOperationManager()
+        
+        let url = "http://api.openweathermap.org/data/2.5/forecast"
+        println(url)
+        
+        let params = ["lat":latitude, "lon":longitude]
+        println(params)
+        
+        manager.GET(url,
+            parameters: params,
+            success: { (operation: AFHTTPRequestOperation!,
+                responseObject: AnyObject!) in
+                println("JSON: " + responseObject.description!)
+        
+                self.updateUISuccess(responseObject as NSDictionary!)
+            },
+            failure: { (operation: AFHTTPRequestOperation!,
+                error: NSError!) in
+                println("Error: " + error.localizedDescription)
+
+        })
+    }
+    
+    func updateUISuccess(jsonResult: NSDictionary) {
+        
+        if let tempResult = ((jsonResult["list"]? as NSArray)[0]["main"] as NSDictionary)["temp"] as? Double {
+            println("TempResult:", tempResult)
+            // If we can get the temperature from JSON correctly, we assume the rest of JSON is correct.
+            var temperature: Double
+            var cntry: String
+            cntry = ""
+            if let city = (jsonResult["city"]? as? NSDictionary) {
+                if let country = (city["country"] as? String) {
+                    cntry = country
+                    if (country == "US") {
+                        // Convert temperature to Fahrenheit if user is within the US
+                        temperature = round(((tempResult - 273.15) * 1.8) + 32)
+                    }
+                    else {
+                        // Otherwise, convert temperature to Celsius
+                        temperature = round(tempResult - 273.15)
+                    }
+                    
+                    // FIXED: Is it a bug of Xcode 6? can not set the font size in IB.
+                    //self.temperature.font = UIFont.boldSystemFontOfSize(60)
+                    self.temperature1.text = "\(temperature)°"
+                }
+                
+                if let name = (city["name"] as? String) {
+                    self.location1.font = UIFont.boldSystemFontOfSize(15)
+                    self.location1.text = name
+                }
+            }
+            
+            
+            if let weatherArray = (jsonResult["list"]? as? NSArray) {
+                for index in 0...4 {
+                    println(index)
+                    if let perTime = (weatherArray[index] as? NSDictionary) {
+                        if let main = (perTime["main"]? as? NSDictionary) {
+                            var temp = (main["temp"] as Double)
+                            if (cntry == "US") {
+                                // Convert temperature to Fahrenheit if user is within the US
+                                temperature = round(((temp - 273.15) * 1.8) + 32)
+                            }
+                            else {
+                                // Otherwise, convert temperature to Celsius
+                                temperature = round(temp - 273.15)
+                            }
+                            
+                            // FIXED: Is it a bug of Xcode 6? can not set the font size in IB.
+                            //self.temperature.font = UIFont.boldSystemFontOfSize(60)
+                        }
+                        var dateFormatter = NSDateFormatter()
+                        dateFormatter.dateFormat = "HH:mm"
+                        if let date = (perTime["dt"]? as? Double) {
+                            let thisDate = NSDate(timeIntervalSince1970: date)
+                            let forecastTime = dateFormatter.stringFromDate(thisDate)
+
+                        }
+                        if let weather = (perTime["weather"]? as? NSArray) {
+                            var condition = (weather[0] as NSDictionary)["id"] as Int
+                            var icon = (weather[0] as NSDictionary)["icon"] as String
+                            var nightTime = false
+                            if icon.rangeOfString("n") != nil{
+                                nightTime = true
+                            }
+                            self.updateWeatherIcon(condition, nightTime: nightTime, index: index)
+                            if (index==4) {
+                                return
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    
+    func updatePictures(index: Int, name: String) {
+        if (index==0) {
+            self.icon1.image = UIImage(named: name)
+        }
+    }
+    
+    func updateWeatherIcon(condition: Int, nightTime: Bool, index: Int) {
+        // Thunderstorm
+        
+        var images = [self.icon1.image]
+        
+        if (condition < 300) {
+            if nightTime {
+                self.updatePictures(index, name: "tstorm1_night")
+            } else {
+                self.updatePictures(index, name: "tstorm1")
+            }
+        }
+            // Drizzle
+        else if (condition < 500) {
+            self.updatePictures(index, name: "light_rain")
+            
+        }
+            // Rain / Freezing rain / Shower rain
+        else if (condition < 600) {
+            self.updatePictures(index, name: "shower3")
+        }
+            // Snow
+        else if (condition < 700) {
+            self.updatePictures(index, name: "snow4")
+        }
+            // Fog / Mist / Haze / etc.
+        else if (condition < 771) {
+            if nightTime {
+                self.updatePictures(index, name: "fog_night")
+            } else {
+                self.updatePictures(index, name: "fog")
+            }
+        }
+            // Tornado / Squalls
+        else if (condition < 800) {
+            self.updatePictures(index, name: "tstorm3")
+        }
+            // Sky is clear
+        else if (condition == 800) {
+            if (nightTime){
+                self.updatePictures(index, name: "sunny_night")
+            }
+            else {
+                self.updatePictures(index, name: "sunny")
+            }
+        }
+            // few / scattered / broken clouds
+        else if (condition < 804) {
+            if (nightTime){
+                self.updatePictures(index, name: "cloudy2_night")
+            }
+            else{
+                self.updatePictures(index, name: "cloudy2")
+            }
+        }
+            // overcast clouds
+        else if (condition == 804) {
+            self.updatePictures(index, name: "overcast")
+        }
+            // Extreme
+        else if ((condition >= 900 && condition < 903) || (condition > 904 && condition < 1000)) {
+            self.updatePictures(index, name: "tstorm3")
+        }
+            // Cold
+        else if (condition == 903) {
+            self.updatePictures(index, name: "snow5")
+        }
+            // Hot
+        else if (condition == 904) {
+            self.updatePictures(index, name: "sunny")
+        }
+            // Weather condition is not available
+        else {
+            self.updatePictures(index, name: "dunno")
+        }
+    }
+    
+    /*
+    iOS 8 Utility
+    */
+    func ios8() -> Bool {
+        
+        if ( NSFoundationVersionNumber <= NSFoundationVersionNumber_iOS_7_1 ) {
+            return false
+        } else {
+            return true
+        }
+    }
+    
+    //CLLocationManagerDelegate
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        var location:CLLocation = locations[locations.count-1] as CLLocation
+        
+        if (location.horizontalAccuracy > 0) {
+            self.locationManager.stopUpdatingLocation()
+            println(location.coordinate)
+            updateWeatherInfo(location.coordinate.latitude, longitude: location.coordinate.longitude)
+        }
+    }
+    
+    func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
+        println(error)
+    }
+
 }
 
 class NavigationModel {
@@ -119,4 +343,5 @@ class NavigationModel {
         self.icon = icon
         self.count = count
     }
+
 }
