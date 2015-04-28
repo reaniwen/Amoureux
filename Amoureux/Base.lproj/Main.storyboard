@@ -1760,26 +1760,27 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HBu-nW-iqG">
-                                <rect key="frame" x="20" y="20" width="40" height="40"/>
+                                <rect key="frame" x="16" y="20" width="40" height="40"/>
                                 <state key="normal" backgroundImage="backbutton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="backButtonDidPress:" destination="YCb-Of-o8v" eventType="touchUpInside" id="z65-4U-28L"/>
+                                    <segue destination="OYI-re-wZV" kind="unwind" unwindAction="close:" id="eJf-eJ-e6o"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="GwD-e1-9fN"/>
                     <connections>
                         <outlet property="backButton" destination="HBu-nW-iqG" id="BfT-rP-sMS"/>
                         <outlet property="imageView" destination="8T1-Kc-44M" id="1vo-bZ-Mky"/>
-                        <segue destination="JDf-3Q-yu8" kind="modal" identifier="detailToHome" id="yOE-vs-LNR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6LL-bI-VkR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="OYI-re-wZV" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="711" y="-911"/>
+            <point key="canvasLocation" x="570" y="-1245"/>
         </scene>
     </scenes>
     <resources>
@@ -1793,7 +1794,7 @@
         <image name="cancel" width="40" height="35"/>
         <image name="enter-pink" width="640" height="120"/>
         <image name="heart" width="394" height="310"/>
-        <image name="image" width="800" height="600"/>
+        <image name="image" width="320" height="568"/>
         <image name="image-red" width="36" height="30"/>
         <image name="image1" width="800" height="600"/>
         <image name="like" width="24" height="22"/>
@@ -1814,6 +1815,5 @@
     <inferredMetricsTieBreakers>
         <segue reference="umV-I3-bzq"/>
         <segue reference="sli-cH-68R"/>
-        <segue reference="yOE-vs-LNR"/>
     </inferredMetricsTieBreakers>
 </document>
