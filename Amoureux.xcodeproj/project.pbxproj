@@ -130,6 +130,7 @@
 		E039A5E71AE30473008AF130 /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E039A5E21AE30473008AF130 /* SpringAnimation.swift */; };
 		E039A5EB1AE30481008AF130 /* PhotoWall.swift in Sources */ = {isa = PBXBuildFile; fileRef = E039A5E91AE30481008AF130 /* PhotoWall.swift */; };
 		E039A5EF1AE30576008AF130 /* Amoureux.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E039A5ED1AE30576008AF130 /* Amoureux.xcdatamodeld */; };
+		E06BE7851AF0404800919D8D /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06BE7841AF0404800919D8D /* Detail.swift */; };
 		ED72CBE8FDD2D057B2FB4D30 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA50B7B38993D87B5E4C1880 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -303,6 +304,7 @@
 		E039A5E91AE30481008AF130 /* PhotoWall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoWall.swift; sourceTree = "<group>"; };
 		E039A5EC1AE3048E008AF130 /* TipoType - Libertad.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TipoType - Libertad.otf"; path = "font/TipoType - Libertad.otf"; sourceTree = "<group>"; };
 		E039A5EE1AE30576008AF130 /* Amoureux.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Amoureux.xcdatamodel; sourceTree = "<group>"; };
+		E06BE7841AF0404800919D8D /* Detail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Detail.swift; path = "../../../../Desktop/cs394-9033-spring2015/session 4/ShotsApp-Data/ShotsApp/Detail.swift"; sourceTree = "<group>"; };
 		E0F0653A1AEB0BD100510604 /* SwiftWeather-Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftWeather-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		E0F0653D1AEB0CAE00510604 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		E0F0653E1AEB0CAE00510604 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
@@ -450,6 +452,7 @@
 				E039A5E91AE30481008AF130 /* PhotoWall.swift */,
 				E010B5901AE34BEE005EA4BE /* Photo.swift */,
 				E010B5921AE356C2005EA4BE /* Phototest.swift */,
+				E06BE7841AF0404800919D8D /* Detail.swift */,
 				4498696A1AD1D877001603F8 /* Animal.swift */,
 				4498696B1AD1D877001603F8 /* CenterViewController.swift */,
 				4498696C1AD1D877001603F8 /* ContainerViewController.swift */,
@@ -1009,6 +1012,7 @@
 				5FFF77FB199C1F6C00AE0269 /* JSQMessagesCollectionViewCellIncoming.m in Sources */,
 				4401682F1AE1D6F900BBFAFE /* OtherNavController.swift in Sources */,
 				5FFF77E9199C1F6C00AE0269 /* JSQSystemSoundPlayer+JSQMessages.m in Sources */,
+				E06BE7851AF0404800919D8D /* Detail.swift in Sources */,
 				5FF98CB219A51B8E0041E81A /* Message.swift in Sources */,
 				63891100199E968100B8998F /* ChatLoginViewController.swift in Sources */,
 				5FFF77EB199C1F6C00AE0269 /* UIColor+JSQMessages.m in Sources */,

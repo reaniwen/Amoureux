@@ -36,7 +36,7 @@ class Home: UIViewController, UIImagePickerControllerDelegate, UINavigationContr
     var resulltsImageFiles = [PFFile]()
     var resultsHasImageArray = [String]()
     var resultsTweetImageFiles = [PFFile?]()
-    
+    var image = UIImage()
     
     @IBAction func maskButtonDidPress(sender: AnyObject) {
         spring(0.5) {
@@ -124,8 +124,18 @@ class Home: UIViewController, UIImagePickerControllerDelegate, UINavigationContr
 
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if segue.identifier == "homeToDetail" {
+            let controller = segue.destinationViewController as Detail
+            controller.data = data
+            controller.number = number
+            controller.image = image
+        }
+    }
+    
     @IBAction func imageButtonDidPress(sender: AnyObject) {
-        
+
+                self.performSegueWithIdentifier("homeToDetail", sender: self)
 
     }
     
@@ -217,7 +227,7 @@ class Home: UIViewController, UIImagePickerControllerDelegate, UINavigationContr
                 self.dialogView.transform = CGAffineTransformConcat(scale, translate)
             }
             
-            var image = UIImage()
+            
             
             resulltsImageFiles[number].getDataInBackgroundWithBlock {
                 (imageData:NSData!, error:NSError!) -> Void in
@@ -238,8 +248,8 @@ class Home: UIViewController, UIImagePickerControllerDelegate, UINavigationContr
                     
                     if error == nil {
                         
-                        image = UIImage(data: imageData)!
-                        self.imageButton.setImage(image, forState: UIControlState.Normal)
+                        self.image = UIImage(data: imageData)!
+                        self.imageButton.setImage(self.image, forState: UIControlState.Normal)
                         //cell.tweetImg.image = image
                         
                     }
