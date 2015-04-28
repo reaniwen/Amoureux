@@ -1765,6 +1765,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="dismissNav:" destination="YCb-Of-o8v" eventType="touchUpInside" id="qUo-hR-flR"/>
                                     <segue destination="OYI-re-wZV" kind="unwind" unwindAction="close:" id="eJf-eJ-e6o"/>
                                 </connections>
                             </button>
