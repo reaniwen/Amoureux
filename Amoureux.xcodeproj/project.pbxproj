@@ -69,6 +69,9 @@
 		44B715921AE3074400D9FE3B /* TipoType - Libertad.otf in Resources */ = {isa = PBXBuildFile; fileRef = E039A5EC1AE3048E008AF130 /* TipoType - Libertad.otf */; };
 		44FFD67A1AF08F5000828C3A /* RMParallax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FFD6781AF08F5000828C3A /* RMParallax.swift */; };
 		44FFD67B1AF08F5000828C3A /* RMParallaxItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FFD6791AF08F5000828C3A /* RMParallaxItem.swift */; };
+		44FFD67D1AF098FE00828C3A /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FFD67C1AF098FE00828C3A /* GameViewController.swift */; };
+		44FFD67F1AF0996100828C3A /* MPCHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FFD67E1AF0996100828C3A /* MPCHandler.swift */; };
+		44FFD6811AF0999700828C3A /* TTTImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FFD6801AF0999700828C3A /* TTTImageView.swift */; };
 		58D8F0961AE7121100B7CE89 /* whisper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 58D8F0951AE7121100B7CE89 /* whisper.jpg */; };
 		5F19222719D9D3D900D5C772 /* TwitterAuthHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F19222619D9D3D900D5C772 /* TwitterAuthHelper.m */; };
 		5FCB62C1199E7C19008B93DB /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCB62C0199E7C19008B93DB /* MessagesViewController.swift */; };
@@ -224,6 +227,9 @@
 		44B715901AE1EB3100D9FE3B /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		44FFD6781AF08F5000828C3A /* RMParallax.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMParallax.swift; sourceTree = "<group>"; };
 		44FFD6791AF08F5000828C3A /* RMParallaxItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMParallaxItem.swift; sourceTree = "<group>"; };
+		44FFD67C1AF098FE00828C3A /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		44FFD67E1AF0996100828C3A /* MPCHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPCHandler.swift; sourceTree = "<group>"; };
+		44FFD6801AF0999700828C3A /* TTTImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTTImageView.swift; sourceTree = "<group>"; };
 		58D8F0951AE7121100B7CE89 /* whisper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = whisper.jpg; sourceTree = "<group>"; };
 		5F19222619D9D3D900D5C772 /* TwitterAuthHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterAuthHelper.m; sourceTree = "<group>"; };
 		5F19222819D9DA1500D5C772 /* TwitterAuthHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwitterAuthHelper.h; sourceTree = "<group>"; };
@@ -545,6 +551,7 @@
 				E039A5E91AE30481008AF130 /* PhotoWall.swift */,
 				E010B5901AE34BEE005EA4BE /* Photo.swift */,
 				E010B5921AE356C2005EA4BE /* Phototest.swift */,
+				44FFD6801AF0999700828C3A /* TTTImageView.swift */,
 				E06BE7861AF0497900919D8D /* Detail.swift */,
 				4498696A1AD1D877001603F8 /* Animal.swift */,
 				4498696B1AD1D877001603F8 /* CenterViewController.swift */,
@@ -574,6 +581,8 @@
 				E039A5ED1AE30576008AF130 /* Amoureux.xcdatamodeld */,
 				E0F0653A1AEB0BD100510604 /* SwiftWeather-Swift-Bridging-Header.h */,
 				44B0741C1AF0512D00C5DE06 /* SettingViewController.swift */,
+				44FFD67C1AF098FE00828C3A /* GameViewController.swift */,
+				44FFD67E1AF0996100828C3A /* MPCHandler.swift */,
 			);
 			path = Amoureux;
 			sourceTree = "<group>";
@@ -1115,6 +1124,7 @@
 				440168371AE1DA7D00BBFAFE /* TransitionOperator.swift in Sources */,
 				5FFF77FB199C1F6C00AE0269 /* JSQMessagesCollectionViewCellIncoming.m in Sources */,
 				44B074351AF0518800C5DE06 /* FormPickerCell.swift in Sources */,
+				44FFD67F1AF0996100828C3A /* MPCHandler.swift in Sources */,
 				4401682F1AE1D6F900BBFAFE /* OtherNavController.swift in Sources */,
 				5FFF77E9199C1F6C00AE0269 /* JSQSystemSoundPlayer+JSQMessages.m in Sources */,
 				E06BE7871AF0497900919D8D /* Detail.swift in Sources */,
@@ -1141,11 +1151,13 @@
 				44B074391AF0518800C5DE06 /* FormTextFieldCell.swift in Sources */,
 				44B0743A1AF0518800C5DE06 /* FormOptionsSelectorController.swift in Sources */,
 				5FFF7801199C1F6C00AE0269 /* JSQMessagesLabel.m in Sources */,
+				44FFD67D1AF098FE00828C3A /* GameViewController.swift in Sources */,
 				449869741AD1D877001603F8 /* Animal.swift in Sources */,
 				5FFF7802199C1F6C00AE0269 /* JSQMessagesLoadEarlierHeaderView.m in Sources */,
 				5FFF77FF199C1F6C00AE0269 /* JSQMessagesComposerTextView.m in Sources */,
 				449869761AD1D877001603F8 /* ContainerViewController.swift in Sources */,
 				44B715911AE1EB3100D9FE3B /* TimelineViewController.swift in Sources */,
+				44FFD6811AF0999700828C3A /* TTTImageView.swift in Sources */,
 				5FFF77F5199C1F6C00AE0269 /* JSQMessagesCollectionViewFlowLayout.m in Sources */,
 				44B074371AF0518800C5DE06 /* FormSelectorCell.swift in Sources */,
 				4493D5571AE4A462002136CB /* signUpVC.swift in Sources */,

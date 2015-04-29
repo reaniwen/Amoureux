@@ -91,7 +91,7 @@ class NavigationViewController : UIViewController, UITableViewDelegate, UITableV
         }else if(indexPath.row == 3) {
             performSegueWithIdentifier("settingnav", sender: self)
         }else if(indexPath.row == 4) {
-            performSegueWithIdentifier("settingnav", sender: self)
+            performSegueWithIdentifier("gamenav", sender: self)
         }else if(indexPath.row % 2 == 0) {
             performSegueWithIdentifier("timelineView", sender: self)
         }else{
