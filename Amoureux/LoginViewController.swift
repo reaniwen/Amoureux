@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import LocalAuthentication
 
 class LoginViewController: UIViewController {
     @IBOutlet weak var txtUserName: UITextField!
