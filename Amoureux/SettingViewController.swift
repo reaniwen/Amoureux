@@ -169,6 +169,7 @@ class SettingViewController: FormViewController, FormViewControllerDelegate {
     func formViewController(controller: FormViewController, didSelectRowDescriptor rowDescriptor: FormRowDescriptor) {
         if rowDescriptor.tag == Static.button {
             self.view.endEditing(true)
+            self.performSegueWithIdentifier("logout", sender: self)
         }
     }
 }
