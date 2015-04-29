@@ -29,7 +29,7 @@ class Home: UIViewController, UIImagePickerControllerDelegate, UINavigationContr
     @IBOutlet weak var shareLabelsView: UIView!
     @IBOutlet weak var save: UIButton!
     @IBOutlet weak var back: UIButton!
-    
+    var resultsNameArray = [String]()
     var followArray = [String]()
     var oldnumber = -1
     var newMedia: Bool?
@@ -38,6 +38,7 @@ class Home: UIViewController, UIImagePickerControllerDelegate, UINavigationContr
     var resultsTweetImageFiles = [PFFile?]()
     var image = UIImage()
     
+    @IBOutlet weak var nameLabel: UILabel!
     @IBAction func maskButtonDidPress(sender: AnyObject) {
         spring(0.5) {
             self.maskButton.alpha = 0
@@ -196,7 +197,7 @@ class Home: UIViewController, UIImagePickerControllerDelegate, UINavigationContr
                 
                 for object in objects {
                     
-                    //                    self.resultsNameArray.append(object.objectForKey("profileName") as String)
+                    self.resultsNameArray.append(object.objectForKey("profileName") as String)
                     //                    self.resulltsImageFiles.append(object.objectForKey("photo") as PFFile)
                     //                    self.resultsTweetArray.append(object.objectForKey("tweet") as String)
                     self.resultsHasImageArray.append(object.objectForKey("hasImage") as String)
@@ -250,7 +251,7 @@ class Home: UIViewController, UIImagePickerControllerDelegate, UINavigationContr
                         
                         self.image = UIImage(data: imageData)!
                         self.imageButton.setImage(self.image, forState: UIControlState.Normal)
-                        //cell.tweetImg.image = image
+                        self.nameLabel.text = self.resultsNameArray[self.number] as String
                         
                     }
                     

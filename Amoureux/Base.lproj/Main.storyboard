@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yIn-b3-j9j">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yIn-b3-j9j">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -926,6 +926,7 @@
                         <segue destination="PvK-Dn-Qrs" kind="custom" identifier="othernav" id="2UE-4U-ZvG"/>
                         <segue destination="JDf-3Q-yu8" kind="custom" identifier="photowall" id="NbH-Eo-pmc"/>
                         <segue destination="Nfv-tS-37e" kind="custom" identifier="timelineView" id="3e0-px-6kB"/>
+                        <segue destination="B53-ck-fmL" kind="custom" identifier="settingnav" id="Ve9-mu-SxT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UrU-sg-PVE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1149,6 +1150,7 @@
                         <outlet property="imageButton" destination="EIV-ep-U9r" id="bRE-BL-m7w"/>
                         <outlet property="likeButton" destination="ipF-dG-yCF" id="2Rs-aL-l0m"/>
                         <outlet property="maskButton" destination="Sx7-Hc-zMn" id="5pA-zj-q3n"/>
+                        <outlet property="nameLabel" destination="Bfb-hl-oef" id="duJ-hX-uTy"/>
                         <outlet property="panRecognizer" destination="Ynh-T5-cKI" id="gdf-3Y-nI1"/>
                         <outlet property="save" destination="Eoq-kJ-9cI" id="V1k-CL-BaC"/>
                         <outlet property="shareButton" destination="8K4-nE-tQZ" id="7kU-aA-7Xi"/>
@@ -1782,6 +1784,47 @@
                 <exit id="OYI-re-wZV" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="570" y="-1245"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="srg-sr-nqd">
+            <objects>
+                <tableViewController id="vGC-zt-sEO" customClass="SettingViewController" customModule="Amoureux" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="ba7-Tq-QHz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="518"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <connections>
+                            <outlet property="dataSource" destination="vGC-zt-sEO" id="57m-q6-suW"/>
+                            <outlet property="delegate" destination="vGC-zt-sEO" id="34T-Rg-pWT"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="WR4-bK-Cul"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="518"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kON-xl-0IO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1253" y="1541"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SYC-ci-DMa">
+            <objects>
+                <navigationController id="B53-ck-fmL" sceneMemberID="viewController">
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="518"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kYW-NE-iWp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vGC-zt-sEO" kind="relationship" relationship="rootViewController" id="HGt-sh-DJ4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jrr-Ds-e5V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1253" y="932"/>
         </scene>
     </scenes>
     <resources>

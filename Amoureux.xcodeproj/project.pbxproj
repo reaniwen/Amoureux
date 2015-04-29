@@ -49,6 +49,22 @@
 		449869931AD1D99C001603F8 /* profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 449869871AD1D99C001603F8 /* profile@2x.png */; };
 		449869941AD1D99C001603F8 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 449869881AD1D99C001603F8 /* star.png */; };
 		449869951AD1D99C001603F8 /* star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 449869891AD1D99C001603F8 /* star@2x.png */; };
+		44B0741D1AF0512D00C5DE06 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B0741C1AF0512D00C5DE06 /* SettingViewController.swift */; };
+		44B074311AF0518800C5DE06 /* FormBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B074201AF0518800C5DE06 /* FormBaseCell.swift */; };
+		44B074321AF0518800C5DE06 /* FormButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B074211AF0518800C5DE06 /* FormButtonCell.swift */; };
+		44B074331AF0518800C5DE06 /* FormCheckCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B074221AF0518800C5DE06 /* FormCheckCell.swift */; };
+		44B074341AF0518800C5DE06 /* FormDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B074231AF0518800C5DE06 /* FormDateCell.swift */; };
+		44B074351AF0518800C5DE06 /* FormPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B074241AF0518800C5DE06 /* FormPickerCell.swift */; };
+		44B074361AF0518800C5DE06 /* FormSegmentedControlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B074251AF0518800C5DE06 /* FormSegmentedControlCell.swift */; };
+		44B074371AF0518800C5DE06 /* FormSelectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B074261AF0518800C5DE06 /* FormSelectorCell.swift */; };
+		44B074381AF0518800C5DE06 /* FormSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B074271AF0518800C5DE06 /* FormSwitchCell.swift */; };
+		44B074391AF0518800C5DE06 /* FormTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B074281AF0518800C5DE06 /* FormTextFieldCell.swift */; };
+		44B0743A1AF0518800C5DE06 /* FormOptionsSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B0742A1AF0518800C5DE06 /* FormOptionsSelectorController.swift */; };
+		44B0743B1AF0518800C5DE06 /* FormSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B0742B1AF0518800C5DE06 /* FormSelector.swift */; };
+		44B0743C1AF0518800C5DE06 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B0742C1AF0518800C5DE06 /* FormViewController.swift */; };
+		44B0743D1AF0518800C5DE06 /* FormDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B0742E1AF0518800C5DE06 /* FormDescriptor.swift */; };
+		44B0743E1AF0518800C5DE06 /* FormRowDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B0742F1AF0518800C5DE06 /* FormRowDescriptor.swift */; };
+		44B0743F1AF0518800C5DE06 /* FormSectionDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B074301AF0518800C5DE06 /* FormSectionDescriptor.swift */; };
 		44B715911AE1EB3100D9FE3B /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B715901AE1EB3100D9FE3B /* TimelineViewController.swift */; };
 		44B715921AE3074400D9FE3B /* TipoType - Libertad.otf in Resources */ = {isa = PBXBuildFile; fileRef = E039A5EC1AE3048E008AF130 /* TipoType - Libertad.otf */; };
 		58D8F0961AE7121100B7CE89 /* whisper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 58D8F0951AE7121100B7CE89 /* whisper.jpg */; };
@@ -187,6 +203,22 @@
 		449869871AD1D99C001603F8 /* profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile@2x.png"; sourceTree = "<group>"; };
 		449869881AD1D99C001603F8 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 		449869891AD1D99C001603F8 /* star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star@2x.png"; sourceTree = "<group>"; };
+		44B0741C1AF0512D00C5DE06 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		44B074201AF0518800C5DE06 /* FormBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormBaseCell.swift; sourceTree = "<group>"; };
+		44B074211AF0518800C5DE06 /* FormButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormButtonCell.swift; sourceTree = "<group>"; };
+		44B074221AF0518800C5DE06 /* FormCheckCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormCheckCell.swift; sourceTree = "<group>"; };
+		44B074231AF0518800C5DE06 /* FormDateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormDateCell.swift; sourceTree = "<group>"; };
+		44B074241AF0518800C5DE06 /* FormPickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormPickerCell.swift; sourceTree = "<group>"; };
+		44B074251AF0518800C5DE06 /* FormSegmentedControlCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormSegmentedControlCell.swift; sourceTree = "<group>"; };
+		44B074261AF0518800C5DE06 /* FormSelectorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormSelectorCell.swift; sourceTree = "<group>"; };
+		44B074271AF0518800C5DE06 /* FormSwitchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormSwitchCell.swift; sourceTree = "<group>"; };
+		44B074281AF0518800C5DE06 /* FormTextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormTextFieldCell.swift; sourceTree = "<group>"; };
+		44B0742A1AF0518800C5DE06 /* FormOptionsSelectorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormOptionsSelectorController.swift; sourceTree = "<group>"; };
+		44B0742B1AF0518800C5DE06 /* FormSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormSelector.swift; sourceTree = "<group>"; };
+		44B0742C1AF0518800C5DE06 /* FormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		44B0742E1AF0518800C5DE06 /* FormDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormDescriptor.swift; sourceTree = "<group>"; };
+		44B0742F1AF0518800C5DE06 /* FormRowDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormRowDescriptor.swift; sourceTree = "<group>"; };
+		44B074301AF0518800C5DE06 /* FormSectionDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormSectionDescriptor.swift; sourceTree = "<group>"; };
 		44B715901AE1EB3100D9FE3B /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		58D8F0951AE7121100B7CE89 /* whisper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = whisper.jpg; sourceTree = "<group>"; };
 		5F19222619D9D3D900D5C772 /* TwitterAuthHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterAuthHelper.m; sourceTree = "<group>"; };
@@ -386,6 +418,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44B0741E1AF0518800C5DE06 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				44B0741F1AF0518800C5DE06 /* cells */,
+				44B074291AF0518800C5DE06 /* controllers */,
+				44B0742D1AF0518800C5DE06 /* descriptors */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		44B0741F1AF0518800C5DE06 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				44B074201AF0518800C5DE06 /* FormBaseCell.swift */,
+				44B074211AF0518800C5DE06 /* FormButtonCell.swift */,
+				44B074221AF0518800C5DE06 /* FormCheckCell.swift */,
+				44B074231AF0518800C5DE06 /* FormDateCell.swift */,
+				44B074241AF0518800C5DE06 /* FormPickerCell.swift */,
+				44B074251AF0518800C5DE06 /* FormSegmentedControlCell.swift */,
+				44B074261AF0518800C5DE06 /* FormSelectorCell.swift */,
+				44B074271AF0518800C5DE06 /* FormSwitchCell.swift */,
+				44B074281AF0518800C5DE06 /* FormTextFieldCell.swift */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		44B074291AF0518800C5DE06 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				44B0742A1AF0518800C5DE06 /* FormOptionsSelectorController.swift */,
+				44B0742B1AF0518800C5DE06 /* FormSelector.swift */,
+				44B0742C1AF0518800C5DE06 /* FormViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		44B0742D1AF0518800C5DE06 /* descriptors */ = {
+			isa = PBXGroup;
+			children = (
+				44B0742E1AF0518800C5DE06 /* FormDescriptor.swift */,
+				44B0742F1AF0518800C5DE06 /* FormRowDescriptor.swift */,
+				44B074301AF0518800C5DE06 /* FormSectionDescriptor.swift */,
+			);
+			path = descriptors;
+			sourceTree = "<group>";
+		};
 		5F5814D5199E8D65000E0E87 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -440,6 +518,7 @@
 		5FFF76BB199C191F00AE0269 /* Amoureux */ = {
 			isa = PBXGroup;
 			children = (
+				44B0741E1AF0518800C5DE06 /* Source */,
 				E0BCEEAA1AE2F8DF00562290 /* font */,
 				E00352351AE2D7FC009788FA /* Spring */,
 				440168381AE1DDD500BBFAFE /* Main.storyboard */,
@@ -480,6 +559,7 @@
 				5FFF76BC199C191F00AE0269 /* Supporting Files */,
 				E039A5ED1AE30576008AF130 /* Amoureux.xcdatamodeld */,
 				E0F0653A1AEB0BD100510604 /* SwiftWeather-Swift-Bridging-Header.h */,
+				44B0741C1AF0512D00C5DE06 /* SettingViewController.swift */,
 			);
 			path = Amoureux;
 			sourceTree = "<group>";
@@ -988,10 +1068,12 @@
 				449869781AD1D877001603F8 /* LoginViewController.swift in Sources */,
 				4498697C1AD1D877001603F8 /* UserViewController.swift in Sources */,
 				5FCB62C1199E7C19008B93DB /* MessagesViewController.swift in Sources */,
+				44B074381AF0518800C5DE06 /* FormSwitchCell.swift in Sources */,
 				440168331AE1D9F000BBFAFE /* NavigationViewController.swift in Sources */,
 				5FFF77EC199C1F6C00AE0269 /* UIImage+JSQMessages.m in Sources */,
 				5FFF77F4199C1F6C00AE0269 /* JSQMessagesToolbarButtonFactory.m in Sources */,
 				449869791AD1D877001603F8 /* SidePanelViewController.swift in Sources */,
+				44B074321AF0518800C5DE06 /* FormButtonCell.swift in Sources */,
 				5FFF77EF199C1F6C00AE0269 /* JSQMessagesViewController.m in Sources */,
 				5FFF77F9199C1F6C00AE0269 /* JSQMessagesCollectionView.m in Sources */,
 				4498697D1AD1D877001603F8 /* ViewController.swift in Sources */,
@@ -999,17 +1081,25 @@
 				5FFF7800199C1F6C00AE0269 /* JSQMessagesInputToolbar.m in Sources */,
 				E039A5E41AE30473008AF130 /* Data.swift in Sources */,
 				5FFF77F2199C1F6C00AE0269 /* JSQMessagesBubbleImageFactory.m in Sources */,
+				44B074331AF0518800C5DE06 /* FormCheckCell.swift in Sources */,
 				449869771AD1D877001603F8 /* FrostedSidebar.swift in Sources */,
 				E039A5E51AE30473008AF130 /* DesignableView.swift in Sources */,
 				5FFF7804199C1F6C00AE0269 /* JSQMessagesToolbarContentView.m in Sources */,
+				44B0743C1AF0518800C5DE06 /* FormViewController.swift in Sources */,
+				44B0741D1AF0512D00C5DE06 /* SettingViewController.swift in Sources */,
 				4493D5561AE4A462002136CB /* usersCell.swift in Sources */,
+				44B074341AF0518800C5DE06 /* FormDateCell.swift in Sources */,
+				44B074361AF0518800C5DE06 /* FormSegmentedControlCell.swift in Sources */,
 				E039A5EF1AE30576008AF130 /* Amoureux.xcdatamodeld in Sources */,
 				5FFF77ED199C1F6C00AE0269 /* UIView+JSQMessages.m in Sources */,
+				44B0743D1AF0518800C5DE06 /* FormDescriptor.swift in Sources */,
 				4493D55A1AE4A462002136CB /* mainVC.swift in Sources */,
 				440168351AE1DA3C00BBFAFE /* NavigationCell.swift in Sources */,
+				44B0743F1AF0518800C5DE06 /* FormSectionDescriptor.swift in Sources */,
 				440168311AE1D91D00BBFAFE /* TimelineCell.swift in Sources */,
 				440168371AE1DA7D00BBFAFE /* TransitionOperator.swift in Sources */,
 				5FFF77FB199C1F6C00AE0269 /* JSQMessagesCollectionViewCellIncoming.m in Sources */,
+				44B074351AF0518800C5DE06 /* FormPickerCell.swift in Sources */,
 				4401682F1AE1D6F900BBFAFE /* OtherNavController.swift in Sources */,
 				5FFF77E9199C1F6C00AE0269 /* JSQSystemSoundPlayer+JSQMessages.m in Sources */,
 				E06BE7871AF0497900919D8D /* Detail.swift in Sources */,
@@ -1032,6 +1122,8 @@
 				E039A5E31AE30473008AF130 /* BlurView.swift in Sources */,
 				E039A5EB1AE30481008AF130 /* PhotoWall.swift in Sources */,
 				5FFF77EE199C1F6C00AE0269 /* JSQMessagesKeyboardController.m in Sources */,
+				44B074391AF0518800C5DE06 /* FormTextFieldCell.swift in Sources */,
+				44B0743A1AF0518800C5DE06 /* FormOptionsSelectorController.swift in Sources */,
 				5FFF7801199C1F6C00AE0269 /* JSQMessagesLabel.m in Sources */,
 				449869741AD1D877001603F8 /* Animal.swift in Sources */,
 				5FFF7802199C1F6C00AE0269 /* JSQMessagesLoadEarlierHeaderView.m in Sources */,
@@ -1039,13 +1131,17 @@
 				449869761AD1D877001603F8 /* ContainerViewController.swift in Sources */,
 				44B715911AE1EB3100D9FE3B /* TimelineViewController.swift in Sources */,
 				5FFF77F5199C1F6C00AE0269 /* JSQMessagesCollectionViewFlowLayout.m in Sources */,
+				44B074371AF0518800C5DE06 /* FormSelectorCell.swift in Sources */,
 				4493D5571AE4A462002136CB /* signUpVC.swift in Sources */,
 				5FFF77EA199C1F6C00AE0269 /* NSString+JSQMessages.m in Sources */,
 				4493D55B1AE4A462002136CB /* usersVC.swift in Sources */,
 				449869751AD1D877001603F8 /* CenterViewController.swift in Sources */,
 				E039A5E71AE30473008AF130 /* SpringAnimation.swift in Sources */,
+				44B0743E1AF0518800C5DE06 /* FormRowDescriptor.swift in Sources */,
 				5FFF780C199C1F9900AE0269 /* JSQSystemSoundPlayer.m in Sources */,
+				44B074311AF0518800C5DE06 /* FormBaseCell.swift in Sources */,
 				5FFF76BF199C191F00AE0269 /* AppDelegate.swift in Sources */,
+				44B0743B1AF0518800C5DE06 /* FormSelector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1175,7 +1271,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = Amoureux;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "47beef3e-1d62-4d23-b202-c72d0b1afb00";
 				SWIFT_OBJC_BRIDGING_HEADER = "Amoureux/FireChat-Swift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1201,7 +1297,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = Amoureux;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "47beef3e-1d62-4d23-b202-c72d0b1afb00";
 				SWIFT_OBJC_BRIDGING_HEADER = "Amoureux/FireChat-Swift-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
