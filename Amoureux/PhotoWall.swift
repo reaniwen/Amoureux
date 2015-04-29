@@ -197,11 +197,11 @@ class Home: UIViewController, UIImagePickerControllerDelegate, UINavigationContr
                 
                 for object in objects {
                     
-                    self.resultsNameArray.append(object.objectForKey("profileName") as String)
                     //                    self.resulltsImageFiles.append(object.objectForKey("photo") as PFFile)
                     //                    self.resultsTweetArray.append(object.objectForKey("tweet") as String)
                     self.resultsHasImageArray.append(object.objectForKey("hasImage") as String)
                     if object.objectForKey("hasImage") as String == "yes" {
+                        self.resultsNameArray.append(object.objectForKey("profileName") as String)
                         self.resulltsImageFiles.append(object.objectForKey("photo") as PFFile)
                         self.resultsTweetImageFiles.append(object.objectForKey("tweetImage") as? PFFile)
                     }
