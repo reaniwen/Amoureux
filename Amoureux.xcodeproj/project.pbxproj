@@ -67,6 +67,8 @@
 		44B0743F1AF0518800C5DE06 /* FormSectionDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B074301AF0518800C5DE06 /* FormSectionDescriptor.swift */; };
 		44B715911AE1EB3100D9FE3B /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B715901AE1EB3100D9FE3B /* TimelineViewController.swift */; };
 		44B715921AE3074400D9FE3B /* TipoType - Libertad.otf in Resources */ = {isa = PBXBuildFile; fileRef = E039A5EC1AE3048E008AF130 /* TipoType - Libertad.otf */; };
+		44FFD67A1AF08F5000828C3A /* RMParallax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FFD6781AF08F5000828C3A /* RMParallax.swift */; };
+		44FFD67B1AF08F5000828C3A /* RMParallaxItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FFD6791AF08F5000828C3A /* RMParallaxItem.swift */; };
 		58D8F0961AE7121100B7CE89 /* whisper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 58D8F0951AE7121100B7CE89 /* whisper.jpg */; };
 		5F19222719D9D3D900D5C772 /* TwitterAuthHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F19222619D9D3D900D5C772 /* TwitterAuthHelper.m */; };
 		5FCB62C1199E7C19008B93DB /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCB62C0199E7C19008B93DB /* MessagesViewController.swift */; };
@@ -220,6 +222,8 @@
 		44B0742F1AF0518800C5DE06 /* FormRowDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormRowDescriptor.swift; sourceTree = "<group>"; };
 		44B074301AF0518800C5DE06 /* FormSectionDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormSectionDescriptor.swift; sourceTree = "<group>"; };
 		44B715901AE1EB3100D9FE3B /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		44FFD6781AF08F5000828C3A /* RMParallax.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMParallax.swift; sourceTree = "<group>"; };
+		44FFD6791AF08F5000828C3A /* RMParallaxItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMParallaxItem.swift; sourceTree = "<group>"; };
 		58D8F0951AE7121100B7CE89 /* whisper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = whisper.jpg; sourceTree = "<group>"; };
 		5F19222619D9D3D900D5C772 /* TwitterAuthHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterAuthHelper.m; sourceTree = "<group>"; };
 		5F19222819D9DA1500D5C772 /* TwitterAuthHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwitterAuthHelper.h; sourceTree = "<group>"; };
@@ -464,6 +468,15 @@
 			path = descriptors;
 			sourceTree = "<group>";
 		};
+		44FFD6771AF08F5000828C3A /* RMParallax */ = {
+			isa = PBXGroup;
+			children = (
+				44FFD6781AF08F5000828C3A /* RMParallax.swift */,
+				44FFD6791AF08F5000828C3A /* RMParallaxItem.swift */,
+			);
+			path = RMParallax;
+			sourceTree = "<group>";
+		};
 		5F5814D5199E8D65000E0E87 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -522,6 +535,7 @@
 				E0BCEEAA1AE2F8DF00562290 /* font */,
 				E00352351AE2D7FC009788FA /* Spring */,
 				440168381AE1DDD500BBFAFE /* Main.storyboard */,
+				44FFD6771AF08F5000828C3A /* RMParallax */,
 				4493D5501AE4A462002136CB /* usersCell.swift */,
 				4493D5511AE4A462002136CB /* signUpVC.swift */,
 				4493D5521AE4A462002136CB /* tweetVC.swift */,
@@ -1091,6 +1105,7 @@
 				44B074341AF0518800C5DE06 /* FormDateCell.swift in Sources */,
 				44B074361AF0518800C5DE06 /* FormSegmentedControlCell.swift in Sources */,
 				E039A5EF1AE30576008AF130 /* Amoureux.xcdatamodeld in Sources */,
+				44FFD67B1AF08F5000828C3A /* RMParallaxItem.swift in Sources */,
 				5FFF77ED199C1F6C00AE0269 /* UIView+JSQMessages.m in Sources */,
 				44B0743D1AF0518800C5DE06 /* FormDescriptor.swift in Sources */,
 				4493D55A1AE4A462002136CB /* mainVC.swift in Sources */,
@@ -1110,6 +1125,7 @@
 				5FFF7806199C1F6C00AE0269 /* JSQMessagesTypingIndicatorFooterView.m in Sources */,
 				5FFF77F7199C1F6C00AE0269 /* JSQMessagesCollectionViewLayoutAttributes.m in Sources */,
 				4493D5591AE4A462002136CB /* mainCell.swift in Sources */,
+				44FFD67A1AF08F5000828C3A /* RMParallax.swift in Sources */,
 				5FFF77F1199C1F6C00AE0269 /* JSQMessagesAvatarFactory.m in Sources */,
 				5F19222719D9D3D900D5C772 /* TwitterAuthHelper.m in Sources */,
 				5FFF77F8199C1F6C00AE0269 /* JSQMessage.m in Sources */,
