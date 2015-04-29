@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LocalAuthentication
 
 class ViewController: UIViewController {
     
@@ -29,6 +30,36 @@ class ViewController: UIViewController {
         signinBtn.center = CGPointMake(theWidth/2, 330)
         signupBtn.center = CGPointMake(theWidth/2, theHeight-40)
         
+    }
+    
+    override func viewDidAppear(animated: Bool){
+        let context = LAContext()
+        var error: NSError?
+        // check if Touch ID is available
+        if context.canEvaluatePolicy(.DeviceOwnerAuthenticationWithBiometrics, error: &error) {
+            let reason = "Authenticate with Touch ID"
+            context.evaluatePolicy(.DeviceOwnerAuthenticationWithBiometrics, localizedReason: reason, reply:
+                {(succes: Bool, error: NSError!) in
+                    if succes {
+                        self.showAlertController("Touch ID Authentication Succeeded")
+                    }
+                    else {
+                        self.showAlertController("Touch ID Authentication Failed")
+                    }
+            })
+        }
+            
+        else {
+            self.showAlertController("Touch ID not available")
+            println("hahahah")
+        }
+        
+    }
+    
+    func showAlertController(message: String) {
+        let alertController = UIAlertController(title: nil, message: message, preferredStyle: .Alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+        presentViewController(alertController, animated: true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {
