@@ -14,9 +14,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "235"
-            endingLineNumber = "235"
-            landmarkName = "viewDidAppear(_:)"
-            landmarkType = "5">
+            endingLineNumber = "235">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -136,9 +134,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "235"
-            endingLineNumber = "235"
-            landmarkName = "viewDidAppear(_:)"
-            landmarkType = "5">
+            endingLineNumber = "235">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -152,9 +148,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "237"
-            endingLineNumber = "237"
-            landmarkName = "viewDidAppear(_:)"
-            landmarkType = "5">
+            endingLineNumber = "237">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -198,9 +192,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "240"
-            endingLineNumber = "240"
-            landmarkName = "viewDidAppear(_:)"
-            landmarkType = "5">
+            endingLineNumber = "240">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -214,9 +206,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "242"
-            endingLineNumber = "242"
-            landmarkName = "viewDidAppear(_:)"
-            landmarkType = "5">
+            endingLineNumber = "242">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -230,9 +220,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "241"
-            endingLineNumber = "241"
-            landmarkName = "viewDidAppear(_:)"
-            landmarkType = "5">
+            endingLineNumber = "241">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -246,9 +234,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "249"
-            endingLineNumber = "249"
-            landmarkName = "viewDidAppear(_:)"
-            landmarkType = "5">
+            endingLineNumber = "249">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -262,9 +248,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "239"
-            endingLineNumber = "239"
-            landmarkName = "viewDidAppear(_:)"
-            landmarkType = "5">
+            endingLineNumber = "239">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
