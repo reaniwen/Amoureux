@@ -12,10 +12,6 @@
             <string>Libertad</string>
             <string>Libertad</string>
             <string>Libertad</string>
-            <string>Libertad</string>
-            <string>Libertad</string>
-            <string>Libertad</string>
-            <string>Libertad</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -989,9 +985,6 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </imageView>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="timeline-photo" translatesAutoresizingMaskIntoConstraints="NO" id="szG-Tl-3NR">
-                                                        <rect key="frame" x="229" y="10" width="40" height="40"/>
-                                                    </imageView>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UgU-XL-YUv">
                                                         <rect key="frame" x="239" y="19" width="20" height="11"/>
                                                         <fontDescription key="fontDescription" name="Libertad" family="Libertad" pointSize="12"/>
@@ -1001,54 +994,6 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ipF-dG-yCF">
-                                                <rect key="frame" x="0.0" y="209" width="140" height="61"/>
-                                                <fontDescription key="fontDescription" name="Libertad" family="Libertad" pointSize="20"/>
-                                                <inset key="imageEdgeInsets" minX="-15" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="Edit" image="list">
-                                                    <color key="titleColor" red="0.23921568630000001" green="0.25882352939999997" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="likeButtonDidPress:" destination="JDf-3Q-yu8" eventType="touchUpInside" id="VUo-5q-0TM"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8K4-nE-tQZ">
-                                                <rect key="frame" x="140" y="209" width="140" height="61"/>
-                                                <fontDescription key="fontDescription" name="Libertad" family="Libertad" pointSize="20"/>
-                                                <inset key="imageEdgeInsets" minX="-15" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="Album" image="share">
-                                                    <color key="titleColor" red="0.23921568630000001" green="0.25882352939999997" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="shareButtonDidPress:" destination="JDf-3Q-yu8" eventType="touchUpInside" id="Pf9-HI-ybd"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eoq-kJ-9cI">
-                                                <rect key="frame" x="0.0" y="209" width="140" height="61"/>
-                                                <fontDescription key="fontDescription" name="Libertad" family="Libertad" pointSize="20"/>
-                                                <inset key="imageEdgeInsets" minX="-15" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="Save" image="like">
-                                                    <color key="titleColor" red="0.23921568630000001" green="0.25882352939999997" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="SavePress:" destination="JDf-3Q-yu8" eventType="touchUpInside" id="a32-R4-DCY"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8q-HZ-Dzk">
-                                                <rect key="frame" x="140" y="209" width="140" height="61"/>
-                                                <fontDescription key="fontDescription" name="Libertad" family="Libertad" pointSize="20"/>
-                                                <inset key="imageEdgeInsets" minX="-15" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="Back" image="toleft">
-                                                    <color key="titleColor" red="0.23921568630000001" green="0.25882352939999997" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="BackPress:" destination="JDf-3Q-yu8" eventType="touchUpInside" id="1cr-mx-LsH"/>
-                                                </connections>
-                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.91764705879999997" green="0.94901960780000005" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <gestureRecognizers/>
@@ -1138,6 +1083,33 @@
                                             <action selector="maskButtonDidPress:" destination="JDf-3Q-yu8" eventType="touchUpInside" id="3Yr-Jl-hPD"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KyP-db-HCB">
+                                        <rect key="frame" x="35" y="363" width="50" height="50"/>
+                                        <state key="normal" backgroundImage="facebook">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="facebookTapped:" destination="JDf-3Q-yu8" eventType="touchUpInside" id="yt7-3s-neE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDQ-NZ-XfT">
+                                        <rect key="frame" x="135" y="363" width="50" height="50"/>
+                                        <state key="normal" backgroundImage="twitter">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="twitterTapped:" destination="JDf-3Q-yu8" eventType="touchUpInside" id="fId-se-eeb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tkF-gX-s80">
+                                        <rect key="frame" x="235" y="363" width="50" height="50"/>
+                                        <state key="normal" backgroundImage="weibo">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="weiboTapped:" destination="JDf-3Q-yu8" eventType="touchUpInside" id="kBY-5J-o67"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
                             </view>
@@ -1148,7 +1120,6 @@
                     <connections>
                         <outlet property="authorLabel" destination="Bfb-hl-oef" id="cHc-s7-Pn7"/>
                         <outlet property="avatarImageView" destination="rHn-tG-NKn" id="1pT-H7-gNd"/>
-                        <outlet property="back" destination="k8q-HZ-Dzk" id="T25-YT-cpv"/>
                         <outlet property="backgroundImageView" destination="7Qa-1l-S1z" id="GUr-NO-6kg"/>
                         <outlet property="backgroundMaskView" destination="tzh-RL-dv8" id="vpp-q1-H1M"/>
                         <outlet property="dialogView" destination="k1F-vh-pjm" id="FWs-6B-GhE"/>
@@ -1157,12 +1128,9 @@
                         <outlet property="favoritesLabel" destination="UgU-XL-YUv" id="uXK-dc-gUh"/>
                         <outlet property="headerView" destination="ohY-kT-xyh" id="vMa-8d-ST6"/>
                         <outlet property="imageButton" destination="EIV-ep-U9r" id="bRE-BL-m7w"/>
-                        <outlet property="likeButton" destination="ipF-dG-yCF" id="2Rs-aL-l0m"/>
                         <outlet property="maskButton" destination="Sx7-Hc-zMn" id="5pA-zj-q3n"/>
                         <outlet property="nameLabel" destination="Bfb-hl-oef" id="duJ-hX-uTy"/>
                         <outlet property="panRecognizer" destination="Ynh-T5-cKI" id="gdf-3Y-nI1"/>
-                        <outlet property="save" destination="Eoq-kJ-9cI" id="V1k-CL-BaC"/>
-                        <outlet property="shareButton" destination="8K4-nE-tQZ" id="7kU-aA-7Xi"/>
                         <outlet property="shareLabelsView" destination="GC8-zm-ZGE" id="w5a-Wo-NDQ"/>
                         <outlet property="shareView" destination="8NK-KL-PuM" id="mOL-PM-wsi"/>
                         <outlet property="twitterButton" destination="qxp-nc-aVR" id="2UO-dT-zvA"/>
@@ -1960,24 +1928,23 @@
         <image name="camera" width="31" height="23"/>
         <image name="cancel" width="40" height="35"/>
         <image name="enter-pink" width="640" height="120"/>
+        <image name="facebook" width="50" height="50"/>
         <image name="field" width="320" height="503"/>
         <image name="heart" width="394" height="310"/>
         <image name="image" width="320" height="568"/>
         <image name="image-red" width="36" height="30"/>
         <image name="image1" width="800" height="600"/>
-        <image name="like" width="24" height="22"/>
-        <image name="list" width="22" height="22"/>
         <image name="menu" width="22" height="22"/>
         <image name="ph.jpg" width="250" height="250"/>
-        <image name="share" width="19" height="27"/>
         <image name="share-bg" width="320" height="200"/>
         <image name="share-email" width="90" height="90"/>
         <image name="share-facebook" width="90" height="90"/>
         <image name="share-twitter" width="90" height="90"/>
         <image name="sharebutton-1" width="93" height="35"/>
-        <image name="timeline-photo" width="36" height="36"/>
         <image name="title" width="307" height="67"/>
         <image name="toleft" width="26" height="23"/>
+        <image name="twitter" width="50" height="50"/>
+        <image name="weibo" width="50" height="50"/>
         <image name="whisper.jpg" width="600" height="800"/>
     </resources>
     <inferredMetricsTieBreakers>

@@ -7,6 +7,7 @@
 
 import UIKit
 import MobileCoreServices
+import Social
 
 class Home: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -16,9 +17,6 @@ class Home: UIViewController, UIImagePickerControllerDelegate, UINavigationContr
     @IBOutlet weak var shareView: UIView!
     @IBOutlet weak var imageButton: UIButton!
     @IBOutlet weak var headerView: UIView!
-    @IBOutlet weak var likeButton: UIButton!
-    @IBOutlet weak var shareButton: UIButton!
-    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
     @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var favoritesLabel: UILabel!
@@ -27,8 +25,7 @@ class Home: UIViewController, UIImagePickerControllerDelegate, UINavigationContr
     @IBOutlet weak var twitterButton: UIButton!
     @IBOutlet weak var facebookButton: UIButton!
     @IBOutlet weak var shareLabelsView: UIView!
-    @IBOutlet weak var save: UIButton!
-    @IBOutlet weak var back: UIButton!
+
     var resultsNameArray = [String]()
     var followArray = [String]()
     var oldnumber = -1
@@ -52,20 +49,7 @@ class Home: UIViewController, UIImagePickerControllerDelegate, UINavigationContr
             self.maskButton.alpha = 1
         }
     }
-    @IBAction func likeButtonDidPress(sender: AnyObject) {
-        likeButton.hidden = true
-        shareButton.hidden = true
-        save.hidden = false
-        back.hidden = false
-    }
 
-
-    @IBAction func BackPress(sender: AnyObject) {
-        likeButton.hidden = false
-        shareButton.hidden = false
-        save.hidden = true
-        back.hidden = true
-    }
 
     
     
@@ -157,8 +141,6 @@ class Home: UIViewController, UIImagePickerControllerDelegate, UINavigationContr
         animator = UIDynamicAnimator(referenceView: view)
         
         dialogView.alpha = 0
-        save.hidden = true
-        back.hidden = true
         println("hello")
     }
     
@@ -253,6 +235,7 @@ class Home: UIViewController, UIImagePickerControllerDelegate, UINavigationContr
                         self.image = UIImage(data: imageData)!
                         self.imageButton.setImage(self.image, forState: UIControlState.Normal)
                         self.nameLabel.text = self.resultsNameArray[self.number] as String
+                        self.backgroundImageView.image = self.image
                         
                     }
                     
@@ -334,6 +317,29 @@ class Home: UIViewController, UIImagePickerControllerDelegate, UINavigationContr
         dialogView.center = view.center
         viewDidAppear(true)
         
+    }
+    
+    @IBAction func facebookTapped(sender: AnyObject) {
+        var controller:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+        controller.setInitialText("Share -.-")
+        controller.addImage(backgroundImageView.image)
+        self.presentViewController(controller, animated: true, completion: nil)
+
+    }
+
+    @IBAction func twitterTapped(sender: AnyObject) {
+        var controller:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+        controller.setInitialText("Share -.-")
+        controller.addImage(backgroundImageView.image)
+        self.presentViewController(controller, animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func weiboTapped(sender: AnyObject) {
+        var controller:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeSinaWeibo)
+        controller.setInitialText("Share -.-")
+        controller.addImage(backgroundImageView.image)
+        self.presentViewController(controller, animated: true, completion: nil)
     }
     
 }
