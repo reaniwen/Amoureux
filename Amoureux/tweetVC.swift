@@ -131,7 +131,7 @@ class tweetVC: UIViewController, UITextViewDelegate, UINavigationControllerDeleg
         if mediaType.isEqualToString(kUTTypeImage as NSString) {
             let image = info[UIImagePickerControllerOriginalImage]
                 as UIImage
-            
+            hasImage = true
             tweetImg.image = image
             
             if (newMedia == true) {
@@ -144,6 +144,21 @@ class tweetVC: UIViewController, UITextViewDelegate, UINavigationControllerDeleg
         }
     }
     
+    func image(image: UIImage, didFinishSavingWithError error: NSErrorPointer, contextInfo:UnsafePointer<Void>) {
+        
+        if error != nil {
+            let alert = UIAlertController(title: "Save Failed",
+                message: "Failed to save image",
+                preferredStyle: UIAlertControllerStyle.Alert)
+            
+            let cancelAction = UIAlertAction(title: "OK",
+                style: .Cancel, handler: nil)
+            
+            alert.addAction(cancelAction)
+            self.presentViewController(alert, animated: true,
+                completion: nil)
+        }
+    }
     
     @IBAction func addPhotoBtn_click(sender: AnyObject) {
         
