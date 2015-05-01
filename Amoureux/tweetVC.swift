@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MobileCoreServices
 
 class tweetVC: UIViewController, UITextViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
@@ -19,6 +20,7 @@ class tweetVC: UIViewController, UITextViewDelegate, UINavigationControllerDeleg
     
     @IBOutlet weak var addimage: UIButton!
     var hasImage = false
+    var newMedia: Bool?
     
 
     override func viewDidLoad() {
@@ -128,6 +130,21 @@ class tweetVC: UIViewController, UITextViewDelegate, UINavigationControllerDeleg
         
         self.presentViewController(image, animated: true, completion: nil)
         
+    }
+    @IBAction func takePhotoBtn_click(sender: AnyObject) {
+        if UIImagePickerController.isSourceTypeAvailable(
+            UIImagePickerControllerSourceType.Camera) {
+                let imagePicker = UIImagePickerController()
+                imagePicker.delegate = self
+                imagePicker.sourceType =
+                    UIImagePickerControllerSourceType.Camera
+                imagePicker.mediaTypes = [kUTTypeImage as NSString]
+                imagePicker.allowsEditing = false
+                
+                self.presentViewController(imagePicker, animated: true,
+                    completion: nil)
+                newMedia = true
+        }
     }
     
 
