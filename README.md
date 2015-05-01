@@ -59,3 +59,14 @@ http://blog.csdn.net/kaitiren/article/details/38513715
 
 ##Milestone 3
 ##Till now, all main functions have been all implemented. The follow-on work will focus on weather widget and some UI refine.
+
+####Apirl 29
+    1. Initial view added.
+    2. Muitipeer interactive game added.
+    3. UI refine.
+    
+####Apirl 30
+    1. Game tableview added.
+    2. Add new single player game for entertainment.
+    3. Photo wall share function added.
+    4. Unit testing.
