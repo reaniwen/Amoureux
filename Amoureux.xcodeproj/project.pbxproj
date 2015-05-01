@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17A1343B1AF41E5900A311C8 /* AddLoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A1343A1AF41E5900A311C8 /* AddLoverVC.swift */; };
+		17A1343D1AF41E7900A311C8 /* ConfirmLoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A1343C1AF41E7900A311C8 /* ConfirmLoverVC.swift */; };
 		4401682F1AE1D6F900BBFAFE /* OtherNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4401682E1AE1D6F900BBFAFE /* OtherNavController.swift */; };
 		440168311AE1D91D00BBFAFE /* TimelineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440168301AE1D91D00BBFAFE /* TimelineCell.swift */; };
 		440168331AE1D9F000BBFAFE /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440168321AE1D9F000BBFAFE /* NavigationViewController.swift */; };
@@ -200,6 +202,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17A1343A1AF41E5900A311C8 /* AddLoverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLoverVC.swift; sourceTree = "<group>"; };
+		17A1343C1AF41E7900A311C8 /* ConfirmLoverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmLoverVC.swift; sourceTree = "<group>"; };
 		4401682E1AE1D6F900BBFAFE /* OtherNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherNavController.swift; sourceTree = "<group>"; };
 		440168301AE1D91D00BBFAFE /* TimelineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineCell.swift; sourceTree = "<group>"; };
 		440168321AE1D9F000BBFAFE /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
@@ -686,6 +690,8 @@
 				E0BCEEAA1AE2F8DF00562290 /* font */,
 				E00352351AE2D7FC009788FA /* Spring */,
 				440168381AE1DDD500BBFAFE /* Main.storyboard */,
+				17A1343A1AF41E5900A311C8 /* AddLoverVC.swift */,
+				17A1343C1AF41E7900A311C8 /* ConfirmLoverVC.swift */,
 				44FFD6771AF08F5000828C3A /* RMParallax */,
 				4493D5501AE4A462002136CB /* usersCell.swift */,
 				4493D5511AE4A462002136CB /* signUpVC.swift */,
@@ -1270,6 +1276,7 @@
 				44B3DBE71AF365F700CE26A5 /* AboutViewController.swift in Sources */,
 				44B074331AF0518800C5DE06 /* FormCheckCell.swift in Sources */,
 				44B3DC2A1AF36F9E00CE26A5 /* ActivityIndicatorViewController.swift in Sources */,
+				17A1343D1AF41E7900A311C8 /* ConfirmLoverVC.swift in Sources */,
 				449869771AD1D877001603F8 /* FrostedSidebar.swift in Sources */,
 				E039A5E51AE30473008AF130 /* DesignableView.swift in Sources */,
 				44B3DC0B1AF3667000CE26A5 /* JLToastView.swift in Sources */,
@@ -1279,6 +1286,7 @@
 				5FFF7804199C1F6C00AE0269 /* JSQMessagesToolbarContentView.m in Sources */,
 				44B0743C1AF0518800C5DE06 /* FormViewController.swift in Sources */,
 				44B3DC191AF3667000CE26A5 /* CustomDynamicViewController.swift in Sources */,
+				17A1343B1AF41E5900A311C8 /* AddLoverVC.swift in Sources */,
 				44B0741D1AF0512D00C5DE06 /* SettingViewController.swift in Sources */,
 				4493D5561AE4A462002136CB /* usersCell.swift in Sources */,
 				44B3DC1A1AF3667000CE26A5 /* GravityViewController.swift in Sources */,
