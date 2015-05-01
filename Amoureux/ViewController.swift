@@ -9,18 +9,22 @@
 import UIKit
 import LocalAuthentication
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBOutlet weak var emailTxt: UITextField!
     @IBOutlet weak var passwordTxt: UITextField!
     @IBOutlet weak var signinBtn: UIButton!
     @IBOutlet weak var signupBtn: UIButton!
-    
+    var kbHeight: CGFloat!
+    var keyboardcount = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        emailTxt.delegate = self
+        passwordTxt.delegate = self
+        
         let item1 = RMParallaxItem(image: UIImage(named: "item1")!, text: "SHARE LIGHTBOXES WITH YOUR TEAM")
         let item2 = RMParallaxItem(image: UIImage(named: "item2")!, text: "FOLLOW WORLD CLASS PHOTOGRAPHERS")
         let item3 = RMParallaxItem(image: UIImage(named: "item3")!, text: "EXPLORE OUR COLLECTION BY CATEGORY")
@@ -50,6 +54,7 @@ class ViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool){
+        
         let context = LAContext()
         var error: NSError?
         // check if Touch ID is available
@@ -72,9 +77,6 @@ class ViewController: UIViewController {
         
     }
     
-    override func viewWillAppear(animated: Bool) {
-        self.navigationController?.navigationBarHidden = true
-    }
     
     func showAlertController(message: String) {
         let alertController = UIAlertController(title: nil, message: message, preferredStyle: .Alert)
@@ -115,6 +117,56 @@ class ViewController: UIViewController {
         self.view.endEditing(true)
     }
     
+    
+    
+    func animateTextField(up: Bool) {
+        var movement = (up ? -kbHeight : kbHeight)
+        
+        UIView.animateWithDuration(0.3, animations: {
+            self.view.frame = CGRectOffset(self.view.frame, 0, movement)
+        })
+    }
+    
+    override func viewWillAppear(animated:Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBarHidden = true
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name: UIKeyboardWillHideNotification, object: nil)
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+    
+    func keyboardWillShow(notification: NSNotification) {
+        if let userInfo = notification.userInfo {
+            if let keyboardSize = (userInfo[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue() {
+                if (keyboardcount == 0){
+                    kbHeight = keyboardSize.height
+                    self.animateTextField(true)
+                    keyboardcount++
+                }
+            }
+            
+        }
+        
+    }
+    
+    func keyboardWillHide(notification: NSNotification) {
+        if (keyboardcount == 1){
+            self.animateTextField(false)
+            keyboardcount--
+        }
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        
+        return true
+    }
     
 }
 
