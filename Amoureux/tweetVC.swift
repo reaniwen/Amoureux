@@ -107,19 +107,43 @@ class tweetVC: UIViewController, UITextViewDelegate, UINavigationControllerDeleg
         
     }
     
+//    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+//        
+//        let theInfo:NSDictionary = info as NSDictionary
+//        
+//        let image:UIImage = theInfo.objectForKey(UIImagePickerControllerEditedImage) as UIImage
+//        tweetImg.image = image
+//        
+//        hasImage = true
+//        
+//        self.dismissViewControllerAnimated(true, completion: nil)
+//        
+//        
+//    }
+    
+    
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
         
-        let theInfo:NSDictionary = info as NSDictionary
-        
-        let image:UIImage = theInfo.objectForKey(UIImagePickerControllerEditedImage) as UIImage
-        tweetImg.image = image
-        
-        hasImage = true
+        let mediaType = info[UIImagePickerControllerMediaType] as NSString
         
         self.dismissViewControllerAnimated(true, completion: nil)
         
-        
+        if mediaType.isEqualToString(kUTTypeImage as NSString) {
+            let image = info[UIImagePickerControllerOriginalImage]
+                as UIImage
+            
+            tweetImg.image = image
+            
+            if (newMedia == true) {
+                UIImageWriteToSavedPhotosAlbum(image, self,
+                    "image:didFinishSavingWithError:contextInfo:", nil)
+            } else if mediaType.isEqualToString(kUTTypeMovie as NSString) {
+                // Code to support video here
+            }
+            
+        }
     }
+    
     
     @IBAction func addPhotoBtn_click(sender: AnyObject) {
         
