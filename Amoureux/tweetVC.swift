@@ -21,6 +21,7 @@ class tweetVC: UIViewController, UITextViewDelegate, UINavigationControllerDeleg
     @IBOutlet weak var addimage: UIButton!
     var hasImage = false
     var newMedia: Bool?
+    var cimage : UIImage?
     
 
     override func viewDidLoad() {
@@ -126,16 +127,21 @@ class tweetVC: UIViewController, UITextViewDelegate, UINavigationControllerDeleg
         
         let mediaType = info[UIImagePickerControllerMediaType] as NSString
         
+        let theInfo:NSDictionary = info as NSDictionary
+        
+
+        
         self.dismissViewControllerAnimated(true, completion: nil)
         
         if mediaType.isEqualToString(kUTTypeImage as NSString) {
-            let image = info[UIImagePickerControllerOriginalImage]
-                as UIImage
+            
+            cimage = info[UIImagePickerControllerOriginalImage] as UIImage!
+            //cimage = theInfo.objectForKey(UIImagePickerControllerEditedImage) as UIImage!
             hasImage = true
-            tweetImg.image = image
+            tweetImg.image = self.cimage
             
             if (newMedia == true) {
-                UIImageWriteToSavedPhotosAlbum(image, self,
+                UIImageWriteToSavedPhotosAlbum(cimage, self,
                     "image:didFinishSavingWithError:contextInfo:", nil)
             } else if mediaType.isEqualToString(kUTTypeMovie as NSString) {
                 // Code to support video here

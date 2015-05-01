@@ -72,6 +72,10 @@ class ViewController: UIViewController {
         
     }
     
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.navigationBarHidden = true
+    }
+    
     func showAlertController(message: String) {
         let alertController = UIAlertController(title: nil, message: message, preferredStyle: .Alert)
         alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
