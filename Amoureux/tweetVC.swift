@@ -17,6 +17,7 @@ class tweetVC: UIViewController, UITextViewDelegate, UINavigationControllerDeleg
     @IBOutlet weak var addPhotoBtn: UIButton!
     @IBOutlet weak var tweetImg: UIImageView!
     
+    @IBOutlet weak var addimage: UIButton!
     var hasImage = false
     
 

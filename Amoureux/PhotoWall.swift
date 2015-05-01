@@ -216,8 +216,9 @@ class Home: UIViewController, UIImagePickerControllerDelegate, UINavigationContr
     }
     
     override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(Bool())
-        
+
+        super.viewDidAppear(animated)
+
         if (number != oldnumber){
             let scale = CGAffineTransformMakeScale(0.5, 0.5)
             let translate = CGAffineTransformMakeTranslation(0, -200)
@@ -273,8 +274,9 @@ class Home: UIViewController, UIImagePickerControllerDelegate, UINavigationContr
     var snapBehavior : UISnapBehavior!
     
     
-    @IBAction func BackMenu(sender: UIButton) {
+    @IBAction func BackMenu(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
+        //Home.popViewControllerAnimated(true)
     }
     
     @IBOutlet var panRecognizer: UIPanGestureRecognizer!
