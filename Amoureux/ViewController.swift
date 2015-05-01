@@ -59,6 +59,7 @@ class ViewController: UIViewController {
                 {(succes: Bool, error: NSError!) in
                     if succes {
                         self.showAlertController("Touch ID Authentication Succeeded")
+                        self.performSegueWithIdentifier("gotoMainVCFromSigninVC", sender: self)
                     }
                     else {
                         self.showAlertController("Touch ID Authentication Failed")
