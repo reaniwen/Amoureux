@@ -930,7 +930,7 @@
                         <segue destination="JDf-3Q-yu8" kind="custom" identifier="photowall" id="NbH-Eo-pmc"/>
                         <segue destination="Nfv-tS-37e" kind="custom" identifier="timelineView" id="3e0-px-6kB"/>
                         <segue destination="B53-ck-fmL" kind="custom" identifier="settingnav" id="Ve9-mu-SxT"/>
-                        <segue destination="Qdn-Wo-PlU" kind="custom" identifier="gamenav" id="viY-6e-k4O"/>
+                        <segue destination="NIi-0f-XKQ" kind="custom" identifier="gamenav" id="nnc-CX-qqU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UrU-sg-PVE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1158,7 +1158,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2Y-wJ-Fug">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2Y-wJ-Fug">
                                 <rect key="frame" x="56" y="240" width="263" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="wbW-nW-LaD"/>
@@ -1170,25 +1170,25 @@
                                     <segue destination="YrR-vx-MZc" kind="push" id="akU-O4-DAS"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b6q-bs-Ni6">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b6q-bs-Ni6">
                                 <rect key="frame" x="56" y="390" width="263" height="30"/>
                                 <color key="textColor" red="0.88235294117647056" green="0.22352941176470589" blue="0.40784313725490196" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aEo-AS-kTP">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aEo-AS-kTP">
                                 <rect key="frame" x="56" y="330" width="263" height="30"/>
                                 <color key="textColor" red="0.88235294119999996" green="0.22352941179999999" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="hcN-cz-CdQ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="hcN-cz-CdQ">
                                 <rect key="frame" x="96" y="50" width="183" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="ItG-N0-irP"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="1N0-4t-npz">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="1N0-4t-npz">
                                 <rect key="frame" x="106" y="115" width="163" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="Aje-Ox-mcv"/>
@@ -1330,7 +1330,7 @@
                                     <constraint firstAttribute="width" constant="60" id="jKt-Ad-RBy"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="b79-Kc-ZzV">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="b79-Kc-ZzV">
                                 <rect key="frame" x="96" y="50" width="183" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="dlZ-FZ-zr9"/>
@@ -1860,23 +1860,18 @@
                                 <rect key="frame" x="229" y="365" width="50" height="50"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43F-j3-HY3">
-                                <rect key="frame" x="16" y="72" width="46" height="30"/>
-                                <state key="normal" title="Back">
+                                <rect key="frame" x="16" y="72" width="59" height="30"/>
+                                <state key="normal" title="Connect">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="Back:" destination="3e2-cG-tyL" eventType="touchUpInside" id="UHw-7u-7uH"/>
+                                    <action selector="connectWithPlayer:" destination="3e2-cG-tyL" eventType="touchUpInside" id="OWe-Jo-PcO"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="TicTacToe" id="tgc-eS-kZH">
-                        <barButtonItem key="leftBarButtonItem" title="Connect" id="n9j-b0-Ca4">
-                            <connections>
-                                <action selector="connectWithPlayer:" destination="3e2-cG-tyL" id="LkP-a2-xgC"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="New Game" id="8Y7-4z-0HQ">
                             <connections>
                                 <action selector="newGame:" destination="3e2-cG-tyL" id="Tcr-OW-ha6"/>
@@ -1897,25 +1892,121 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1zd-zO-xRW" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2500" y="979"/>
+            <point key="canvasLocation" x="3658" y="1019"/>
+        </scene>
+        <!--Game-->
+        <scene sceneID="P6N-WD-eiR">
+            <objects>
+                <tableViewController id="Ha2-VM-UjT" customClass="GamesViewController" customModule="Amoureux" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="K33-8h-wJV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Search for Game" showsScopeBar="YES" id="KjC-nM-R3g">
+                            <rect key="frame" x="0.0" y="64" width="600" height="88"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <scopeButtonTitles>
+                                <string>All</string>
+                                <string>Chocolate</string>
+                                <string>Hard</string>
+                                <string>Other</string>
+                            </scopeButtonTitles>
+                            <connections>
+                                <outlet property="delegate" destination="Ha2-VM-UjT" id="yNe-AN-cX9"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="k1b-km-uVu">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k1b-km-uVu" id="ddz-7g-W8x">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <variation key="heightClass=regular" ambiguous="YES">
+                            <rect key="frame" x="0.0" y="0.0" width="480" height="640"/>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular" ambiguous="YES">
+                            <rect key="frame" x="0.0" y="0.0" width="640" height="640"/>
+                        </variation>
+                        <connections>
+                            <outlet property="dataSource" destination="Ha2-VM-UjT" id="DGy-3I-mQf"/>
+                            <outlet property="delegate" destination="Ha2-VM-UjT" id="c7R-is-yLD"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Game" id="gQB-wL-mv0"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="L8g-xr-t0n" id="fxK-rc-xmM"/>
+                        <segue destination="3e2-cG-tyL" kind="push" identifier="candyDetail" id="QVr-VI-LaX"/>
+                        <segue destination="dfg-J7-Mei" kind="push" identifier="flappybird" id="F1f-cq-ysr"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xDC-4V-AHw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="L8g-xr-t0n">
+                    <connections>
+                        <outlet property="delegate" destination="Ha2-VM-UjT" id="h8D-vE-mHD"/>
+                        <outlet property="searchBar" destination="KjC-nM-R3g" id="5Za-Sh-ieO"/>
+                        <outlet property="searchContentsController" destination="Ha2-VM-UjT" id="Hor-cx-ogB"/>
+                        <outlet property="searchResultsDataSource" destination="Ha2-VM-UjT" id="rR7-aN-YqF"/>
+                        <outlet property="searchResultsDelegate" destination="Ha2-VM-UjT" id="MCX-bn-qXc"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="2756" y="1019"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eqM-5c-Gd3">
+            <objects>
+                <viewController id="nzf-ol-RIR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="E2E-ry-nEZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="W91-mB-51X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cD2-9t-Dk8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="raD-Ke-GiM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4389" y="754"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="osW-ZI-Ebv">
+        <scene sceneID="3jf-tm-dMs">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qdn-Wo-PlU" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cQF-ur-sPL">
+                <navigationController id="NIi-0f-XKQ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sX3-xR-0bp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="3e2-cG-tyL" kind="relationship" relationship="rootViewController" id="jTh-Og-UcG"/>
+                        <segue destination="Ha2-VM-UjT" kind="relationship" relationship="rootViewController" id="11S-4K-SdY"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IDj-jA-3bD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QO5-NG-oiW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1785" y="979"/>
+            <point key="canvasLocation" x="2104" y="1019"/>
+        </scene>
+        <!--Single Game View Controller-->
+        <scene sceneID="fcH-Hn-dsv">
+            <objects>
+                <viewController id="dfg-J7-Mei" customClass="SingleGameViewController" customModule="Amoureux" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sdt-6d-mgS"/>
+                        <viewControllerLayoutGuide type="bottom" id="H6W-3W-tRa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CZz-PI-FQW" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ife-hz-ILD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SN7-si-eSy" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3658" y="1730"/>
         </scene>
     </scenes>
     <resources>

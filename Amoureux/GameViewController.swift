@@ -205,12 +205,6 @@ class GameViewController: UIViewController, MCBrowserViewControllerDelegate {
         
     }
     
-    
-    
-    @IBAction func Back(sender: UIButton) {
-        dismissViewControllerAnimated(true, completion: nil)
-    }
-    
     func browserViewControllerDidFinish(browserViewController: MCBrowserViewController!) {
         appDelegate.mpcHandler.browser.dismissViewControllerAnimated(true, completion: nil)
     }
