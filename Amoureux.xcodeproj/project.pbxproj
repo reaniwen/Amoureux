@@ -551,7 +551,6 @@
 				E039A5E91AE30481008AF130 /* PhotoWall.swift */,
 				E010B5901AE34BEE005EA4BE /* Photo.swift */,
 				E010B5921AE356C2005EA4BE /* Phototest.swift */,
-				44FFD6801AF0999700828C3A /* TTTImageView.swift */,
 				E06BE7861AF0497900919D8D /* Detail.swift */,
 				4498696A1AD1D877001603F8 /* Animal.swift */,
 				4498696B1AD1D877001603F8 /* CenterViewController.swift */,
@@ -581,6 +580,7 @@
 				E039A5ED1AE30576008AF130 /* Amoureux.xcdatamodeld */,
 				E0F0653A1AEB0BD100510604 /* SwiftWeather-Swift-Bridging-Header.h */,
 				44B0741C1AF0512D00C5DE06 /* SettingViewController.swift */,
+				44FFD6801AF0999700828C3A /* TTTImageView.swift */,
 				44FFD67C1AF098FE00828C3A /* GameViewController.swift */,
 				44FFD67E1AF0996100828C3A /* MPCHandler.swift */,
 			);
