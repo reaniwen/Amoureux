@@ -71,6 +71,34 @@
 		44B3DBDF1AF351FF00CE26A5 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3DBDE1AF351FF00CE26A5 /* GameScene.swift */; };
 		44B3DBE11AF3551700CE26A5 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 44B3DBE01AF3551700CE26A5 /* GameScene.sks */; };
 		44B3DBE31AF355C200CE26A5 /* bird.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 44B3DBE21AF355C200CE26A5 /* bird.atlas */; };
+		44B3DBE71AF365F700CE26A5 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3DBE61AF365F700CE26A5 /* AboutViewController.swift */; };
+		44B3DBE91AF3662D00CE26A5 /* DemoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3DBE81AF3662D00CE26A5 /* DemoTableViewController.swift */; };
+		44B3DC091AF3667000CE26A5 /* JLToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3DBEC1AF3667000CE26A5 /* JLToast.swift */; };
+		44B3DC0A1AF3667000CE26A5 /* JLToastCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3DBED1AF3667000CE26A5 /* JLToastCenter.swift */; };
+		44B3DC0B1AF3667000CE26A5 /* JLToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3DBEE1AF3667000CE26A5 /* JLToastView.swift */; };
+		44B3DC0C1AF3667000CE26A5 /* BlogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3DBF01AF3667000CE26A5 /* BlogTableViewCell.swift */; };
+		44B3DC0D1AF3667000CE26A5 /* BlogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B3DBF11AF3667000CE26A5 /* BlogTableViewCell.xib */; };
+		44B3DC0E1AF3667000CE26A5 /* BlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3DBF21AF3667000CE26A5 /* BlogViewController.swift */; };
+		44B3DC0F1AF3667000CE26A5 /* BlogWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3DBF31AF3667000CE26A5 /* BlogWebViewController.swift */; };
+		44B3DC101AF3667000CE26A5 /* UIImageView+WebCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3DBF51AF3667000CE26A5 /* UIImageView+WebCache.swift */; };
+		44B3DC111AF3667000CE26A5 /* BlogPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3DBF71AF3667000CE26A5 /* BlogPost.swift */; };
+		44B3DC131AF3667000CE26A5 /* AttachmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3DBFB1AF3667000CE26A5 /* AttachmentViewController.swift */; };
+		44B3DC141AF3667000CE26A5 /* Box1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 44B3DBFC1AF3667000CE26A5 /* Box1@2x.png */; };
+		44B3DC151AF3667000CE26A5 /* CollisionGravityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3DBFD1AF3667000CE26A5 /* CollisionGravityViewController.swift */; };
+		44B3DC161AF3667000CE26A5 /* CollisionsGravitySpringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3DBFE1AF3667000CE26A5 /* CollisionsGravitySpringViewController.swift */; };
+		44B3DC171AF3667000CE26A5 /* CompositeBehaviorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3DBFF1AF3667000CE26A5 /* CompositeBehaviorViewController.swift */; };
+		44B3DC181AF3667000CE26A5 /* ContinuousPushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3DC001AF3667000CE26A5 /* ContinuousPushViewController.swift */; };
+		44B3DC191AF3667000CE26A5 /* CustomDynamicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3DC011AF3667000CE26A5 /* CustomDynamicViewController.swift */; };
+		44B3DC1A1AF3667000CE26A5 /* GravityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3DC021AF3667000CE26A5 /* GravityViewController.swift */; };
+		44B3DC1B1AF3667000CE26A5 /* InstantaneousPushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3DC031AF3667000CE26A5 /* InstantaneousPushViewController.swift */; };
+		44B3DC1C1AF3667000CE26A5 /* ItemPropertiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3DC041AF3667000CE26A5 /* ItemPropertiesViewController.swift */; };
+		44B3DC1D1AF3667000CE26A5 /* SnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3DC051AF3667000CE26A5 /* SnapViewController.swift */; };
+		44B3DC1E1AF3667000CE26A5 /* UIDCDecorationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3DC061AF3667000CE26A5 /* UIDCDecorationView.swift */; };
+		44B3DC1F1AF3667000CE26A5 /* UIDCPendulumBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3DC071AF3667000CE26A5 /* UIDCPendulumBehavior.swift */; };
+		44B3DC201AF3667000CE26A5 /* UIDCPositionToBoundsMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3DC081AF3667000CE26A5 /* UIDCPositionToBoundsMapping.swift */; };
+		44B3DC221AF3680000CE26A5 /* wechat.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 44B3DC211AF3680000CE26A5 /* wechat.JPG */; };
+		44B3DC241AF3682B00CE26A5 /* swift.png in Resources */ = {isa = PBXBuildFile; fileRef = 44B3DC231AF3682B00CE26A5 /* swift.png */; };
+		44B3DC2A1AF36F9E00CE26A5 /* ActivityIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3DC291AF36F9E00CE26A5 /* ActivityIndicatorViewController.swift */; };
 		44B715911AE1EB3100D9FE3B /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B715901AE1EB3100D9FE3B /* TimelineViewController.swift */; };
 		44B715921AE3074400D9FE3B /* TipoType - Libertad.otf in Resources */ = {isa = PBXBuildFile; fileRef = E039A5EC1AE3048E008AF130 /* TipoType - Libertad.otf */; };
 		44FFD67A1AF08F5000828C3A /* RMParallax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FFD6781AF08F5000828C3A /* RMParallax.swift */; };
@@ -236,6 +264,35 @@
 		44B3DBDE1AF351FF00CE26A5 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		44B3DBE01AF3551700CE26A5 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		44B3DBE21AF355C200CE26A5 /* bird.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = bird.atlas; sourceTree = "<group>"; };
+		44B3DBE61AF365F700CE26A5 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		44B3DBE81AF3662D00CE26A5 /* DemoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoTableViewController.swift; sourceTree = "<group>"; };
+		44B3DBEB1AF3667000CE26A5 /* JLToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLToast.h; sourceTree = "<group>"; };
+		44B3DBEC1AF3667000CE26A5 /* JLToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLToast.swift; sourceTree = "<group>"; };
+		44B3DBED1AF3667000CE26A5 /* JLToastCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLToastCenter.swift; sourceTree = "<group>"; };
+		44B3DBEE1AF3667000CE26A5 /* JLToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLToastView.swift; sourceTree = "<group>"; };
+		44B3DBF01AF3667000CE26A5 /* BlogTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogTableViewCell.swift; sourceTree = "<group>"; };
+		44B3DBF11AF3667000CE26A5 /* BlogTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlogTableViewCell.xib; sourceTree = "<group>"; };
+		44B3DBF21AF3667000CE26A5 /* BlogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogViewController.swift; sourceTree = "<group>"; };
+		44B3DBF31AF3667000CE26A5 /* BlogWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogWebViewController.swift; sourceTree = "<group>"; };
+		44B3DBF51AF3667000CE26A5 /* UIImageView+WebCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+WebCache.swift"; sourceTree = "<group>"; };
+		44B3DBF71AF3667000CE26A5 /* BlogPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogPost.swift; sourceTree = "<group>"; };
+		44B3DBFB1AF3667000CE26A5 /* AttachmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttachmentViewController.swift; sourceTree = "<group>"; };
+		44B3DBFC1AF3667000CE26A5 /* Box1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Box1@2x.png"; sourceTree = "<group>"; };
+		44B3DBFD1AF3667000CE26A5 /* CollisionGravityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollisionGravityViewController.swift; sourceTree = "<group>"; };
+		44B3DBFE1AF3667000CE26A5 /* CollisionsGravitySpringViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollisionsGravitySpringViewController.swift; sourceTree = "<group>"; };
+		44B3DBFF1AF3667000CE26A5 /* CompositeBehaviorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositeBehaviorViewController.swift; sourceTree = "<group>"; };
+		44B3DC001AF3667000CE26A5 /* ContinuousPushViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContinuousPushViewController.swift; sourceTree = "<group>"; };
+		44B3DC011AF3667000CE26A5 /* CustomDynamicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDynamicViewController.swift; sourceTree = "<group>"; };
+		44B3DC021AF3667000CE26A5 /* GravityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GravityViewController.swift; sourceTree = "<group>"; };
+		44B3DC031AF3667000CE26A5 /* InstantaneousPushViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstantaneousPushViewController.swift; sourceTree = "<group>"; };
+		44B3DC041AF3667000CE26A5 /* ItemPropertiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemPropertiesViewController.swift; sourceTree = "<group>"; };
+		44B3DC051AF3667000CE26A5 /* SnapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapViewController.swift; sourceTree = "<group>"; };
+		44B3DC061AF3667000CE26A5 /* UIDCDecorationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDCDecorationView.swift; sourceTree = "<group>"; };
+		44B3DC071AF3667000CE26A5 /* UIDCPendulumBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDCPendulumBehavior.swift; sourceTree = "<group>"; };
+		44B3DC081AF3667000CE26A5 /* UIDCPositionToBoundsMapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDCPositionToBoundsMapping.swift; sourceTree = "<group>"; };
+		44B3DC211AF3680000CE26A5 /* wechat.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wechat.JPG; sourceTree = "<group>"; };
+		44B3DC231AF3682B00CE26A5 /* swift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swift.png; sourceTree = "<group>"; };
+		44B3DC291AF36F9E00CE26A5 /* ActivityIndicatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorViewController.swift; sourceTree = "<group>"; };
 		44B715901AE1EB3100D9FE3B /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		44FFD6781AF08F5000828C3A /* RMParallax.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMParallax.swift; sourceTree = "<group>"; };
 		44FFD6791AF08F5000828C3A /* RMParallaxItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMParallaxItem.swift; sourceTree = "<group>"; };
@@ -486,6 +543,75 @@
 			path = descriptors;
 			sourceTree = "<group>";
 		};
+		44B3DBEA1AF3667000CE26A5 /* JLToast */ = {
+			isa = PBXGroup;
+			children = (
+				44B3DBEB1AF3667000CE26A5 /* JLToast.h */,
+				44B3DBEC1AF3667000CE26A5 /* JLToast.swift */,
+				44B3DBED1AF3667000CE26A5 /* JLToastCenter.swift */,
+				44B3DBEE1AF3667000CE26A5 /* JLToastView.swift */,
+			);
+			path = JLToast;
+			sourceTree = "<group>";
+		};
+		44B3DBEF1AF3667000CE26A5 /* ObjccBlog */ = {
+			isa = PBXGroup;
+			children = (
+				44B3DBF01AF3667000CE26A5 /* BlogTableViewCell.swift */,
+				44B3DBF11AF3667000CE26A5 /* BlogTableViewCell.xib */,
+				44B3DBF21AF3667000CE26A5 /* BlogViewController.swift */,
+				44B3DBF31AF3667000CE26A5 /* BlogWebViewController.swift */,
+				44B3DBF41AF3667000CE26A5 /* ext */,
+				44B3DBF61AF3667000CE26A5 /* models */,
+			);
+			path = ObjccBlog;
+			sourceTree = "<group>";
+		};
+		44B3DBF41AF3667000CE26A5 /* ext */ = {
+			isa = PBXGroup;
+			children = (
+				44B3DBF51AF3667000CE26A5 /* UIImageView+WebCache.swift */,
+			);
+			path = ext;
+			sourceTree = "<group>";
+		};
+		44B3DBF61AF3667000CE26A5 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				44B3DBF71AF3667000CE26A5 /* BlogPost.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		44B3DBFA1AF3667000CE26A5 /* UIDynamicsCatalog */ = {
+			isa = PBXGroup;
+			children = (
+				44B3DBFB1AF3667000CE26A5 /* AttachmentViewController.swift */,
+				44B3DBFC1AF3667000CE26A5 /* Box1@2x.png */,
+				44B3DBFD1AF3667000CE26A5 /* CollisionGravityViewController.swift */,
+				44B3DBFE1AF3667000CE26A5 /* CollisionsGravitySpringViewController.swift */,
+				44B3DBFF1AF3667000CE26A5 /* CompositeBehaviorViewController.swift */,
+				44B3DC001AF3667000CE26A5 /* ContinuousPushViewController.swift */,
+				44B3DC011AF3667000CE26A5 /* CustomDynamicViewController.swift */,
+				44B3DC021AF3667000CE26A5 /* GravityViewController.swift */,
+				44B3DC031AF3667000CE26A5 /* InstantaneousPushViewController.swift */,
+				44B3DC041AF3667000CE26A5 /* ItemPropertiesViewController.swift */,
+				44B3DC051AF3667000CE26A5 /* SnapViewController.swift */,
+				44B3DC061AF3667000CE26A5 /* UIDCDecorationView.swift */,
+				44B3DC071AF3667000CE26A5 /* UIDCPendulumBehavior.swift */,
+				44B3DC081AF3667000CE26A5 /* UIDCPositionToBoundsMapping.swift */,
+			);
+			path = UIDynamicsCatalog;
+			sourceTree = "<group>";
+		};
+		44B3DC281AF36F9E00CE26A5 /* UICatalog */ = {
+			isa = PBXGroup;
+			children = (
+				44B3DC291AF36F9E00CE26A5 /* ActivityIndicatorViewController.swift */,
+			);
+			path = UICatalog;
+			sourceTree = "<group>";
+		};
 		44FFD6771AF08F5000828C3A /* RMParallax */ = {
 			isa = PBXGroup;
 			children = (
@@ -549,6 +675,12 @@
 		5FFF76BB199C191F00AE0269 /* Amoureux */ = {
 			isa = PBXGroup;
 			children = (
+				44B3DC281AF36F9E00CE26A5 /* UICatalog */,
+				44B3DC211AF3680000CE26A5 /* wechat.JPG */,
+				44B3DC231AF3682B00CE26A5 /* swift.png */,
+				44B3DBEA1AF3667000CE26A5 /* JLToast */,
+				44B3DBEF1AF3667000CE26A5 /* ObjccBlog */,
+				44B3DBFA1AF3667000CE26A5 /* UIDynamicsCatalog */,
 				44B3DBE21AF355C200CE26A5 /* bird.atlas */,
 				44B0741E1AF0518800C5DE06 /* Source */,
 				E0BCEEAA1AE2F8DF00562290 /* font */,
@@ -601,6 +733,8 @@
 				44B3DBDC1AF351DB00CE26A5 /* SingleGameViewController.swift */,
 				44B3DBDE1AF351FF00CE26A5 /* GameScene.swift */,
 				44B3DBE01AF3551700CE26A5 /* GameScene.sks */,
+				44B3DBE61AF365F700CE26A5 /* AboutViewController.swift */,
+				44B3DBE81AF3662D00CE26A5 /* DemoTableViewController.swift */,
 			);
 			path = Amoureux;
 			sourceTree = "<group>";
@@ -1016,6 +1150,8 @@
 				5FFF77E0199C1F6C00AE0269 /* bubble_stroked_tailless@2x.png in Resources */,
 				5FFF77E6199C1F6C00AE0269 /* typing@2x.png in Resources */,
 				449869901AD1D99C001603F8 /* globe.png in Resources */,
+				44B3DC221AF3680000CE26A5 /* wechat.JPG in Resources */,
+				44B3DC141AF3667000CE26A5 /* Box1@2x.png in Resources */,
 				449869921AD1D99C001603F8 /* profile.png in Resources */,
 				5FFF77E2199C1F6C00AE0269 /* bubble_tailless@2x.png in Resources */,
 				5FFF7803199C1F6C00AE0269 /* JSQMessagesLoadEarlierHeaderView.xib in Resources */,
@@ -1024,6 +1160,7 @@
 				5FFF77E7199C1F6C00AE0269 /* message_received.aiff in Resources */,
 				449869951AD1D99C001603F8 /* star@2x.png in Resources */,
 				5FFF77DC199C1F6C00AE0269 /* bubble_min_tailless@2x.png in Resources */,
+				44B3DC241AF3682B00CE26A5 /* swift.png in Resources */,
 				4498698D1AD1D99C001603F8 /* click.gif in Resources */,
 				5FFF77E1199C1F6C00AE0269 /* bubble_tailless.png in Resources */,
 				4498698C1AD1D99C001603F8 /* burger@2x.png in Resources */,
@@ -1035,6 +1172,7 @@
 				5FFF77E5199C1F6C00AE0269 /* typing.png in Resources */,
 				5FFF77DD199C1F6C00AE0269 /* bubble_stroked.png in Resources */,
 				5FFF77FE199C1F6C00AE0269 /* JSQMessagesCollectionViewCellOutgoing.xib in Resources */,
+				44B3DC0D1AF3667000CE26A5 /* BlogTableViewCell.xib in Resources */,
 				5FFF77DA199C1F6C00AE0269 /* bubble_min@2x.png in Resources */,
 				4498698B1AD1D99C001603F8 /* burger.png in Resources */,
 				449869911AD1D99C001603F8 /* globe@2x.png in Resources */,
@@ -1107,31 +1245,43 @@
 			buildActionMask = 2147483647;
 			files = (
 				E010B5931AE356C2005EA4BE /* Phototest.swift in Sources */,
+				44B3DC1E1AF3667000CE26A5 /* UIDCDecorationView.swift in Sources */,
 				E010B5911AE34BEE005EA4BE /* Photo.swift in Sources */,
 				449869781AD1D877001603F8 /* LoginViewController.swift in Sources */,
 				4498697C1AD1D877001603F8 /* UserViewController.swift in Sources */,
 				5FCB62C1199E7C19008B93DB /* MessagesViewController.swift in Sources */,
 				44B074381AF0518800C5DE06 /* FormSwitchCell.swift in Sources */,
 				440168331AE1D9F000BBFAFE /* NavigationViewController.swift in Sources */,
+				44B3DC161AF3667000CE26A5 /* CollisionsGravitySpringViewController.swift in Sources */,
 				5FFF77EC199C1F6C00AE0269 /* UIImage+JSQMessages.m in Sources */,
 				5FFF77F4199C1F6C00AE0269 /* JSQMessagesToolbarButtonFactory.m in Sources */,
+				44B3DC131AF3667000CE26A5 /* AttachmentViewController.swift in Sources */,
 				449869791AD1D877001603F8 /* SidePanelViewController.swift in Sources */,
 				44B074321AF0518800C5DE06 /* FormButtonCell.swift in Sources */,
 				5FFF77EF199C1F6C00AE0269 /* JSQMessagesViewController.m in Sources */,
 				5FFF77F9199C1F6C00AE0269 /* JSQMessagesCollectionView.m in Sources */,
 				4498697D1AD1D877001603F8 /* ViewController.swift in Sources */,
 				5FFF77F6199C1F6C00AE0269 /* JSQMessagesCollectionViewFlowLayoutInvalidationContext.m in Sources */,
+				44B3DC151AF3667000CE26A5 /* CollisionGravityViewController.swift in Sources */,
 				5FFF7800199C1F6C00AE0269 /* JSQMessagesInputToolbar.m in Sources */,
 				E039A5E41AE30473008AF130 /* Data.swift in Sources */,
 				5FFF77F2199C1F6C00AE0269 /* JSQMessagesBubbleImageFactory.m in Sources */,
+				44B3DC1D1AF3667000CE26A5 /* SnapViewController.swift in Sources */,
+				44B3DBE71AF365F700CE26A5 /* AboutViewController.swift in Sources */,
 				44B074331AF0518800C5DE06 /* FormCheckCell.swift in Sources */,
+				44B3DC2A1AF36F9E00CE26A5 /* ActivityIndicatorViewController.swift in Sources */,
 				449869771AD1D877001603F8 /* FrostedSidebar.swift in Sources */,
 				E039A5E51AE30473008AF130 /* DesignableView.swift in Sources */,
+				44B3DC0B1AF3667000CE26A5 /* JLToastView.swift in Sources */,
+				44B3DC0F1AF3667000CE26A5 /* BlogWebViewController.swift in Sources */,
 				44B3DBDB1AF34DFA00CE26A5 /* Candy.swift in Sources */,
+				44B3DC1C1AF3667000CE26A5 /* ItemPropertiesViewController.swift in Sources */,
 				5FFF7804199C1F6C00AE0269 /* JSQMessagesToolbarContentView.m in Sources */,
 				44B0743C1AF0518800C5DE06 /* FormViewController.swift in Sources */,
+				44B3DC191AF3667000CE26A5 /* CustomDynamicViewController.swift in Sources */,
 				44B0741D1AF0512D00C5DE06 /* SettingViewController.swift in Sources */,
 				4493D5561AE4A462002136CB /* usersCell.swift in Sources */,
+				44B3DC1A1AF3667000CE26A5 /* GravityViewController.swift in Sources */,
 				44B074341AF0518800C5DE06 /* FormDateCell.swift in Sources */,
 				44B074361AF0518800C5DE06 /* FormSegmentedControlCell.swift in Sources */,
 				E039A5EF1AE30576008AF130 /* Amoureux.xcdatamodeld in Sources */,
@@ -1139,7 +1289,9 @@
 				5FFF77ED199C1F6C00AE0269 /* UIView+JSQMessages.m in Sources */,
 				44B0743D1AF0518800C5DE06 /* FormDescriptor.swift in Sources */,
 				4493D55A1AE4A462002136CB /* mainVC.swift in Sources */,
+				44B3DC181AF3667000CE26A5 /* ContinuousPushViewController.swift in Sources */,
 				440168351AE1DA3C00BBFAFE /* NavigationCell.swift in Sources */,
+				44B3DC1B1AF3667000CE26A5 /* InstantaneousPushViewController.swift in Sources */,
 				44B0743F1AF0518800C5DE06 /* FormSectionDescriptor.swift in Sources */,
 				440168311AE1D91D00BBFAFE /* TimelineCell.swift in Sources */,
 				440168371AE1DA7D00BBFAFE /* TransitionOperator.swift in Sources */,
@@ -1149,6 +1301,7 @@
 				44B3DBD91AF3495500CE26A5 /* GamesViewController.swift in Sources */,
 				4401682F1AE1D6F900BBFAFE /* OtherNavController.swift in Sources */,
 				5FFF77E9199C1F6C00AE0269 /* JSQSystemSoundPlayer+JSQMessages.m in Sources */,
+				44B3DC101AF3667000CE26A5 /* UIImageView+WebCache.swift in Sources */,
 				E06BE7871AF0497900919D8D /* Detail.swift in Sources */,
 				5FF98CB219A51B8E0041E81A /* Message.swift in Sources */,
 				44B3DBDD1AF351DB00CE26A5 /* SingleGameViewController.swift in Sources */,
@@ -1157,7 +1310,9 @@
 				5FFF77FD199C1F6C00AE0269 /* JSQMessagesCollectionViewCellOutgoing.m in Sources */,
 				5FFF7806199C1F6C00AE0269 /* JSQMessagesTypingIndicatorFooterView.m in Sources */,
 				5FFF77F7199C1F6C00AE0269 /* JSQMessagesCollectionViewLayoutAttributes.m in Sources */,
+				44B3DC0A1AF3667000CE26A5 /* JLToastCenter.swift in Sources */,
 				4493D5591AE4A462002136CB /* mainCell.swift in Sources */,
+				44B3DC0C1AF3667000CE26A5 /* BlogTableViewCell.swift in Sources */,
 				44FFD67A1AF08F5000828C3A /* RMParallax.swift in Sources */,
 				5FFF77F1199C1F6C00AE0269 /* JSQMessagesAvatarFactory.m in Sources */,
 				5F19222719D9D3D900D5C772 /* TwitterAuthHelper.m in Sources */,
@@ -1165,6 +1320,8 @@
 				4493D5581AE4A462002136CB /* tweetVC.swift in Sources */,
 				5FFF77F3199C1F6C00AE0269 /* JSQMessagesTimestampFormatter.m in Sources */,
 				5FFF77FA199C1F6C00AE0269 /* JSQMessagesCollectionViewCell.m in Sources */,
+				44B3DC1F1AF3667000CE26A5 /* UIDCPendulumBehavior.swift in Sources */,
+				44B3DC091AF3667000CE26A5 /* JLToast.swift in Sources */,
 				E039A5E61AE30473008AF130 /* Misc.swift in Sources */,
 				4498697A1AD1D877001603F8 /* SignUpViewController.swift in Sources */,
 				4498697B1AD1D877001603F8 /* TabBarController.swift in Sources */,
@@ -1177,14 +1334,18 @@
 				44FFD67D1AF098FE00828C3A /* GameViewController.swift in Sources */,
 				449869741AD1D877001603F8 /* Animal.swift in Sources */,
 				5FFF7802199C1F6C00AE0269 /* JSQMessagesLoadEarlierHeaderView.m in Sources */,
+				44B3DC0E1AF3667000CE26A5 /* BlogViewController.swift in Sources */,
 				5FFF77FF199C1F6C00AE0269 /* JSQMessagesComposerTextView.m in Sources */,
 				449869761AD1D877001603F8 /* ContainerViewController.swift in Sources */,
 				44B715911AE1EB3100D9FE3B /* TimelineViewController.swift in Sources */,
 				44FFD6811AF0999700828C3A /* TTTImageView.swift in Sources */,
 				5FFF77F5199C1F6C00AE0269 /* JSQMessagesCollectionViewFlowLayout.m in Sources */,
 				44B074371AF0518800C5DE06 /* FormSelectorCell.swift in Sources */,
+				44B3DC201AF3667000CE26A5 /* UIDCPositionToBoundsMapping.swift in Sources */,
 				4493D5571AE4A462002136CB /* signUpVC.swift in Sources */,
 				5FFF77EA199C1F6C00AE0269 /* NSString+JSQMessages.m in Sources */,
+				44B3DC171AF3667000CE26A5 /* CompositeBehaviorViewController.swift in Sources */,
+				44B3DBE91AF3662D00CE26A5 /* DemoTableViewController.swift in Sources */,
 				4493D55B1AE4A462002136CB /* usersVC.swift in Sources */,
 				449869751AD1D877001603F8 /* CenterViewController.swift in Sources */,
 				E039A5E71AE30473008AF130 /* SpringAnimation.swift in Sources */,
@@ -1192,6 +1353,7 @@
 				44B0743E1AF0518800C5DE06 /* FormRowDescriptor.swift in Sources */,
 				5FFF780C199C1F9900AE0269 /* JSQSystemSoundPlayer.m in Sources */,
 				44B074311AF0518800C5DE06 /* FormBaseCell.swift in Sources */,
+				44B3DC111AF3667000CE26A5 /* BlogPost.swift in Sources */,
 				5FFF76BF199C191F00AE0269 /* AppDelegate.swift in Sources */,
 				44B0743B1AF0518800C5DE06 /* FormSelector.swift in Sources */,
 			);

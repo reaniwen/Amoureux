@@ -53,17 +53,18 @@ class NavigationViewController : UIViewController, UITableViewDelegate, UITableV
         dimmerView.backgroundColor = UIColor(white: 0.0, alpha: 0.3)
         bgImage.image = UIImage(named: "nav-bg")
         
-        let item1 = NavigationModel(title: "TimeLine", icon: "icon-home")
+        let item1 = NavigationModel(title: "Timeline", icon: "icon-home")
         let item2 = NavigationModel(title: "Chat", icon: "icon-chat", count: "3")
         let item3 = NavigationModel(title: "Gallery", icon: "icon-star")
-        let item4 = NavigationModel(title: "SETTINGS", icon: "icon-filter")
-        let item5 = NavigationModel(title: "ABOUT", icon: "icon-info")
+        let item4 = NavigationModel(title: "Settings", icon: "icon-filter")
+        let item5 = NavigationModel(title: "Game", icon: "icon-info")
+        let item6 = NavigationModel(title: "About", icon: "icon-info")
         
-        items = [item1, item2, item3, item4, item5]
+        items = [item1, item2, item3, item4, item5, item6]
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 6
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -85,15 +86,17 @@ class NavigationViewController : UIViewController, UITableViewDelegate, UITableV
         self.snapshot.removeFromSuperview()
         
         if (indexPath.row == 1){
-            performSegueWithIdentifier("listview", sender: self)
+            performSegueWithIdentifier("chatview", sender: self)
         }else if(indexPath.row == 2){
             performSegueWithIdentifier("photowall", sender: self)
         }else if(indexPath.row == 3) {
             performSegueWithIdentifier("settingnav", sender: self)
         }else if(indexPath.row == 4) {
             performSegueWithIdentifier("gamenav", sender: self)
-        }else if(indexPath.row % 2 == 0) {
+        }else if(indexPath.row == 0) {
             performSegueWithIdentifier("timelineView", sender: self)
+        }else if(indexPath.row == 5) {
+            performSegueWithIdentifier("aboutus", sender: self)
         }else{
             performSegueWithIdentifier("othernav", sender: self)
         }
