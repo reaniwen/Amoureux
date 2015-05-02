@@ -97,12 +97,39 @@ class ViewController: UIViewController, UITextFieldDelegate {
             
             if error == nil {
                 
-                println("logIn")
-                self.performSegueWithIdentifier("gotoMainVCFromSigninVC", sender: self)
+                println("logInSucceed")
+//                self.performSegueWithIdentifier("gotoMainVCFromSigninVC", sender: self)
                 
+                var queryExist = PFQuery(className: "follow")
+                queryExist.whereKey("user", equalTo: PFUser.currentUser().username)
+                queryExist.countObjectsInBackgroundWithBlock {
+                    (count:Int32, error:NSError!) -> Void in
+                    
+                    if error == nil {
+                        if count == 0 {
+                            var queryFollow = PFQuery(className: "follow")
+                            queryFollow.whereKey("userToFollow", equalTo: PFUser.currentUser().username)
+                            queryFollow.countObjectsInBackgroundWithBlock {
+                                (count:Int32, error:NSError!) -> Void in
+    
+                                if error == nil {
+                                    if count == 0 {
+                                        //add an invitation
+                                        self.performSegueWithIdentifier("addInvitationSegue", sender: self)
+                                    } else {
+                                        //agree an invitation
+                                        self.performSegueWithIdentifier("agreeInvitationSegue", sender: self)
+                                    }
+                                }
+                            }
+                            
+                        } else {
+                            self.performSegueWithIdentifier("gotoMainVCFromSigninVC", sender: self)
+                        }
+                    }
+                }
             } else {
-                
-                println("error")
+                println("error while logging in")
             }
             
         }

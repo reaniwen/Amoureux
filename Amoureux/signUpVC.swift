@@ -94,14 +94,86 @@ class signUpVC: UIViewController, UINavigationControllerDelegate, UIImagePickerC
                 
                 println("User Created!")
                 
-                var followObj = PFObject(className: "follow")
+                var queryExist = PFQuery(className: "follow")
+                queryExist.whereKey("user", equalTo: PFUser.currentUser().username)
+                queryExist.countObjectsInBackgroundWithBlock {
+                    (count:Int32, error:NSError!) -> Void in
+
+                    if error == nil {
+                        if count == 0 {
+                            var queryFollow = PFQuery(className: "follow")
+                            queryFollow.whereKey("userToFollow", equalTo: PFUser.currentUser().username)
+                            queryFollow.countObjectsInBackgroundWithBlock {
+                                (count:Int32, error:NSError!) -> Void in
+
+                                if error == nil {
+                                    if count == 0 {
+                                            //add an invitation
+                                            self.performSegueWithIdentifier("addInvitationFromSignUp", sender: self)
+                                    } else {
+                                            //agree an invitation
+                                            self.performSegueWithIdentifier("agreeInvitationFromSignUp", sender: self)
+                                        }
+                                }
+                            }
+                            
+                        } else {
+                            self.performSegueWithIdentifier("gotoMainVCFromSigninVC", sender: self)
+                            }
+                    }
+                }
                 
-                followObj["user"] = PFUser.currentUser().username
-                followObj["userToFollow"] = PFUser.currentUser().username
-                
-                followObj.save()
                 
                 
+//                var followObj = PFObject(className: "follow")
+//                
+//                followObj["user"] = PFUser.currentUser().username
+//                followObj["userToFollow"] = PFUser.currentUser().username
+//                
+//                followObj.save()
+                
+//                PFUser.logInWithUsernameInBackground(emailTxt.text, password: passwordTxt.text) {
+//            (user:PFUser!, error:NSError!) -> Void in
+//            
+//            if error == nil {
+//                
+//                println("logInSucceed")
+//                self.performSegueWithIdentifier("gotoMainVCFromSigninVC", sender: self)
+//                
+//                var queryExist = PFQuery(className: "follow")
+//                queryExist.whereKey("user", equalTo: PFUser.currentUser().username)
+//                queryExist.countObjectsInBackgroundWithBlock {
+//                    (count:Int32, error:NSError!) -> Void in
+//                    
+//                    if error == nil {
+//                        if count == 0 {
+//                            var queryFollow = PFQuery(className: "follow")
+//                            queryFollow.whereKey("userToFollow", equalTo: PFUser.currentUser().username)
+//                            queryFollow.countObjectsInBackgroundWithBlock {
+//                                (count:Int32, error:NSError!) -> Void in
+//    
+//                                if error == nil {
+//                                    if count == 0 {
+//                                        //add an invitation
+//                                        self.performSegueWithIdentifier("gotoMainVCFromSigninVC", sender: self)
+//                                    } else {
+//                                        //agree an invitation
+//                                        self.performSegueWithIdentifier("gotoMainVCFromSigninVC", sender: self)
+//                                    }
+//                                }
+//                            }
+//                            
+//                        } else {
+//                            self.performSegueWithIdentifier("gotoMainVCFromSigninVC", sender: self)
+//                        }
+//                    }
+//                }
+//            } else {
+//                println("error while logging in")
+//            }
+//            
+//        }
+
                 self.performSegueWithIdentifier("gotoMainVCFromSignupVC", sender: self)
                 
             }
