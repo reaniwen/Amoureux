@@ -954,7 +954,7 @@
                                                 <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KyP-db-HCB">
-                                                <rect key="frame" x="30" y="215" width="50" height="50"/>
+                                                <rect key="frame" x="76" y="230" width="13" height="27"/>
                                                 <state key="normal" backgroundImage="facebook">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -1059,10 +1059,10 @@
                                             <action selector="BackMenu:" destination="JDf-3Q-yu8" eventType="touchUpInside" id="KpE-F1-SHa"/>
                                         </connections>
                                     </button>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sx7-Hc-zMn">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sx7-Hc-zMn">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
-                                        <state key="normal">
+                                        <state key="normal" image="facebook" backgroundImage="facebook">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -2969,7 +2969,7 @@
         <image name="camera" width="31" height="23"/>
         <image name="cancel" width="40" height="35"/>
         <image name="enter-pink" width="640" height="120"/>
-        <image name="facebook" width="50" height="50"/>
+        <image name="facebook" width="13" height="27"/>
         <image name="field" width="320" height="503"/>
         <image name="heart" width="394" height="310"/>
         <image name="image-red" width="36" height="30"/>
