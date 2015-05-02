@@ -963,21 +963,12 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDQ-NZ-XfT">
-                                                <rect key="frame" x="115" y="215" width="50" height="50"/>
-                                                <state key="normal" backgroundImage="twitter">
+                                                <rect key="frame" x="146" y="233" width="30" height="23"/>
+                                                <state key="normal" backgroundImage="twitter-1">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="twitterTapped:" destination="JDf-3Q-yu8" eventType="touchUpInside" id="fId-se-eeb"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tkF-gX-s80">
-                                                <rect key="frame" x="200" y="215" width="50" height="50"/>
-                                                <state key="normal" backgroundImage="weibo">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="weiboTapped:" destination="JDf-3Q-yu8" eventType="touchUpInside" id="kBY-5J-o67"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -2985,8 +2976,7 @@
         <image name="sharebutton-1" width="93" height="35"/>
         <image name="title" width="307" height="67"/>
         <image name="toleft" width="26" height="23"/>
-        <image name="twitter" width="50" height="50"/>
-        <image name="weibo" width="50" height="50"/>
+        <image name="twitter-1" width="30" height="23"/>
         <image name="whisper.jpg" width="600" height="800"/>
         <image name="whiteleft" width="25" height="25"/>
         <image name="zoey" width="854" height="1280"/>
