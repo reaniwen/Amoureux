@@ -54,7 +54,7 @@ class NavigationViewController : UIViewController, UITableViewDelegate, UITableV
         bgImage.image = UIImage(named: "nav-bg")
         
         let item1 = NavigationModel(title: "Timeline", icon: "icon-home")
-        let item2 = NavigationModel(title: "Chat", icon: "icon-chat", count: "3")
+        let item2 = NavigationModel(title: "Chat", icon: "icon-chat")
         let item3 = NavigationModel(title: "Gallery", icon: "icon-image")
         let item4 = NavigationModel(title: "Settings", icon: "icon-setting")
         let item5 = NavigationModel(title: "Game", icon: "icon-game")
