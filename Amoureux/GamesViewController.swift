@@ -21,7 +21,8 @@ class GamesViewController: UITableViewController, UISearchBarDelegate, UISearchD
         
         // Reload the table
         self.tableView.reloadData()
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .Bordered, target: self, action: "back:")
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named:"whiteleft.png"),landscapeImagePhone:UIImage(named: "whiteleft.png"), style:.Bordered, target: self, action:"back:")
+        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
     }
     
     func back(_: UIBarButtonItem!){

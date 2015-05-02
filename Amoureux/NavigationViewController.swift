@@ -58,7 +58,7 @@ class NavigationViewController : UIViewController, UITableViewDelegate, UITableV
         let item3 = NavigationModel(title: "Gallery", icon: "icon-image")
         let item4 = NavigationModel(title: "Settings", icon: "icon-setting")
         let item5 = NavigationModel(title: "Game", icon: "icon-game")
-        let item6 = NavigationModel(title: "Calendar", icon: "icon-info")
+        let item6 = NavigationModel(title: "Calendar", icon: "icon-clock")
         let item7 = NavigationModel(title: "About", icon: "icon-info")
         
         items = [item1, item2, item3, item4, item5, item6, item7]

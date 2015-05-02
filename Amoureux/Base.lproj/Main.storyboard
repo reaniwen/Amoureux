@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="r5Y-Lo-wKv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="r5Y-Lo-wKv">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -1069,6 +1069,13 @@
                                             <action selector="maskButtonDidPress:" destination="JDf-3Q-yu8" eventType="touchUpInside" id="3Yr-Jl-hPD"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Moments" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.65000000000000013" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cec-30-wyx">
+                                        <rect key="frame" x="94" y="53" width="133" height="56"/>
+                                        <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="51"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="shadowColor" red="0.88235294119999996" green="0.22352941179999999" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
                             </view>
@@ -1304,7 +1311,7 @@
                                     <constraint firstAttribute="width" constant="60" id="jKt-Ad-RBy"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="b79-Kc-ZzV">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="b79-Kc-ZzV">
                                 <rect key="frame" x="96" y="50" width="183" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="dlZ-FZ-zr9"/>
@@ -1949,6 +1956,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.61568627450000002" green="0.15686274510000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="Ha2-VM-UjT" kind="relationship" relationship="rootViewController" id="11S-4K-SdY"/>
@@ -1956,7 +1967,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QO5-NG-oiW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="881" y="2515"/>
+            <point key="canvasLocation" x="1005" y="2510"/>
         </scene>
         <!--Single Game View Controller-->
         <scene sceneID="fcH-Hn-dsv">
@@ -2035,7 +2046,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="John" translatesAutoresizingMaskIntoConstraints="NO" id="vmq-Mh-aRb">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="John" translatesAutoresizingMaskIntoConstraints="NO" id="vmq-Mh-aRb">
                                 <rect key="frame" x="170" y="235" width="60" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="OQP-Re-58p"/>
@@ -2099,6 +2110,7 @@
                             <constraint firstItem="q5O-io-x04" firstAttribute="leading" secondItem="FC3-Dh-seS" secondAttribute="leadingMargin" constant="74" id="5cb-yc-daL"/>
                             <constraint firstItem="5pM-54-DQ8" firstAttribute="leading" secondItem="FC3-Dh-seS" secondAttribute="leadingMargin" constant="26" id="Crg-C9-AQJ"/>
                             <constraint firstItem="jTg-FL-Te9" firstAttribute="top" secondItem="51b-Qr-OYb" secondAttribute="bottom" constant="80" id="GLN-bN-Cp5"/>
+                            <constraint firstItem="vmq-Mh-aRb" firstAttribute="leading" secondItem="q5O-io-x04" secondAttribute="trailing" constant="20" id="IDh-GI-9FH"/>
                             <constraint firstItem="nrB-em-dOw" firstAttribute="top" secondItem="0lU-uR-jgZ" secondAttribute="bottom" constant="40" id="IR3-hP-1nk"/>
                             <constraint firstItem="e7J-D7-qis" firstAttribute="leading" secondItem="FC3-Dh-seS" secondAttribute="leadingMargin" constant="74" id="IU5-sj-GaD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0lU-uR-jgZ" secondAttribute="trailing" constant="40" id="JW6-X9-KOf"/>
