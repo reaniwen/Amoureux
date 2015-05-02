@@ -62,7 +62,8 @@ class AboutViewController: UIViewController {
         fly()
         // Do any additional setup after loading the view, typically from a nib.
         hiButton.setTitle("Stop fly", forState:nil)
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .Bordered, target: self, action: "back:")
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named:"whiteleft.png"), landscapeImagePhone: UIImage(named:"whiteleft.png"), style: .Bordered, target: self, action: "back:")
+        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
     }
     
     func back(_: UIBarButtonItem!){
