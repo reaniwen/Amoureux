@@ -23,10 +23,10 @@ class NavigationViewController : UIViewController, UITableViewDelegate, UITableV
     @IBOutlet var bgImageView : UIImageView!
     @IBOutlet var tview: UITableView!
     @IBOutlet var tableview: UITableView!
-
+    
     
     @IBOutlet var bgImage: UIImageView!
-
+    
     @IBOutlet var dimmerView  : UIView!
     
     @IBOutlet var dimmeruiview: UIView!
@@ -58,13 +58,14 @@ class NavigationViewController : UIViewController, UITableViewDelegate, UITableV
         let item3 = NavigationModel(title: "Gallery", icon: "icon-star")
         let item4 = NavigationModel(title: "Settings", icon: "icon-filter")
         let item5 = NavigationModel(title: "Game", icon: "icon-info")
-        let item6 = NavigationModel(title: "About", icon: "icon-info")
+        let item6 = NavigationModel(title: "Calendar", icon: "icon-info")
+        let item7 = NavigationModel(title: "About", icon: "icon-info")
         
-        items = [item1, item2, item3, item4, item5, item6]
+        items = [item1, item2, item3, item4, item5, item6, item7]
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return self.items.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -96,6 +97,8 @@ class NavigationViewController : UIViewController, UITableViewDelegate, UITableV
         }else if(indexPath.row == 0) {
             performSegueWithIdentifier("timelineView", sender: self)
         }else if(indexPath.row == 5) {
+            performSegueWithIdentifier("calendar", sender: self)
+        }else if(indexPath.row == 6) {
             performSegueWithIdentifier("aboutus", sender: self)
         }else{
             performSegueWithIdentifier("othernav", sender: self)
@@ -133,13 +136,13 @@ class NavigationViewController : UIViewController, UITableViewDelegate, UITableV
             success: { (operation: AFHTTPRequestOperation!,
                 responseObject: AnyObject!) in
                 println("JSON: " + responseObject.description!)
-        
+                
                 self.updateUISuccess(responseObject as NSDictionary!)
             },
             failure: { (operation: AFHTTPRequestOperation!,
                 error: NSError!) in
                 println("Error: " + error.localizedDescription)
-
+                
         })
     }
     
@@ -198,7 +201,7 @@ class NavigationViewController : UIViewController, UITableViewDelegate, UITableV
                         if let date = (perTime["dt"]? as? Double) {
                             let thisDate = NSDate(timeIntervalSince1970: date)
                             let forecastTime = dateFormatter.stringFromDate(thisDate)
-
+                            
                         }
                         if let weather = (perTime["weather"]? as? NSArray) {
                             var condition = (weather[0] as NSDictionary)["id"] as Int
@@ -329,7 +332,7 @@ class NavigationViewController : UIViewController, UITableViewDelegate, UITableV
     func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
         println(error)
     }
-
+    
 }
 
 class NavigationModel {
@@ -348,5 +351,5 @@ class NavigationModel {
         self.icon = icon
         self.count = count
     }
-
+    
 }

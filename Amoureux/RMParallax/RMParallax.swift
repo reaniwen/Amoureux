@@ -27,7 +27,7 @@
 */
 typealias RMParallaxCompletionHandler = () -> Void
 
-enum ScrollDirection: Int {
+enum Scrolldirection: Int {
     case Right = 0, Left
 }
 
@@ -184,7 +184,7 @@ class RMParallax : UIViewController, UIScrollViewDelegate {
     }
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
-        var direction: ScrollDirection!
+        var direction: Scrolldirection!
         var multiplier: CGFloat = 1.0
         
         let offset: CGFloat = scrollView.contentOffset.x

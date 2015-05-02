@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="r5Y-Lo-wKv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="r5Y-Lo-wKv">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -889,6 +889,7 @@
                         <segue destination="B53-ck-fmL" kind="custom" identifier="settingnav" id="Ve9-mu-SxT"/>
                         <segue destination="NIi-0f-XKQ" kind="custom" identifier="gamenav" id="nnc-CX-qqU"/>
                         <segue destination="EAV-vj-Yw9" kind="custom" identifier="aboutus" id="A0u-3C-pnw"/>
+                        <segue destination="2Gg-Kz-jrc" kind="custom" identifier="calendar" id="5lx-jz-wDH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UrU-sg-PVE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1663,7 +1664,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L15-Zb-PyM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1709" y="278"/>
+            <point key="canvasLocation" x="-1833" y="278"/>
         </scene>
         <!--Detail-->
         <scene sceneID="tFV-sQ-o2Q">
@@ -2802,6 +2803,91 @@
             </objects>
             <point key="canvasLocation" x="3386" y="3715"/>
         </scene>
+        <!--Calendar View Controller-->
+        <scene sceneID="Nqd-pK-f5c">
+            <objects>
+                <viewController id="2Gg-Kz-jrc" customClass="CalendarViewController" customModule="Amoureux" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7lQ-jz-4Af"/>
+                        <viewControllerLayoutGuide type="bottom" id="eaG-ey-w5e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8zz-Mg-5Ui">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="January, 2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rBc-vX-zkp">
+                                <rect key="frame" x="97" y="28" width="127" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fRB-Dk-ABZ" customClass="CVCalendarMenuView" customModule="Amoureux" customModuleProvider="target">
+                                <rect key="frame" x="16" y="71" width="288" height="24"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3uh-OG-vs5">
+                                <rect key="frame" x="551" y="23" width="33" height="33"/>
+                                <state key="normal" image="present-100">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="todayMonthView" destination="2Gg-Kz-jrc" eventType="touchUpInside" id="ryC-EF-Xpa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable showing days out" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xa4-uO-l9z">
+                                <rect key="frame" x="16" y="524" width="220.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QhH-dH-u6m">
+                                <rect key="frame" x="255" y="517" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchChanged:" destination="2Gg-Kz-jrc" eventType="valueChanged" id="IK4-M5-ziw"/>
+                                </connections>
+                            </switch>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cfQ-XJ-v87" customClass="CVCalendarView" customModule="Amoureux" customModuleProvider="target">
+                                <rect key="frame" x="16" y="103" width="288" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="IBu-Yq-Hhn">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="480"/>
+                                    </constraint>
+                                </constraints>
+                                <connections>
+                                    <outlet property="calendarAppearanceDelegate" destination="2Gg-Kz-jrc" id="BMP-CT-LCz"/>
+                                    <outlet property="calendarDelegate" destination="2Gg-Kz-jrc" id="d7h-KT-5rY"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cfQ-XJ-v87" firstAttribute="trailing" secondItem="fRB-Dk-ABZ" secondAttribute="trailing" id="0xc-hZ-RZh"/>
+                            <constraint firstItem="cfQ-XJ-v87" firstAttribute="top" secondItem="8zz-Mg-5Ui" secondAttribute="top" constant="103" id="9jl-hW-v1n"/>
+                            <constraint firstItem="rBc-vX-zkp" firstAttribute="top" secondItem="7lQ-jz-4Af" secondAttribute="bottom" constant="8" symbolic="YES" id="BCR-Nj-jWH"/>
+                            <constraint firstItem="3uh-OG-vs5" firstAttribute="top" secondItem="7lQ-jz-4Af" secondAttribute="bottom" constant="3" id="JXt-9I-rXJ"/>
+                            <constraint firstItem="fRB-Dk-ABZ" firstAttribute="trailing" secondItem="8zz-Mg-5Ui" secondAttribute="trailingMargin" id="Je7-PU-0fy"/>
+                            <constraint firstItem="fRB-Dk-ABZ" firstAttribute="top" secondItem="3uh-OG-vs5" secondAttribute="bottom" constant="15" id="KyM-4d-MEn"/>
+                            <constraint firstItem="QhH-dH-u6m" firstAttribute="bottom" secondItem="xa4-uO-l9z" secondAttribute="bottom" id="L3U-9p-dEX"/>
+                            <constraint firstItem="cfQ-XJ-v87" firstAttribute="leading" secondItem="8zz-Mg-5Ui" secondAttribute="leadingMargin" id="MHS-Qb-kSY"/>
+                            <constraint firstItem="rBc-vX-zkp" firstAttribute="centerX" secondItem="fRB-Dk-ABZ" secondAttribute="centerX" id="ONe-VY-VES"/>
+                            <constraint firstItem="QhH-dH-u6m" firstAttribute="trailing" secondItem="cfQ-XJ-v87" secondAttribute="trailing" id="VI0-BN-9lO"/>
+                            <constraint firstItem="3uh-OG-vs5" firstAttribute="trailing" secondItem="fRB-Dk-ABZ" secondAttribute="trailing" id="gJv-3c-AcT"/>
+                            <constraint firstAttribute="bottom" secondItem="xa4-uO-l9z" secondAttribute="bottom" constant="20" symbolic="YES" id="n1C-XT-97b"/>
+                            <constraint firstItem="xa4-uO-l9z" firstAttribute="leading" secondItem="cfQ-XJ-v87" secondAttribute="leading" id="nnW-Fc-wwf"/>
+                            <constraint firstItem="cfQ-XJ-v87" firstAttribute="leading" secondItem="fRB-Dk-ABZ" secondAttribute="leading" id="ogG-r5-Qsg"/>
+                            <constraint firstItem="cfQ-XJ-v87" firstAttribute="top" secondItem="fRB-Dk-ABZ" secondAttribute="bottom" constant="8" symbolic="YES" id="xQe-wj-2of"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="calendarView" destination="cfQ-XJ-v87" id="scY-Nx-DDi"/>
+                        <outlet property="daysOutSwitch" destination="QhH-dH-u6m" id="CA6-co-xuG"/>
+                        <outlet property="menuView" destination="fRB-Dk-ABZ" id="HME-46-Njc"/>
+                        <outlet property="monthLabel" destination="rBc-vX-zkp" id="owM-TO-cfF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YWR-FM-bzL" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="98" y="-553"/>
+        </scene>
     </scenes>
     <resources>
         <image name="AttachmentPoint_Mask" width="12" height="12"/>
@@ -2827,6 +2913,7 @@
         <image name="image-red" width="36" height="30"/>
         <image name="menu" width="22" height="22"/>
         <image name="ph.jpg" width="250" height="250"/>
+        <image name="present-100" width="600" height="800"/>
         <image name="rean" width="464" height="695"/>
         <image name="share-bg" width="320" height="200"/>
         <image name="share-email" width="90" height="90"/>
@@ -2846,7 +2933,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="lyl-qa-jCI"/>
         <segue reference="6N5-eT-YbN"/>
+        <segue reference="SOp-RU-QFD"/>
     </inferredMetricsTieBreakers>
 </document>
