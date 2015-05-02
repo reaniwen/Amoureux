@@ -63,7 +63,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             context.evaluatePolicy(.DeviceOwnerAuthenticationWithBiometrics, localizedReason: reason, reply:
                 {(succes: Bool, error: NSError!) in
                     if succes {
-                        self.performSegueWithIdentifier("gotoMainVCFromSigninVC", sender: self)
+                        self.performSegueWithIdentifier("indirect1", sender: self)
                     }
                     else {
                     }
@@ -124,7 +124,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                             }
                             
                         } else {
-                            self.performSegueWithIdentifier("gotoMainVCFromSigninVC", sender: self)
+                            self.performSegueWithIdentifier("indirect1", sender: self)
                         }
                     }
                 }

@@ -214,6 +214,7 @@
 		E039A5EB1AE30481008AF130 /* PhotoWall.swift in Sources */ = {isa = PBXBuildFile; fileRef = E039A5E91AE30481008AF130 /* PhotoWall.swift */; };
 		E039A5EF1AE30576008AF130 /* Amoureux.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E039A5ED1AE30576008AF130 /* Amoureux.xcdatamodeld */; };
 		E06BE7871AF0497900919D8D /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06BE7861AF0497900919D8D /* Detail.swift */; };
+		E09D04FE1AF542010016DDE7 /* IndirectPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09D04FD1AF542010016DDE7 /* IndirectPage.swift */; };
 		ED72CBE8FDD2D057B2FB4D30 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA50B7B38993D87B5E4C1880 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -472,6 +473,7 @@
 		E039A5EC1AE3048E008AF130 /* TipoType - Libertad.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TipoType - Libertad.otf"; path = "font/TipoType - Libertad.otf"; sourceTree = "<group>"; };
 		E039A5EE1AE30576008AF130 /* Amoureux.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Amoureux.xcdatamodel; sourceTree = "<group>"; };
 		E06BE7861AF0497900919D8D /* Detail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
+		E09D04FD1AF542010016DDE7 /* IndirectPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndirectPage.swift; sourceTree = "<group>"; };
 		E0F0653A1AEB0BD100510604 /* SwiftWeather-Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftWeather-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		E0F0653D1AEB0CAE00510604 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		E0F0653E1AEB0CAE00510604 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
@@ -797,6 +799,7 @@
 				4498696F1AD1D877001603F8 /* SidePanelViewController.swift */,
 				449869711AD1D877001603F8 /* TabBarController.swift */,
 				449869721AD1D877001603F8 /* UserViewController.swift */,
+				E09D04FD1AF542010016DDE7 /* IndirectPage.swift */,
 				5FFF76BE199C191F00AE0269 /* AppDelegate.swift */,
 				5FCB62C0199E7C19008B93DB /* MessagesViewController.swift */,
 				638910FF199E968100B8998F /* ChatLoginViewController.swift */,
@@ -1354,6 +1357,7 @@
 				5FFF77F4199C1F6C00AE0269 /* JSQMessagesToolbarButtonFactory.m in Sources */,
 				44B3DC131AF3667000CE26A5 /* AttachmentViewController.swift in Sources */,
 				449869791AD1D877001603F8 /* SidePanelViewController.swift in Sources */,
+				E09D04FE1AF542010016DDE7 /* IndirectPage.swift in Sources */,
 				44B074321AF0518800C5DE06 /* FormButtonCell.swift in Sources */,
 				5FFF77EF199C1F6C00AE0269 /* JSQMessagesViewController.m in Sources */,
 				5FFF77F9199C1F6C00AE0269 /* JSQMessagesCollectionView.m in Sources */,

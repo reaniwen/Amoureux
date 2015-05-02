@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="r5Y-Lo-wKv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="r5Y-Lo-wKv">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -851,7 +851,7 @@
                                         <color key="textColor" red="0.89561596750000005" green="0.90818189540000005" blue="0.1929215222" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="avatar1" translatesAutoresizingMaskIntoConstraints="NO" id="lVY-F9-Mxp">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lVY-F9-Mxp">
                                         <rect key="frame" x="31" y="25" width="49" height="49"/>
                                     </imageView>
                                 </subviews>
@@ -894,7 +894,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UrU-sg-PVE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="184.26666666666665" y="282.57999999999993"/>
+            <point key="canvasLocation" x="65.5" y="262.5"/>
         </scene>
         <!--Home-->
         <scene sceneID="C8W-2k-pe0">
@@ -1196,11 +1196,33 @@
                         <segue destination="yIn-b3-j9j" kind="modal" identifier="gotoMainVCFromSigninVC" id="umV-I3-bzq"/>
                         <segue destination="ePP-aN-0il" kind="modal" identifier="addInvitationSegue" id="61O-N5-4CO"/>
                         <segue destination="ZTf-VX-Zvs" kind="modal" identifier="agreeInvitationSegue" id="To4-Pe-zYo"/>
+                        <segue destination="hwg-Q6-0lN" kind="modal" identifier="indirect1" animates="NO" id="jl1-xg-lW6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3j4-bP-BgG" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1263.5" y="277.49999999999994"/>
+            <point key="canvasLocation" x="-1268.5" y="198.5"/>
+        </scene>
+        <!--Indirect Page-->
+        <scene sceneID="jCu-yR-dwg">
+            <objects>
+                <viewController id="hwg-Q6-0lN" customClass="IndirectPage" customModule="Amoureux" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="X4i-tI-loJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="9WV-he-T0X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6L4-5K-s2Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="yIn-b3-j9j" kind="modal" identifier="indirect2" id="pgR-Bx-bkh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gw3-eA-G6D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-487.5" y="186.5"/>
         </scene>
         <!--Add LoverVC-->
         <scene sceneID="AFF-87-8uh">
@@ -2955,7 +2977,6 @@
         <image name="Origin" width="10" height="10"/>
         <image name="SignUp" width="478" height="90"/>
         <image name="SignUpDone" width="310" height="87"/>
-        <image name="avatar1" width="160" height="160"/>
         <image name="burger" width="19" height="17"/>
         <image name="camera" width="31" height="23"/>
         <image name="cancel" width="40" height="35"/>
@@ -2987,9 +3008,9 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="umV-I3-bzq"/>
+        <segue reference="pgR-Bx-bkh"/>
         <segue reference="lyl-qa-jCI"/>
-        <segue reference="ZBS-nv-DDX"/>
-        <segue reference="rjb-FM-u0M"/>
+        <segue reference="To4-Pe-zYo"/>
+        <segue reference="61O-N5-4CO"/>
     </inferredMetricsTieBreakers>
 </document>
