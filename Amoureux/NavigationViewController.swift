@@ -55,8 +55,8 @@ class NavigationViewController : UIViewController, UITableViewDelegate, UITableV
         
         let item1 = NavigationModel(title: "Timeline", icon: "icon-home")
         let item2 = NavigationModel(title: "Chat", icon: "icon-chat", count: "3")
-        let item3 = NavigationModel(title: "Gallery", icon: "icon-star")
-        let item4 = NavigationModel(title: "Settings", icon: "icon-filter")
+        let item3 = NavigationModel(title: "Gallery", icon: "icon-image")
+        let item4 = NavigationModel(title: "Settings", icon: "icon-setting")
         let item5 = NavigationModel(title: "Game", icon: "icon-game")
         let item6 = NavigationModel(title: "Calendar", icon: "icon-info")
         let item7 = NavigationModel(title: "About", icon: "icon-info")
