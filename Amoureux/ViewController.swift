@@ -24,7 +24,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         emailTxt.delegate = self
         passwordTxt.delegate = self
+        println(PFUser.currentUser())
         
+        if (PFUser.currentUser().username == ""){
         let item1 = RMParallaxItem(image: UIImage(named: "item1")!, text: "SHARE LIGHTBOXES WITH YOUR TEAM")
         let item2 = RMParallaxItem(image: UIImage(named: "item2")!, text: "FOLLOW WORLD CLASS PHOTOGRAPHERS")
         let item3 = RMParallaxItem(image: UIImage(named: "item3")!, text: "EXPLORE OUR COLLECTION BY CATEGORY")
@@ -41,6 +43,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.view.addSubview(rmParallaxViewController.view)
         rmParallaxViewController.didMoveToParentViewController(self)
         
+        }
         // Do any additional setup after loading the view, typically from a nib.
         
         let theWidth = view.frame.size.width
@@ -55,6 +58,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidAppear(animated: Bool){
         
+        if (PFUser.currentUser().username != ""){
         let context = LAContext()
         var error: NSError?
         // check if Touch ID is available
@@ -74,7 +78,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             self.showAlertController("Touch ID not available")
             println("hahahah")
         }
-        
+        }
     }
     
     
