@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class CVAuxiliaryView: UIView {
     var shape: CVShape!
     var strokeColor: UIColor! {

@@ -20,16 +20,20 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
-	<key>LSRequiresIPhoneOS</key>
-	<true/>
-	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Your location is used to tell where you are.</string>
+	<key>CVCalendarStarterWeekday</key>
+	<integer>1</integer>
+	<key>CVCalendarViewMode</key>
+	<string>MonthView</string>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Your location is used to tell where you are.</string>
 	<key>NSLocationUsageDescription</key>
 	<string>Your location is used to tell where you are.</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

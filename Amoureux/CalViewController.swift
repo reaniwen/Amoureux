@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CalendarViewController: UIViewController {
+class CalViewController: UIViewController {
     // MARK: - Properties
     @IBOutlet weak var calendarView: CVCalendarView!
     @IBOutlet weak var menuView: CVCalendarMenuView!
@@ -32,11 +32,18 @@ class CalendarViewController: UIViewController {
         calendarView.commitCalendarViewUpdate()
         menuView.commitMenuViewUpdate()
     }
+    
+
+
+
+    @IBAction func back(sender: UIButton) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 }
 
 // MARK: - CVCalendarViewDelegate
 
-extension CalendarViewController: CVCalendarViewDelegate {
+extension CalViewController: CVCalendarViewDelegate {
     func shouldShowWeekdaysOut() -> Bool {
         return shouldShowDaysOut
     }
@@ -120,7 +127,7 @@ extension CalendarViewController: CVCalendarViewDelegate {
 
 // MARK: - CVCalendarViewAppearanceDelegate
 
-extension CalendarViewController: CVCalendarViewAppearanceDelegate {
+extension CalViewController: CVCalendarViewAppearanceDelegate {
     func dayLabelPresentWeekdayInitallyBold() -> Bool {
         return false
     }
@@ -132,7 +139,7 @@ extension CalendarViewController: CVCalendarViewAppearanceDelegate {
 
 // MARK: - IB Actions
 
-extension CalendarViewController {
+extension CalViewController {
     @IBAction func switchChanged(sender: UISwitch) {
         if sender.on {
             calendarView.changeDaysOutShowingState(false)
@@ -150,7 +157,7 @@ extension CalendarViewController {
 
 // MARK: - Convenience API Demo
 
-extension CalendarViewController {
+extension CalViewController {
     func toggleMonthViewWithMonthOffset(offset: Int) {
         let calendar = NSCalendar.currentCalendar()
         let calendarManager = CVCalendarManager.sharedManager
