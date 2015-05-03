@@ -32,9 +32,9 @@ class mainVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         
         let tweetBtn = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Compose, target: self, action: Selector("tweetBtn_click"))
         
-        let searchBtn = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Search, target: self, action: Selector("searchBtn_click"))
+//        let searchBtn = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Search, target: self, action: Selector("searchBtn_click"))
         
-        var buttonArray = NSArray(objects: tweetBtn, searchBtn)
+        var buttonArray = NSArray(objects: tweetBtn)//, searchBtn)
         self.navigationItem.rightBarButtonItems = buttonArray
         
         refresher = UIRefreshControl()
@@ -195,12 +195,12 @@ class mainVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         
     }
     
-    func searchBtn_click() {
-        
-        println("search pressed")
-        self.performSegueWithIdentifier("gotoUsersVCFromMainVC", sender: self)
-        
-    }
+//    func searchBtn_click() {
+//        
+//        println("search pressed")
+//        self.performSegueWithIdentifier("gotoUsersVCFromMainVC", sender: self)
+//        
+//    }
     
     @IBAction func logoutBtn(sender: AnyObject) {
         

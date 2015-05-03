@@ -58,7 +58,7 @@
                                     <action selector="login:" destination="qsy-uf-DGF" eventType="touchUpInside" id="itB-n9-Y91"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whisper.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="SoR-0q-e8M">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SoR-0q-e8M">
                                 <rect key="frame" x="0.0" y="64" width="320" height="447"/>
                             </imageView>
                         </subviews>
@@ -1490,7 +1490,6 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="resultsTable" destination="Sc7-Da-8bw" id="BX4-Kg-36P"/>
-                        <segue destination="UAp-Y4-fb8" kind="push" identifier="gotoUsersVCFromMainVC" id="qKO-cP-aDh"/>
                         <segue destination="y91-iJ-v0I" kind="modal" identifier="gotoTweetVCFromMainVC" id="q1T-ag-q9h"/>
                     </connections>
                 </viewController>
@@ -2998,7 +2997,6 @@
         <image name="title" width="307" height="67"/>
         <image name="toleft" width="26" height="23"/>
         <image name="twitter-1" width="30" height="23"/>
-        <image name="whisper.jpg" width="600" height="800"/>
         <image name="whiteleft" width="25" height="25"/>
         <image name="zoey" width="854" height="1280"/>
     </resources>
