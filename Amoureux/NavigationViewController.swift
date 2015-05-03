@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Foundation
 import UIKit
 import CoreLocation
 import AFNetworking
@@ -19,6 +18,9 @@ class NavigationViewController : UIViewController, UITableViewDelegate, UITableV
     @IBOutlet weak var location1: UILabel!
     @IBOutlet weak var temperature1: UILabel!
     @IBOutlet weak var icon1: UIImageView!
+    @IBOutlet weak var location2: UILabel!
+    @IBOutlet weak var temperature2: UILabel!
+    @IBOutlet weak var icon2: UIImageView!
     
     @IBOutlet var bgImageView : UIImageView!
     @IBOutlet var tview: UITableView!
@@ -33,17 +35,71 @@ class NavigationViewController : UIViewController, UITableViewDelegate, UITableV
     var items : [NavigationModel]!
     var snapshot : UIView = UIView()
     var transitionOperator = TransitionOperator()
+    var flongitude = ""
+    var flatitude = ""
+    var fuser = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         //add by Xiao
+        //        var query = PFQuery(className:"follow")
+        //        query.whereKey("user", equalTo:"\(PFUser.currentUser().username)")
+        //
+        let predicate = NSPredicate(format:"user = '\(PFUser.currentUser().username)' and userToFollow != '\(PFUser.currentUser().username)' ")
+        var query = PFQuery(className:"follow", predicate:predicate)
+        
+        query.findObjectsInBackgroundWithBlock {
+            (objects: [AnyObject]?, error: NSError?) -> Void in
+            
+            if error == nil {
+                // The find succeeded.
+                //println("Successfully retrieved \(objects!.count) scores.")
+                // Do something with the found objects
+                if let objects = objects as? [PFObject] {
+                    for object in objects {
+                        self.fuser = object.objectForKey("userToFollow") as String
+                        //println(self.fuser)
+                    }
+                }
+            } else {
+                // Log details of the failure
+                println("Error: \(error!) \(error!.userInfo!)")
+            }
+        }
+        
+        let predicate2 = NSPredicate(format:"username = 'hg@qq.com'")
+        var query2 = PFQuery(className:"_User", predicate:predicate2)
+        
+        query2.findObjectsInBackgroundWithBlock {
+            (objects2: [AnyObject]?, error: NSError?) -> Void in
+            
+            if error == nil {
+                // The find succeeded.
+                println("Successfully retrieved \(objects2!.count) scores.")
+                // Do something with the found objects
+                if let objects2 = objects2 as? [PFObject] {
+                    for object2 in objects2 {
+                        self.flatitude = object2.objectForKey("latitude") as String
+                        self.flongitude = object2.objectForKey("longitude") as String
+                        
+                    }
+                }
+            } else {
+                // Log details of the failure
+                println("Error: \(error!) \(error!.userInfo!)")
+            }
+        }
+        
+        
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         if ( ios8() ) {
             locationManager.requestAlwaysAuthorization()
         }
         locationManager.startUpdatingLocation()
+        
         
         tview.delegate = self
         tview.dataSource = self
@@ -126,16 +182,15 @@ class NavigationViewController : UIViewController, UITableViewDelegate, UITableV
         let manager = AFHTTPRequestOperationManager()
         
         let url = "http://api.openweathermap.org/data/2.5/forecast"
-        println(url)
         
         let params = ["lat":latitude, "lon":longitude]
-        println(params)
+        
+        
         
         manager.GET(url,
             parameters: params,
             success: { (operation: AFHTTPRequestOperation!,
                 responseObject: AnyObject!) in
-                println("JSON: " + responseObject.description!)
                 
                 self.updateUISuccess(responseObject as NSDictionary!)
             },
@@ -306,6 +361,192 @@ class NavigationViewController : UIViewController, UITableViewDelegate, UITableV
         }
     }
     
+    
+    //////////////////////////////////---------------------------
+    
+    func updateWeatherInfo2(latitude: String, longitude: String) {
+        let manager = AFHTTPRequestOperationManager()
+        
+        let url = "http://api.openweathermap.org/data/2.5/forecast"
+        
+        let params = ["lat":latitude, "lon":longitude]
+        
+        
+        
+        manager.GET(url,
+            parameters: params,
+            success: { (operation: AFHTTPRequestOperation!,
+                responseObject: AnyObject!) in
+                
+                self.updateUISuccess2(responseObject as NSDictionary!)
+            },
+            failure: { (operation: AFHTTPRequestOperation!,
+                error: NSError!) in
+                println("Error: " + error.localizedDescription)
+                
+        })
+    }
+    
+    func updateUISuccess2(jsonResult: NSDictionary) {
+        
+        if let tempResult = ((jsonResult["list"]? as NSArray)[0]["main"] as NSDictionary)["temp"] as? Double {
+            println("TempResult:", tempResult)
+            // If we can get the temperature from JSON correctly, we assume the rest of JSON is correct.
+            var temperature: Double
+            var cntry: String
+            cntry = ""
+            if let city = (jsonResult["city"]? as? NSDictionary) {
+                if let country = (city["country"] as? String) {
+                    cntry = country
+                    if (country == "US") {
+                        // Convert temperature to Fahrenheit if user is within the US
+                        temperature = round(((tempResult - 273.15) * 1.8) + 32)
+                    }
+                    else {
+                        // Otherwise, convert temperature to Celsius
+                        temperature = round(tempResult - 273.15)
+                    }
+                    
+                    // FIXED: Is it a bug of Xcode 6? can not set the font size in IB.
+                    //self.temperature.font = UIFont.boldSystemFontOfSize(60)
+                    self.temperature2.text = "\(temperature)°"
+                }
+                
+                if let name = (city["name"] as? String) {
+                    self.location2.font = UIFont.boldSystemFontOfSize(15)
+                    self.location2.text = name
+                }
+            }
+            
+            
+            if let weatherArray = (jsonResult["list"]? as? NSArray) {
+                for index in 0...4 {
+                    println(index)
+                    if let perTime = (weatherArray[index] as? NSDictionary) {
+                        if let main = (perTime["main"]? as? NSDictionary) {
+                            var temp = (main["temp"] as Double)
+                            if (cntry == "US") {
+                                // Convert temperature to Fahrenheit if user is within the US
+                                temperature = round(((temp - 273.15) * 1.8) + 32)
+                            }
+                            else {
+                                // Otherwise, convert temperature to Celsius
+                                temperature = round(temp - 273.15)
+                            }
+                            
+                            // FIXED: Is it a bug of Xcode 6? can not set the font size in IB.
+                            //self.temperature.font = UIFont.boldSystemFontOfSize(60)
+                        }
+                        var dateFormatter = NSDateFormatter()
+                        dateFormatter.dateFormat = "HH:mm"
+                        if let date = (perTime["dt"]? as? Double) {
+                            let thisDate = NSDate(timeIntervalSince1970: date)
+                            let forecastTime = dateFormatter.stringFromDate(thisDate)
+                            
+                        }
+                        if let weather = (perTime["weather"]? as? NSArray) {
+                            var condition = (weather[0] as NSDictionary)["id"] as Int
+                            var icon = (weather[0] as NSDictionary)["icon"] as String
+                            var nightTime = false
+                            if icon.rangeOfString("n") != nil{
+                                nightTime = true
+                            }
+                            self.updateWeatherIcon2(condition, nightTime: nightTime, index: index)
+                            if (index==4) {
+                                return
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    
+    func updatePictures2(index: Int, name: String) {
+        if (index==0) {
+            self.icon2.image = UIImage(named: name)
+        }
+    }
+    
+    func updateWeatherIcon2(condition: Int, nightTime: Bool, index: Int) {
+        // Thunderstorm
+        
+        var images = [self.icon2.image]
+        
+        if (condition < 300) {
+            if nightTime {
+                self.updatePictures2(index, name: "tstorm1_night")
+            } else {
+                self.updatePictures2(index, name: "tstorm1")
+            }
+        }
+            // Drizzle
+        else if (condition < 500) {
+            self.updatePictures2(index, name: "light_rain")
+            
+        }
+            // Rain / Freezing rain / Shower rain
+        else if (condition < 600) {
+            self.updatePictures2(index, name: "shower3")
+        }
+            // Snow
+        else if (condition < 700) {
+            self.updatePictures2(index, name: "snow4")
+        }
+            // Fog / Mist / Haze / etc.
+        else if (condition < 771) {
+            if nightTime {
+                self.updatePictures2(index, name: "fog_night")
+            } else {
+                self.updatePictures2(index, name: "fog")
+            }
+        }
+            // Tornado / Squalls
+        else if (condition < 800) {
+            self.updatePictures2(index, name: "tstorm3")
+        }
+            // Sky is clear
+        else if (condition == 800) {
+            if (nightTime){
+                self.updatePictures2(index, name: "sunny_night")
+            }
+            else {
+                self.updatePictures2(index, name: "sunny")
+            }
+        }
+            // few / scattered / broken clouds
+        else if (condition < 804) {
+            if (nightTime){
+                self.updatePictures2(index, name: "cloudy2_night")
+            }
+            else{
+                self.updatePictures2(index, name: "cloudy2")
+            }
+        }
+            // overcast clouds
+        else if (condition == 804) {
+            self.updatePictures2(index, name: "overcast")
+        }
+            // Extreme
+        else if ((condition >= 900 && condition < 903) || (condition > 904 && condition < 1000)) {
+            self.updatePictures2(index, name: "tstorm3")
+        }
+            // Cold
+        else if (condition == 903) {
+            self.updatePictures2(index, name: "snow5")
+        }
+            // Hot
+        else if (condition == 904) {
+            self.updatePictures2(index, name: "sunny")
+        }
+            // Weather condition is not available
+        else {
+            self.updatePictures2(index, name: "dunno")
+        }
+    }
+    
     /*
     iOS 8 Utility
     */
@@ -326,7 +567,25 @@ class NavigationViewController : UIViewController, UITableViewDelegate, UITableV
             self.locationManager.stopUpdatingLocation()
             println(location.coordinate)
             updateWeatherInfo(location.coordinate.latitude, longitude: location.coordinate.longitude)
+            
+            var query = PFQuery(className:"_User")
+            query.getObjectInBackgroundWithId("\(PFUser.currentUser().objectId)") {
+                (asd: PFObject?, error: NSError?) -> Void in
+                if error != nil {
+                    println(error)
+                } else if let asd = asd {
+                    asd["longitude"] = "\(location.coordinate.latitude)"
+                    asd["latitude"] = "\(location.coordinate.longitude)"
+                    asd.save()
+                }
+            }
+            
         }
+        
+        if(flongitude != "" && flatitude != ""){
+            updateWeatherInfo2(flatitude, longitude: flongitude)
+        }
+        
     }
     
     func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
