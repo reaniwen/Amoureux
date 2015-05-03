@@ -8,7 +8,9 @@
 
 import UIKit
 
-class SettingViewController: FormViewController, FormViewControllerDelegate {
+class SettingViewController: FormViewController, FormViewControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+    
+    var imgView: UIImage?
     
     struct Static {
         static let nameTag = "name"
@@ -43,9 +45,10 @@ class SettingViewController: FormViewController, FormViewControllerDelegate {
     
     func submit(_: UIBarButtonItem!) {
         
-        let message = self.form.formValues().description
+        //let message = self.form.formValues().description
         
-        let alert: UIAlertView = UIAlertView(title: "Form output", message: message, delegate: nil, cancelButtonTitle: "OK")
+        let message = "Submit Succeed"
+        let alert: UIAlertView = UIAlertView(title: "", message: message, delegate: nil, cancelButtonTitle: "OK")
         
         alert.show()
     }
@@ -60,11 +63,17 @@ class SettingViewController: FormViewController, FormViewControllerDelegate {
         
         let form = FormDescriptor()
         
-        form.title = "Example form"
+        form.title = "Settings"
+        
+        let section0 = FormSectionDescriptor()
+        var row: FormRowDescriptor! = FormRowDescriptor(tag: Static.button, rowType: .Button, title: "Edit Profile")
+        section0.addRow(row)
+        row = FormRowDescriptor(tag: Static.button, rowType: .Button, title: "Upload")
+        section0.addRow(row)
         
         let section1 = FormSectionDescriptor()
         
-        var row: FormRowDescriptor! = FormRowDescriptor(tag: Static.nameTag, rowType: .Email, title: "Email")
+        row = FormRowDescriptor(tag: Static.nameTag, rowType: .Email, title: "Email")
         section1.addRow(row)
         
         row = FormRowDescriptor(tag: Static.passwordTag, rowType: .Password, title: "Password")
@@ -156,10 +165,10 @@ class SettingViewController: FormViewController, FormViewControllerDelegate {
         
         let section6 = FormSectionDescriptor()
         
-        row = FormRowDescriptor(tag: Static.button, rowType: .Button, title: "Dismiss")
+        row = FormRowDescriptor(tag: Static.button, rowType: .Button, title: "Log Out")
         section6.addRow(row)
         
-        form.sections = [section1, section2, section3, section4, section5, section6]
+        form.sections = [section0, section1, section2, section3, section4, section5, section6]
         
         self.form = form
     }
@@ -167,9 +176,53 @@ class SettingViewController: FormViewController, FormViewControllerDelegate {
     /// MARK: FormViewControllerDelegate
     
     func formViewController(controller: FormViewController, didSelectRowDescriptor rowDescriptor: FormRowDescriptor) {
-        if rowDescriptor.tag == Static.button {
+        if rowDescriptor.title == "Log Out" {
             self.view.endEditing(true)
             self.performSegueWithIdentifier("logout", sender: self)
+        }else if rowDescriptor.title == "Edit Profile" {
+            self.view.endEditing(true)
+            editProfile()
+        }else if rowDescriptor.title == "Upload" {
+            self.view.endEditing(true)
+            updateProfile()
+        }
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+        
+        let theInfo:NSDictionary = info as NSDictionary
+        
+        let image = theInfo.objectForKey(UIImagePickerControllerEditedImage) as UIImage
+        
+        imgView = image
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
+    
+    func editProfile() {
+        var image = UIImagePickerController()
+        image.delegate = self
+        image.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+        image.allowsEditing = true
+        
+        self.presentViewController(image, animated: true, completion: nil)
+    }
+    
+    func updateProfile() {
+        
+        let imageData = UIImagePNGRepresentation(self.imgView)
+        let imageFile = PFFile(name: "profilePhoto.png", data: imageData)
+        
+        var query = PFQuery(className:"_User")
+        query.getObjectInBackgroundWithId("\(PFUser.currentUser().objectId)") {
+            (profile: PFObject?, error: NSError?) -> Void in
+            if error != nil {
+                println(error)
+            } else if let profile = profile {
+                profile["photo"] = imageFile
+                profile.save()
+            }
         }
     }
 }

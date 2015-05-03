@@ -1334,13 +1334,6 @@
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ph.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="TCh-cz-X0L">
-                                <rect key="frame" x="56" y="247" width="80" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="bTP-gB-kjh"/>
-                                    <constraint firstAttribute="width" constant="60" id="jKt-Ad-RBy"/>
-                                </constraints>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="b79-Kc-ZzV">
                                 <rect key="frame" x="96" y="50" width="183" height="40"/>
                                 <constraints>
@@ -1358,6 +1351,13 @@
                                     <action selector="addPhotoBtn:" destination="YrR-vx-MZc" eventType="touchUpInside" id="ln3-cY-Jdt"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ph.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="TCh-cz-X0L">
+                                <rect key="frame" x="56" y="247" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="bTP-gB-kjh"/>
+                                    <constraint firstAttribute="width" constant="60" id="jKt-Ad-RBy"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -2928,7 +2928,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable showing days out" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqY-Xn-Fhx">
-                                <rect key="frame" x="16" y="556" width="221" height="24"/>
+                                <rect key="frame" x="16" y="556" width="220.5" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -3033,8 +3033,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="jl1-xg-lW6"/>
-        <segue reference="lyl-qa-jCI"/>
-        <segue reference="rjb-FM-u0M"/>
+        <segue reference="SOp-RU-QFD"/>
         <segue reference="ZBS-nv-DDX"/>
+        <segue reference="rjb-FM-u0M"/>
     </inferredMetricsTieBreakers>
 </document>
