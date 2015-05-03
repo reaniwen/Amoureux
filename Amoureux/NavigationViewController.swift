@@ -84,6 +84,8 @@ class NavigationViewController : UIViewController, UITableViewDelegate, UITableV
                         self.flatitude = object2.objectForKey("latitude") as String
                         self.flongitude = object2.objectForKey("longitude") as String
                         
+                        self.updateWeatherInfo2(self.flatitude, longitude: self.flongitude)
+                        
                     }
                 }
             } else {
@@ -185,7 +187,9 @@ class NavigationViewController : UIViewController, UITableViewDelegate, UITableV
         
         let params = ["lat":latitude, "lon":longitude]
         
-        
+        println("|||||||||||||||||||||||||")
+        println("\(params)")
+        println("|||||||||||||||||||||||||")
         
         manager.GET(url,
             parameters: params,
@@ -368,16 +372,22 @@ class NavigationViewController : UIViewController, UITableViewDelegate, UITableV
         let manager = AFHTTPRequestOperationManager()
         
         let url = "http://api.openweathermap.org/data/2.5/forecast"
-        
+
         let params = ["lat":latitude, "lon":longitude]
         
+        println("-----------------------------")
+        println("\(latitude)")
+        println("\(longitude)")
+        println("\(params)")
+        println("-----------------------------")
         
+        println("updateWeatherInfo2")
         
         manager.GET(url,
             parameters: params,
             success: { (operation: AFHTTPRequestOperation!,
                 responseObject: AnyObject!) in
-                
+                println("JSON: " + responseObject.description!)
                 self.updateUISuccess2(responseObject as NSDictionary!)
             },
             failure: { (operation: AFHTTPRequestOperation!,
@@ -389,6 +399,7 @@ class NavigationViewController : UIViewController, UITableViewDelegate, UITableV
     
     func updateUISuccess2(jsonResult: NSDictionary) {
         
+        println("updateUISuccess2")
         if let tempResult = ((jsonResult["list"]? as NSArray)[0]["main"] as NSDictionary)["temp"] as? Double {
             println("TempResult:", tempResult)
             // If we can get the temperature from JSON correctly, we assume the rest of JSON is correct.
@@ -415,7 +426,9 @@ class NavigationViewController : UIViewController, UITableViewDelegate, UITableV
                 if let name = (city["name"] as? String) {
                     self.location2.font = UIFont.boldSystemFontOfSize(15)
                     self.location2.text = name
+                    println("\(name)")
                 }
+                
             }
             
             
@@ -567,24 +580,20 @@ class NavigationViewController : UIViewController, UITableViewDelegate, UITableV
             self.locationManager.stopUpdatingLocation()
             println(location.coordinate)
             updateWeatherInfo(location.coordinate.latitude, longitude: location.coordinate.longitude)
-            
             var query = PFQuery(className:"_User")
             query.getObjectInBackgroundWithId("\(PFUser.currentUser().objectId)") {
                 (asd: PFObject?, error: NSError?) -> Void in
                 if error != nil {
                     println(error)
                 } else if let asd = asd {
-                    asd["longitude"] = "\(location.coordinate.latitude)"
-                    asd["latitude"] = "\(location.coordinate.longitude)"
+                    asd["longitude"] = "\(location.coordinate.longitude)"
+                    asd["latitude"] = "\(location.coordinate.latitude)"
                     asd.save()
                 }
             }
             
         }
         
-        if(flongitude != "" && flatitude != ""){
-            updateWeatherInfo2(flatitude, longitude: flongitude)
-        }
         
     }
     
