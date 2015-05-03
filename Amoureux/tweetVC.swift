@@ -17,7 +17,6 @@ class tweetVC: UIViewController, UITextViewDelegate, UINavigationControllerDeleg
     @IBOutlet weak var tweetBtn: UIButton!
     @IBOutlet weak var addPhotoBtn: UIButton!
     @IBOutlet weak var tweetImg: UIImageView!
-    
     @IBOutlet weak var addimage: UIButton!
     var hasImage = false
     var newMedia: Bool?
@@ -74,13 +73,10 @@ class tweetVC: UIViewController, UITextViewDelegate, UINavigationControllerDeleg
         var len = messageTxt.text.utf16Count
         
         if len > 90 {
-            
             theTweet = theTweet.substringToIndex(advance(theTweet.startIndex, 90))
-            
         }
         
         var tweetObj = PFObject(className: "tweets")
-        
         tweetObj["userName"] = PFUser.currentUser().username
         tweetObj["profileName"] = PFUser.currentUser().valueForKey("profileName") as String
         tweetObj["photo"] = PFUser.currentUser().valueForKey("photo") as PFFile
@@ -93,19 +89,20 @@ class tweetVC: UIViewController, UITextViewDelegate, UINavigationControllerDeleg
             let imageData = UIImagePNGRepresentation(self.tweetImg.image)
             let imageFile = PFFile(name: "tweetPhoto.png", data: imageData)
             tweetObj["tweetImage"] = imageFile
-            
         } else {
-            
             tweetObj["hasImage"] = "no"
-            
         }
-        
-        
-        tweetObj.save()
-        
+        tweetObj.saveInBackgroundWithBlock {
+            (success: Bool, error: NSError?) -> Void in
+            if (success) {
+                println("add success")
+            } else {
+                // There was a problem, check error.description
+                println("add failed")
+            }
+        }
         println("tweet!")
         self.dismissViewControllerAnimated(true, completion: nil)
-        
     }
     
 //    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
@@ -133,12 +130,12 @@ class tweetVC: UIViewController, UITextViewDelegate, UINavigationControllerDeleg
         
         self.dismissViewControllerAnimated(true, completion: nil)
         
-        if mediaType.isEqualToString(kUTTypeImage as NSString) {
+        //if mediaType.isEqualToString(kUTTypeImage as NSString) {
             
             cimage = info[UIImagePickerControllerOriginalImage] as UIImage!
             //cimage = theInfo.objectForKey(UIImagePickerControllerEditedImage) as UIImage!
             hasImage = true
-            tweetImg.image = self.cimage
+            tweetImg.image = self.cimage as UIImage!
             
             if (newMedia == true) {
                 UIImageWriteToSavedPhotosAlbum(cimage, self,
@@ -147,7 +144,7 @@ class tweetVC: UIViewController, UITextViewDelegate, UINavigationControllerDeleg
                 // Code to support video here
             }
             
-        }
+        //}
     }
     
     func image(image: UIImage, didFinishSavingWithError error: NSErrorPointer, contextInfo:UnsafePointer<Void>) {
