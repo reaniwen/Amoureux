@@ -18,7 +18,7 @@ class GamesViewController: UITableViewController, UISearchBarDelegate, UISearchD
         //Sample Data for candyArray
         self.candies = [Candy(category:"MultiGame", name:"Tic Tac Toe"),
             Candy(category:"SingleGame", name:"Flappy Bird"),
-            Candy(category:"TripleGame", name:"Find Hotel")
+            Candy(category:"TripleGame", name:"Find a place")
         ]
         
         // Reload the table
@@ -88,7 +88,7 @@ class GamesViewController: UITableViewController, UISearchBarDelegate, UISearchD
             self.performSegueWithIdentifier("flappybird", sender: tableView)
         }
         else if(indexPath.row == 2){
-            self.performSegueWithIdentifier("Hotel", sender: tableView)
+            self.performSegueWithIdentifier("hotel", sender: tableView)
         }
     }
     

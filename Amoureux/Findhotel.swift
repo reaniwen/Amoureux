@@ -8,12 +8,13 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
-class Findhotel: UIViewController {
+class Findhotel: UIViewController, CLLocationManagerDelegate {
     @IBOutlet var mapView: MKMapView!
     @IBOutlet var segmentedControl: UISegmentedControl!
-    
-    let initialLocation = CLLocation(latitude: 52.3740300, longitude: 4.8896900)
+    let locationManager:CLLocationManager = CLLocationManager()
+    var initialLocation = CLLocation(latitude: 52.3740300, longitude: 4.8896900)
     let searchRadius: CLLocationDistance = 2000
     
     @IBAction func searchOnValueChanged(sender: AnyObject) {
@@ -25,10 +26,16 @@ class Findhotel: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let coordinateRegion = MKCoordinateRegionMakeWithDistance(initialLocation.coordinate, searchRadius * 2.0, searchRadius * 2.0)
-        mapView.setRegion(coordinateRegion, animated: true)
+
         
-        searchInMap()
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        if ( ios8() ) {
+            locationManager.requestAlwaysAuthorization()
+        }
+        locationManager.startUpdatingLocation()
+        
+
     }
     
     func searchInMap() {
@@ -61,6 +68,42 @@ class Findhotel: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    /*
+    iOS 8 Utility
+    */
+    func ios8() -> Bool {
+        
+        if ( NSFoundationVersionNumber <= NSFoundationVersionNumber_iOS_7_1 ) {
+            return false
+        } else {
+            return true
+        }
+    }
+    
+    //CLLocationManagerDelegate
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        var location:CLLocation = locations[locations.count-1] as CLLocation
+        
+        if (location.horizontalAccuracy > 0) {
+            self.locationManager.stopUpdatingLocation()
+            println(location.coordinate)
+            initialLocation = CLLocation(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+            let coordinateRegion = MKCoordinateRegionMakeWithDistance(initialLocation.coordinate, searchRadius * 2.0, searchRadius * 2.0)
+            mapView.setRegion(coordinateRegion, animated: true)
+            searchInMap()
+        }
+        
+        
+    }
+    
+    func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
+        println(error)
+    }
+    
+    @IBAction func BackMenu(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+        //Home.popViewControllerAnimated(true)
+    }
     
 }
 

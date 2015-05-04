@@ -1948,7 +1948,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1zd-zO-xRW" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3193.125" y="2517.2535211267605"/>
+            <point key="canvasLocation" x="4367" y="2517"/>
         </scene>
         <!--Game-->
         <scene sceneID="P6N-WD-eiR">
@@ -1990,7 +1990,7 @@
                         <outlet property="searchDisplayController" destination="L8g-xr-t0n" id="fxK-rc-xmM"/>
                         <segue destination="3e2-cG-tyL" kind="show" identifier="candyDetail" id="QVr-VI-LaX"/>
                         <segue destination="dfg-J7-Mei" kind="show" identifier="flappybird" id="F1f-cq-ysr"/>
-                        <segue destination="PI1-CU-1Fr" kind="showDetail" identifier="hotel" id="eMU-Dy-6t1"/>
+                        <segue destination="IUb-gt-7YI" kind="showDetail" identifier="hotel" id="FBF-RM-Eb3"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xDC-4V-AHw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2025,7 +2025,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QO5-NG-oiW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1884.375" y="2651.4084507042253"/>
+            <point key="canvasLocation" x="1748" y="2535"/>
         </scene>
         <!--Single Game View Controller-->
         <scene sceneID="fcH-Hn-dsv">
@@ -2044,7 +2044,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SN7-si-eSy" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3995.625" y="2517.2535211267605"/>
+            <point key="canvasLocation" x="5169" y="2517"/>
         </scene>
         <!--Flying Swift-->
         <scene sceneID="wvD-J7-yhX">
@@ -3019,7 +3019,7 @@
             </objects>
             <point key="canvasLocation" x="-355" y="-511.99999999999994"/>
         </scene>
-        <!--Findhotel-->
+        <!--Find a place-->
         <scene sceneID="Kir-bR-8wG">
             <objects>
                 <viewController id="PI1-CU-1Fr" customClass="Findhotel" customModule="Amoureux" customModuleProvider="target" sceneMemberID="viewController">
@@ -3031,11 +3031,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eCj-qP-jGq">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eCj-qP-jGq">
                                 <rect key="frame" x="0.0" y="28" width="375" height="567"/>
                             </mapView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jY1-jb-JYu">
-                                <rect key="frame" x="121" y="619" width="133" height="29"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jY1-jb-JYu">
+                                <rect key="frame" x="120" y="619" width="133" height="29"/>
                                 <segments>
                                     <segment title="Hotel"/>
                                     <segment title="Museum"/>
@@ -3055,6 +3055,13 @@
                             <constraint firstAttribute="trailing" secondItem="eCj-qP-jGq" secondAttribute="trailing" id="v9k-ds-v4R"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Find a place" id="H3i-5i-3NS">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="U6y-O0-mlV">
+                            <connections>
+                                <action selector="BackMenu:" destination="PI1-CU-1Fr" id="9Jb-Y6-56g"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="eCj-qP-jGq" id="Itw-0Q-x1e"/>
                         <outlet property="segmentedControl" destination="jY1-jb-JYu" id="BI1-qN-go7"/>
@@ -3062,7 +3069,42 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oZW-5J-Z9j" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2947.5" y="2186.5"/>
+            <point key="canvasLocation" x="3878.5" y="2094.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oqo-6d-QVF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IUb-gt-7YI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mwq-ct-g1T">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PI1-CU-1Fr" kind="relationship" relationship="rootViewController" id="6Co-F1-OYT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FGJ-XE-c3R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3291.5" y="2094.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="CNS-XZ-VbY">
+            <objects>
+                <viewController id="cGZ-bE-ygD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tys-vH-pfg"/>
+                        <viewControllerLayoutGuide type="bottom" id="vrb-fh-4wL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GbG-lB-Q53">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G3D-zx-tIw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <resources>
