@@ -1990,6 +1990,7 @@
                         <outlet property="searchDisplayController" destination="L8g-xr-t0n" id="fxK-rc-xmM"/>
                         <segue destination="3e2-cG-tyL" kind="show" identifier="candyDetail" id="QVr-VI-LaX"/>
                         <segue destination="dfg-J7-Mei" kind="show" identifier="flappybird" id="F1f-cq-ysr"/>
+                        <segue destination="PI1-CU-1Fr" kind="showDetail" identifier="hotel" id="eMU-Dy-6t1"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xDC-4V-AHw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3017,6 +3018,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z3i-w3-nqB" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-355" y="-511.99999999999994"/>
+        </scene>
+        <!--Findhotel-->
+        <scene sceneID="Kir-bR-8wG">
+            <objects>
+                <viewController id="PI1-CU-1Fr" customClass="Findhotel" customModule="Amoureux" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Oo7-42-xb0"/>
+                        <viewControllerLayoutGuide type="bottom" id="qHh-DR-gdo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KB0-i1-yXv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eCj-qP-jGq">
+                                <rect key="frame" x="0.0" y="28" width="375" height="567"/>
+                            </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jY1-jb-JYu">
+                                <rect key="frame" x="121" y="619" width="133" height="29"/>
+                                <segments>
+                                    <segment title="Hotel"/>
+                                    <segment title="Museum"/>
+                                </segments>
+                                <connections>
+                                    <action selector="searchOnValueChanged:" destination="PI1-CU-1Fr" eventType="valueChanged" id="qDl-zx-Lsy"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eCj-qP-jGq" firstAttribute="centerX" secondItem="jY1-jb-JYu" secondAttribute="centerX" id="Avf-mA-6HW"/>
+                            <constraint firstItem="eCj-qP-jGq" firstAttribute="top" secondItem="Oo7-42-xb0" secondAttribute="bottom" constant="8" symbolic="YES" id="J1d-ib-etd"/>
+                            <constraint firstItem="jY1-jb-JYu" firstAttribute="top" secondItem="eCj-qP-jGq" secondAttribute="bottom" constant="24" id="aGC-gd-LNl"/>
+                            <constraint firstItem="eCj-qP-jGq" firstAttribute="leading" secondItem="KB0-i1-yXv" secondAttribute="leading" id="axZ-pj-Az6"/>
+                            <constraint firstAttribute="bottom" secondItem="jY1-jb-JYu" secondAttribute="bottom" constant="20" symbolic="YES" id="sq4-cA-tDw"/>
+                            <constraint firstAttribute="trailing" secondItem="eCj-qP-jGq" secondAttribute="trailing" id="v9k-ds-v4R"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="eCj-qP-jGq" id="Itw-0Q-x1e"/>
+                        <outlet property="segmentedControl" destination="jY1-jb-JYu" id="BI1-qN-go7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oZW-5J-Z9j" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2947.5" y="2186.5"/>
         </scene>
     </scenes>
     <resources>
