@@ -1432,7 +1432,7 @@
                     <connections>
                         <outlet property="agreeBtn" destination="gLR-nb-AXN" id="9kV-r6-UAt"/>
                         <outlet property="invitationLabel" destination="BVb-WU-y6A" id="ZuQ-JY-DFP"/>
-                        <segue destination="hwg-Q6-0lN" kind="modal" id="bG9-La-uzd"/>
+                        <segue destination="hwg-Q6-0lN" kind="modal" identifier="confirmInvitationSegue" id="bG9-La-uzd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zEU-r5-Dl5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3054,9 +3054,9 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="jl1-xg-lW6"/>
+        <segue reference="bG9-La-uzd"/>
+        <segue reference="ZBS-nv-DDX"/>
         <segue reference="lyl-qa-jCI"/>
         <segue reference="rjb-FM-u0M"/>
-        <segue reference="ZBS-nv-DDX"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -26,6 +26,27 @@ class AddLoverVC: UIViewController {
     
     @IBAction func inviteAct(sender: AnyObject) {
         
+        var selfFollow = PFObject(className: "follow")
+        selfFollow["user"] = PFUser.currentUser().username
+        selfFollow["userToFollow"] = PFUser.currentUser().username
+        selfFollow.saveInBackgroundWithBlock {
+            (success: Bool, error: NSError!) -> Void in
+            if success {
+                println("Add self to the follow table")
+            }
+        }
+        
+        var Follow = PFObject(className: "follow")
+        Follow["user"] = PFUser.currentUser().username
+        Follow["userToFollow"] = emailText.text
+        Follow.saveInBackgroundWithBlock {
+            (success: Bool, error: NSError!) -> Void in
+            if success {
+                println("Add invitation to the follow table")
+            }
+        }
+        
+        self.performSegueWithIdentifier("confirmAddSegue", sender: self)
         
     }
 

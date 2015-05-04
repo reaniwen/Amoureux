@@ -141,19 +141,27 @@ class NewChatViewController: UIViewController, UITableViewDataSource, UITableVie
         retrieveMessages()
     }
     
-    // Define the query that will provide the data for the table view
-    func queryForTable() -> PFQuery! {
-        var query = PFQuery(className: "Countries")
-        query.orderByAscending("nameEnglish")
-        //        query.whereKey("currencyCode", equalTo:"EUR")
-        return query
-    }
     
     func retrieveMessages() {
+        var group:[String] = []
+        var groupQuery = PFQuery(className: "follow")
+        groupQuery.whereKey("user", equalTo: PFUser.currentUser().username)
+        
+        groupQuery.findObjectsInBackgroundWithBlock {
+            (objects: [AnyObject]!, error: NSError!) -> Void in
+            if error == nil {
+                var groups = objects as [PFObject]
+                for p in groups{
+                    group.append(p["userToFollow"]as NSString)
+                }
+            }else {
+                println("Error: \(error) \(error.userInfo!)")
+            }
+        }
         var query = PFQuery(className: "Message")
         
         //a temp solution to find if the sender is aaa or bbb
-        query.whereKey("sender", containedIn: ["aaa@aa.com","bbb@bb.com"])
+        query.whereKey("sender", containedIn: group)
         query.addAscendingOrder("time")
 //        query.addDescendingOrder("time")
         
