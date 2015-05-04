@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -12,22 +13,27 @@
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="b1C-43-dHS">
                     <rect key="frame" x="92" y="71" width="306" height="67"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="b1C-43-dHS" secondAttribute="height" multiplier="306:67" id="7QV-T1-eUi"/>
+                    </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="kFE-hD-rd0">
-                    <rect key="frame" x="113" y="189" width="240" height="212"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="kFE-hD-rd0">
+                    <rect key="frame" x="127" y="201" width="226" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="kFE-hD-rd0" secondAttribute="height" multiplier="60:53" id="dUz-qd-9nL"/>
+                    </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="centerY" secondItem="b1C-43-dHS" secondAttribute="centerY" id="2we-lR-xT8"/>
                 <constraint firstItem="b1C-43-dHS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="71" id="3mG-MI-vKf"/>
-                <constraint firstAttribute="centerX" secondItem="kFE-hD-rd0" secondAttribute="centerX" constant="7" id="5ge-nP-Wer"/>
+                <constraint firstAttribute="centerX" secondItem="kFE-hD-rd0" secondAttribute="centerX" id="5ge-nP-Wer"/>
                 <constraint firstAttribute="centerX" secondItem="b1C-43-dHS" secondAttribute="centerX" constant="-5" id="BOw-Ys-4Md"/>
-                <constraint firstItem="kFE-hD-rd0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="113" id="KaF-Gl-va7"/>
+                <constraint firstItem="kFE-hD-rd0" firstAttribute="top" secondItem="b1C-43-dHS" secondAttribute="bottom" constant="63" id="LOG-Au-npx"/>
                 <constraint firstAttribute="trailing" secondItem="b1C-43-dHS" secondAttribute="trailing" constant="82" id="Ovl-ka-U8g"/>
                 <constraint firstAttribute="centerX" secondItem="b1C-43-dHS" secondAttribute="centerX" id="SKY-Or-Xtr"/>
                 <constraint firstAttribute="trailing" secondItem="kFE-hD-rd0" secondAttribute="trailing" constant="127" id="YVj-cs-hQ2"/>
-                <constraint firstAttribute="bottom" secondItem="kFE-hD-rd0" secondAttribute="bottom" constant="79" id="d3V-6i-DdI"/>
                 <constraint firstAttribute="centerY" secondItem="b1C-43-dHS" secondAttribute="centerY" id="mln-4o-Obq"/>
                 <constraint firstAttribute="centerX" secondItem="b1C-43-dHS" secondAttribute="centerX" priority="750" id="wrG-oW-IPU"/>
                 <constraint firstItem="b1C-43-dHS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="92" id="wvO-IF-u77"/>
