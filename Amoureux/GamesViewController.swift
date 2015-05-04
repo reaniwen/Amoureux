@@ -17,7 +17,9 @@ class GamesViewController: UITableViewController, UISearchBarDelegate, UISearchD
     override func viewDidLoad() {
         //Sample Data for candyArray
         self.candies = [Candy(category:"MultiGame", name:"Tic Tac Toe"),
-            Candy(category:"SingleGame", name:"Flappy Bird")]
+            Candy(category:"SingleGame", name:"Flappy Bird"),
+            Candy(category:"TripleGame", name:"Find Hotel")
+        ]
         
         // Reload the table
         self.tableView.reloadData()
@@ -82,8 +84,11 @@ class GamesViewController: UITableViewController, UISearchBarDelegate, UISearchD
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if(indexPath.row == 0){
             self.performSegueWithIdentifier("candyDetail", sender: tableView)
-        }else {
+        }else if(indexPath.row == 1){
             self.performSegueWithIdentifier("flappybird", sender: tableView)
+        }
+        else if(indexPath.row == 2){
+            self.performSegueWithIdentifier("Hotel", sender: tableView)
         }
     }
     
@@ -100,6 +105,17 @@ class GamesViewController: UITableViewController, UISearchBarDelegate, UISearchD
                 candyDetailViewController.title = destinationTitle
             }
         }else if segue.identifier == "flappybird" {
+            let candyDetailViewController = segue.destinationViewController as UIViewController
+            if sender as UITableView == self.searchDisplayController!.searchResultsTableView {
+                let indexPath = self.searchDisplayController!.searchResultsTableView.indexPathForSelectedRow()!
+                let destinationTitle = self.filteredCandies[indexPath.row].name
+                candyDetailViewController.title = destinationTitle
+            } else {
+                let indexPath = self.tableView.indexPathForSelectedRow()!
+                let destinationTitle = self.candies[indexPath.row].name
+                candyDetailViewController.title = destinationTitle
+            }
+        }else if segue.identifier == "hotel" {
             let candyDetailViewController = segue.destinationViewController as UIViewController
             if sender as UITableView == self.searchDisplayController!.searchResultsTableView {
                 let indexPath = self.searchDisplayController!.searchResultsTableView.indexPathForSelectedRow()!
