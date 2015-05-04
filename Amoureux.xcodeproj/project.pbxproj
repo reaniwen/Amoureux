@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1766433F1AF73B8D00C6605D /* NewMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1766433E1AF73B8D00C6605D /* NewMessage.swift */; };
+		176643421AF73BB100C6605D /* MessageSentDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176643401AF73BB100C6605D /* MessageSentDateCell.swift */; };
+		176643431AF73BB100C6605D /* MessageBubbleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176643411AF73BB100C6605D /* MessageBubbleCell.swift */; };
+		176643461AF73BC200C6605D /* MessageIncoming.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 176643441AF73BC200C6605D /* MessageIncoming.aiff */; };
+		176643471AF73BC200C6605D /* MessageOutgoing.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 176643451AF73BC200C6605D /* MessageOutgoing.aiff */; };
+		1766434A1AF73BEC00C6605D /* NewChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176643491AF73BEC00C6605D /* NewChatViewController.swift */; };
 		17A1343B1AF41E5900A311C8 /* AddLoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A1343A1AF41E5900A311C8 /* AddLoverVC.swift */; };
 		17A1343D1AF41E7900A311C8 /* ConfirmLoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A1343C1AF41E7900A311C8 /* ConfirmLoverVC.swift */; };
 		4401682F1AE1D6F900BBFAFE /* OtherNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4401682E1AE1D6F900BBFAFE /* OtherNavController.swift */; };
@@ -223,6 +229,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1766433E1AF73B8D00C6605D /* NewMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessage.swift; sourceTree = "<group>"; };
+		176643401AF73BB100C6605D /* MessageSentDateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageSentDateCell.swift; sourceTree = "<group>"; };
+		176643411AF73BB100C6605D /* MessageBubbleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageBubbleCell.swift; sourceTree = "<group>"; };
+		176643441AF73BC200C6605D /* MessageIncoming.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = MessageIncoming.aiff; sourceTree = "<group>"; };
+		176643451AF73BC200C6605D /* MessageOutgoing.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = MessageOutgoing.aiff; sourceTree = "<group>"; };
+		176643491AF73BEC00C6605D /* NewChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewChatViewController.swift; sourceTree = "<group>"; };
 		17A1343A1AF41E5900A311C8 /* AddLoverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLoverVC.swift; sourceTree = "<group>"; };
 		17A1343C1AF41E7900A311C8 /* ConfirmLoverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmLoverVC.swift; sourceTree = "<group>"; };
 		4401682E1AE1D6F900BBFAFE /* OtherNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherNavController.swift; sourceTree = "<group>"; };
@@ -545,6 +557,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		176643481AF73BDD00C6605D /* NewChat */ = {
+			isa = PBXGroup;
+			children = (
+				176643401AF73BB100C6605D /* MessageSentDateCell.swift */,
+				176643411AF73BB100C6605D /* MessageBubbleCell.swift */,
+				176643441AF73BC200C6605D /* MessageIncoming.aiff */,
+				176643451AF73BC200C6605D /* MessageOutgoing.aiff */,
+				1766433E1AF73B8D00C6605D /* NewMessage.swift */,
+				176643491AF73BEC00C6605D /* NewChatViewController.swift */,
+			);
+			name = NewChat;
+			sourceTree = "<group>";
+		};
 		4430ED4D1AF5FD7700D8815F /* Main Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -821,6 +846,7 @@
 				44B0741E1AF0518800C5DE06 /* Source */,
 				E0BCEEAA1AE2F8DF00562290 /* font */,
 				E00352351AE2D7FC009788FA /* Spring */,
+				176643481AF73BDD00C6605D /* NewChat */,
 				440168381AE1DDD500BBFAFE /* Main.storyboard */,
 				449869731AD1D877001603F8 /* ViewController.swift */,
 				4493D5511AE4A462002136CB /* signUpVC.swift */,
@@ -1287,6 +1313,7 @@
 				5FFF77E0199C1F6C00AE0269 /* bubble_stroked_tailless@2x.png in Resources */,
 				5FFF77E6199C1F6C00AE0269 /* typing@2x.png in Resources */,
 				449869901AD1D99C001603F8 /* globe.png in Resources */,
+				176643471AF73BC200C6605D /* MessageOutgoing.aiff in Resources */,
 				44B3DC141AF3667000CE26A5 /* Box1@2x.png in Resources */,
 				449869921AD1D99C001603F8 /* profile.png in Resources */,
 				5FFF77E2199C1F6C00AE0269 /* bubble_tailless@2x.png in Resources */,
@@ -1294,6 +1321,7 @@
 				4401683A1AE1DDD500BBFAFE /* Main.storyboard in Resources */,
 				4498698E1AD1D99C001603F8 /* gear.png in Resources */,
 				5FFF77E7199C1F6C00AE0269 /* message_received.aiff in Resources */,
+				176643461AF73BC200C6605D /* MessageIncoming.aiff in Resources */,
 				449869951AD1D99C001603F8 /* star@2x.png in Resources */,
 				5FFF77DC199C1F6C00AE0269 /* bubble_min_tailless@2x.png in Resources */,
 				5FFF77E1199C1F6C00AE0269 /* bubble_tailless.png in Resources */,
@@ -1378,6 +1406,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44B3DCF81AF4526D00CE26A5 /* CVCalendarDayView.swift in Sources */,
+				176643421AF73BB100C6605D /* MessageSentDateCell.swift in Sources */,
 				44B3DD0C1AF4526D00CE26A5 /* CVSet.swift in Sources */,
 				44B3DD081AF4526D00CE26A5 /* CVCalendarWeekView.swift in Sources */,
 				E010B5931AE356C2005EA4BE /* Phototest.swift in Sources */,
@@ -1453,6 +1482,7 @@
 				E06BE7871AF0497900919D8D /* Detail.swift in Sources */,
 				5FF98CB219A51B8E0041E81A /* Message.swift in Sources */,
 				44B3DBDD1AF351DB00CE26A5 /* SingleGameViewController.swift in Sources */,
+				1766434A1AF73BEC00C6605D /* NewChatViewController.swift in Sources */,
 				63891100199E968100B8998F /* ChatLoginViewController.swift in Sources */,
 				5FFF77EB199C1F6C00AE0269 /* UIColor+JSQMessages.m in Sources */,
 				44B3DD0B1AF4526D00CE26A5 /* CVSelectionType.swift in Sources */,
@@ -1491,6 +1521,7 @@
 				44B3DCFA1AF4526D00CE26A5 /* CVCalendarManager.swift in Sources */,
 				44B3DD071AF4526D00CE26A5 /* CVCalendarWeekContentView.swift in Sources */,
 				44B3DC0E1AF3667000CE26A5 /* BlogViewController.swift in Sources */,
+				1766433F1AF73B8D00C6605D /* NewMessage.swift in Sources */,
 				5FFF77FF199C1F6C00AE0269 /* JSQMessagesComposerTextView.m in Sources */,
 				44B3DCFE1AF4526D00CE26A5 /* CVCalendarRenderer.swift in Sources */,
 				44B3DD0D1AF4526D00CE26A5 /* CVShape.swift in Sources */,
@@ -1514,6 +1545,7 @@
 				5FFF780C199C1F9900AE0269 /* JSQSystemSoundPlayer.m in Sources */,
 				44B074311AF0518800C5DE06 /* FormBaseCell.swift in Sources */,
 				44B3DC111AF3667000CE26A5 /* BlogPost.swift in Sources */,
+				176643431AF73BB100C6605D /* MessageBubbleCell.swift in Sources */,
 				5FFF76BF199C191F00AE0269 /* AppDelegate.swift in Sources */,
 				44B0743B1AF0518800C5DE06 /* FormSelector.swift in Sources */,
 			);

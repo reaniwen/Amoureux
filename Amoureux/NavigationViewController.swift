@@ -145,7 +145,7 @@ class NavigationViewController : UIViewController, UITableViewDelegate, UITableV
         self.snapshot.removeFromSuperview()
         
         if (indexPath.row == 1){
-            performSegueWithIdentifier("chatview", sender: self)
+            performSegueWithIdentifier("newchatview", sender: self)
         }else if(indexPath.row == 2){
             performSegueWithIdentifier("photowall", sender: self)
         }else if(indexPath.row == 3) {
