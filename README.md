@@ -37,22 +37,22 @@ We design to achieve these functions:<br>
 Readme modify tutorial
 http://blog.csdn.net/kaitiren/article/details/38513715
 
-####Apirl 5
+####April 5
     1. Side menu revised
     2. Chat module added(twitter app engine)
     3. Use Firebase for user message data storage
     
-####Apirl 17
+####April 17
     1. UI refine
     2. TimeLine module added
     3. Improve system stability.
     
-####Apirl 20
+####April 20
     1. improving the login and signup function using Parse.
     2. Loading new status updates in asynchronous manner.
     3. Improving timeline stability.
     
-####Apirl 21
+####April 21
     1. improving the TimeLine UI.
     2. New photowall function has been published.
     3. Refine design structure.
@@ -60,13 +60,25 @@ http://blog.csdn.net/kaitiren/article/details/38513715
 ##Milestone 3
 ##Till now, all main functions have been all implemented. The follow-on work will focus on weather widget and some UI refine.
 
-####Apirl 29
+####April 29
     1. Initial view added.
     2. Muitipeer interactive game added.
     3. UI refine.
     
-####Apirl 30
+####April 30
     1. Game tableview added.
     2. Add new single player game for entertainment.
     3. Photo wall share function added.
     4. Unit testing.
+    
+####May 1
+    1. Change follow logic, pair from one-many to one-one
+    2. Add launching screen
+    
+####May 2
+    1. Move chat from firebase back to parse
+    2. fix some bugs
+    
+####May 3
+    1. Optimize the chat UI to a chat-like UI
+    2. recover follo logic
