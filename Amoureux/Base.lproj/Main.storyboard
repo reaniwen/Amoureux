@@ -1142,7 +1142,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="YrR-vx-MZc" kind="presentation" id="akU-O4-DAS"/>
+                                    <segue destination="YrR-vx-MZc" kind="push" id="5EK-30-mqc"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b6q-bs-Ni6">
@@ -1334,7 +1334,7 @@
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="b79-Kc-ZzV">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="b79-Kc-ZzV">
                                 <rect key="frame" x="96" y="50" width="183" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="dlZ-FZ-zr9"/>
@@ -1396,7 +1396,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SjV-8Z-bxF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3134.0625" y="983.97887323943644"/>
+            <point key="canvasLocation" x="-3134.5" y="775.5"/>
         </scene>
         <!--Confirm LoverVC-->
         <scene sceneID="x5w-2K-hck">
