@@ -26,6 +26,7 @@ class NewChatViewController: UIViewController, UITableViewDataSource, UITableVie
     
     var messages = [PFObject]()
     var loadedMessages = [[NewMessage]]()
+    var group: [String] = []
 
     
     override var inputAccessoryView: UIView! {
@@ -87,8 +88,7 @@ class NewChatViewController: UIViewController, UITableViewDataSource, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //define receiver
-//        receiver = defineReceiver()
+        confirmGroup()
         
         //retriveMessages for the firse time
         retrieveMessages()
@@ -146,9 +146,7 @@ class NewChatViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     
-    
-    func retrieveMessages() {
-        var group:[String] = []
+    func confirmGroup(){
         var groupQuery = PFQuery(className: "follow")
         groupQuery.whereKey("user", equalTo: PFUser.currentUser().username)
         
@@ -157,16 +155,35 @@ class NewChatViewController: UIViewController, UITableViewDataSource, UITableVie
             if error == nil {
                 var groups = objects as [PFObject]
                 for p in groups{
-                    group.append(p["userToFollow"]as NSString)
+                    self.group.append(p["userToFollow"]as NSString)
                 }
             }else {
                 println("Error: \(error) \(error.userInfo!)")
             }
         }
+    }
+    func retrieveMessages() {
+//        var group:[String] = []
+//        var groupQuery = PFQuery(className: "follow")
+//        groupQuery.whereKey("user", equalTo: PFUser.currentUser().username)
+//        
+//        groupQuery.findObjectsInBackgroundWithBlock {
+//            (objects: [AnyObject]!, error: NSError!) -> Void in
+//            if error == nil {
+//                var groups = objects as [PFObject]
+//                for p in groups{
+//                    group.append(p["userToFollow"]as NSString)
+//                }
+//            }else {
+//                println("Error: \(error) \(error.userInfo!)")
+//            }
+//        }
+//        
+//        group = ["aaa@aa.com", "bbb@bb.com"]
         var query = PFQuery(className: "Message")
         
         //a temp solution to find if the sender is aaa or bbb
-        query.whereKey("sender", containedIn: group)
+        query.whereKey("sender", containedIn: self.group)
         query.addAscendingOrder("time")
 //        query.addDescendingOrder("time")
         
