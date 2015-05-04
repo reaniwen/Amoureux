@@ -1119,7 +1119,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1340.625" y="1037.3239436619717"/>
+            <point key="canvasLocation" x="1550" y="1043"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="CQf-yv-35K">
@@ -1471,7 +1471,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zEU-r5-Dl5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2042.5" y="519.5"/>
+            <point key="canvasLocation" x="-2078.5" y="487.5"/>
         </scene>
         <!--TimeLine-->
         <scene sceneID="x3m-e6-HII">
@@ -3182,9 +3182,9 @@
         <image name="zoey" width="854" height="1280"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bG9-La-uzd"/>
-        <segue reference="To4-Pe-zYo"/>
-        <segue reference="lyl-qa-jCI"/>
+        <segue reference="9To-QF-I5i"/>
         <segue reference="61O-N5-4CO"/>
+        <segue reference="lyl-qa-jCI"/>
+        <segue reference="To4-Pe-zYo"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -49,6 +49,9 @@ class AddLoverVC: UIViewController {
         self.performSegueWithIdentifier("confirmAddSegue", sender: self)
         
     }
+    override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
+        emailText.resignFirstResponder()
+    }
 
 
 }
