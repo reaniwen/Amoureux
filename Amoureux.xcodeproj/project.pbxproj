@@ -218,6 +218,8 @@
 		E0621EFF1AF7DF9D003740EE /* MyAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0621EFE1AF7DF9D003740EE /* MyAnnotation.swift */; };
 		E06BE7871AF0497900919D8D /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06BE7861AF0497900919D8D /* Detail.swift */; };
 		E09D04FE1AF542010016DDE7 /* IndirectPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09D04FD1AF542010016DDE7 /* IndirectPage.swift */; };
+		E0E2D7AA1AF9034B009B675B /* RenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E2D7A91AF9034B009B675B /* RenderView.swift */; };
+		E0E2D7AC1AF9036C009B675B /* DBPathRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E2D7AB1AF9036C009B675B /* DBPathRecognizer.swift */; };
 		ED72CBE8FDD2D057B2FB4D30 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA50B7B38993D87B5E4C1880 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -482,6 +484,8 @@
 		E0621EFE1AF7DF9D003740EE /* MyAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAnnotation.swift; sourceTree = "<group>"; };
 		E06BE7861AF0497900919D8D /* Detail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
 		E09D04FD1AF542010016DDE7 /* IndirectPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndirectPage.swift; sourceTree = "<group>"; };
+		E0E2D7A91AF9034B009B675B /* RenderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenderView.swift; sourceTree = "<group>"; };
+		E0E2D7AB1AF9036C009B675B /* DBPathRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBPathRecognizer.swift; sourceTree = "<group>"; };
 		E0F0653A1AEB0BD100510604 /* SwiftWeather-Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftWeather-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		E0F0653D1AEB0CAE00510604 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		E0F0653E1AEB0CAE00510604 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
@@ -908,6 +912,8 @@
 				44B3DD0E1AF4529D00CE26A5 /* CalViewController.swift */,
 				E0621EFC1AF7DF5C003740EE /* Findhotel.swift */,
 				E0621EFE1AF7DF9D003740EE /* MyAnnotation.swift */,
+				E0E2D7A91AF9034B009B675B /* RenderView.swift */,
+				E0E2D7AB1AF9036C009B675B /* DBPathRecognizer.swift */,
 			);
 			path = Amoureux;
 			sourceTree = "<group>";
@@ -1489,6 +1495,7 @@
 				44FFD67F1AF0996100828C3A /* MPCHandler.swift in Sources */,
 				44B3DBD91AF3495500CE26A5 /* GamesViewController.swift in Sources */,
 				4401682F1AE1D6F900BBFAFE /* OtherNavController.swift in Sources */,
+				E0E2D7AC1AF9036C009B675B /* DBPathRecognizer.swift in Sources */,
 				5FFF77E9199C1F6C00AE0269 /* JSQSystemSoundPlayer+JSQMessages.m in Sources */,
 				44B3DC101AF3667000CE26A5 /* UIImageView+WebCache.swift in Sources */,
 				E06BE7871AF0497900919D8D /* Detail.swift in Sources */,
@@ -1543,6 +1550,7 @@
 				44B3DD091AF4526D00CE26A5 /* CVDate.swift in Sources */,
 				44FFD6811AF0999700828C3A /* TTTImageView.swift in Sources */,
 				5FFF77F5199C1F6C00AE0269 /* JSQMessagesCollectionViewFlowLayout.m in Sources */,
+				E0E2D7AA1AF9034B009B675B /* RenderView.swift in Sources */,
 				44B074371AF0518800C5DE06 /* FormSelectorCell.swift in Sources */,
 				44B3DC201AF3667000CE26A5 /* UIDCPositionToBoundsMapping.swift in Sources */,
 				4493D5571AE4A462002136CB /* signUpVC.swift in Sources */,
