@@ -213,7 +213,7 @@ class Home: UIViewController, UIImagePickerControllerDelegate, UINavigationContr
             }
             
             
-            
+            if (resulltsImageFiles.count > 0){
             resulltsImageFiles[number].getDataInBackgroundWithBlock {
                 (imageData:NSData!, error:NSError!) -> Void in
                 
@@ -248,7 +248,7 @@ class Home: UIViewController, UIImagePickerControllerDelegate, UINavigationContr
             dialogView.alpha = 1
             oldnumber = number
         }
-        
+        }
         dialogView.alpha = 1
     }
     
