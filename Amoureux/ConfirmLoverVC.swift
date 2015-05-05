@@ -12,6 +12,7 @@ class ConfirmLoverVC: UIViewController {
 
     @IBOutlet weak var invitationLabel: UILabel!
     @IBOutlet weak var agreeBtn: UIButton!
+    @IBOutlet weak var invitationImage: UIImageView!
     
     var applicant: String = ""
     
