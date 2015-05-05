@@ -562,8 +562,13 @@
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+<<<<<<< Updated upstream
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="1N0-4t-npz">
                                 <rect key="frame" x="106" y="159" width="163" height="90"/>
+=======
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="1N0-4t-npz">
+                                <rect key="frame" x="116" y="188" width="142" height="100"/>
+>>>>>>> Stashed changes
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="yU0-bl-KfD"/>
                                 </constraints>
@@ -571,10 +576,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+<<<<<<< Updated upstream
                             <constraint firstItem="aEo-AS-kTP" firstAttribute="top" secondItem="c2Y-wJ-Fug" secondAttribute="bottom" constant="50" id="0EG-Xj-43g"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hcN-cz-CdQ" secondAttribute="trailing" constant="80" id="3XH-fF-4Ov"/>
                             <constraint firstItem="1N0-4t-npz" firstAttribute="leading" secondItem="pgI-1Z-eTL" secondAttribute="leadingMargin" constant="90" id="7nr-Fn-DpD"/>
                             <constraint firstItem="c2Y-wJ-Fug" firstAttribute="top" secondItem="1N0-4t-npz" secondAttribute="bottom" constant="35" id="7yw-U6-rHk"/>
+=======
+                            <constraint firstItem="aEo-AS-kTP" firstAttribute="top" secondItem="c2Y-wJ-Fug" secondAttribute="bottom" constant="70" id="0EG-Xj-43g"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hcN-cz-CdQ" secondAttribute="trailing" constant="18" id="3XH-fF-4Ov"/>
+                            <constraint firstItem="c2Y-wJ-Fug" firstAttribute="top" secondItem="1N0-4t-npz" secondAttribute="bottom" constant="56" id="7yw-U6-rHk"/>
+>>>>>>> Stashed changes
                             <constraint firstItem="GO1-aw-jng" firstAttribute="top" secondItem="unR-Kv-ECA" secondAttribute="bottom" id="99z-CQ-oSl"/>
                             <constraint firstItem="unR-Kv-ECA" firstAttribute="leading" secondItem="pgI-1Z-eTL" secondAttribute="leadingMargin" constant="-15" id="QqZ-gq-Xp5"/>
                             <constraint firstItem="hcN-cz-CdQ" firstAttribute="top" secondItem="aBy-aX-jaP" secondAttribute="bottom" constant="30" id="TBC-13-C7V"/>
@@ -585,10 +596,17 @@
                             <constraint firstItem="1N0-4t-npz" firstAttribute="top" secondItem="hcN-cz-CdQ" secondAttribute="bottom" constant="25" id="hF4-0I-E0u"/>
                             <constraint firstItem="hcN-cz-CdQ" firstAttribute="leading" secondItem="pgI-1Z-eTL" secondAttribute="leadingMargin" constant="80" id="iXs-wd-Xh4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="unR-Kv-ECA" secondAttribute="trailing" constant="-15" id="qe3-tZ-i29"/>
+<<<<<<< Updated upstream
                             <constraint firstItem="aEo-AS-kTP" firstAttribute="leading" secondItem="pgI-1Z-eTL" secondAttribute="leadingMargin" constant="40" id="qlb-VY-rys"/>
                             <constraint firstItem="c2Y-wJ-Fug" firstAttribute="leading" secondItem="pgI-1Z-eTL" secondAttribute="leadingMargin" constant="40" id="sWT-mu-7hO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="c2Y-wJ-Fug" secondAttribute="trailing" constant="40" id="txe-NB-sVZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1N0-4t-npz" secondAttribute="trailing" constant="90" id="zqa-4A-cCS"/>
+=======
+                            <constraint firstItem="aEo-AS-kTP" firstAttribute="leading" secondItem="pgI-1Z-eTL" secondAttribute="leadingMargin" constant="60" id="qlb-VY-rys"/>
+                            <constraint firstAttribute="centerX" secondItem="1N0-4t-npz" secondAttribute="centerX" id="rvK-FF-QLn"/>
+                            <constraint firstItem="c2Y-wJ-Fug" firstAttribute="leading" secondItem="pgI-1Z-eTL" secondAttribute="leadingMargin" constant="60" id="sWT-mu-7hO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="c2Y-wJ-Fug" secondAttribute="trailing" constant="60" id="txe-NB-sVZ"/>
+>>>>>>> Stashed changes
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9vL-DX-ZEM"/>
@@ -2752,8 +2770,8 @@
         <image name="zoey" width="854" height="1280"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bG9-La-uzd"/>
-        <segue reference="ZBS-nv-DDX"/>
-        <segue reference="rjb-FM-u0M"/>
+        <segue reference="jl1-xg-lW6"/>
+        <segue reference="To4-Pe-zYo"/>
+        <segue reference="61O-N5-4CO"/>
     </inferredMetricsTieBreakers>
 </document>
