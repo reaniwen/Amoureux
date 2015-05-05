@@ -22,7 +22,7 @@ class mainCell: UITableViewCell {
         
         let theWidth = UIScreen.mainScreen().bounds.width
         
-        contentView.frame = CGRectMake(0, 0, theWidth, 90)
+        contentView.frame = CGRectMake(0, 0, theWidth, 85 + UIScreen.mainScreen().bounds.width)
         
         imgView.center = CGPointMake(35, 35)
         imgView.layer.cornerRadius = imgView.frame.size.width / 2

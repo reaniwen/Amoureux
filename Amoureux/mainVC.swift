@@ -172,7 +172,9 @@ class mainVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
             
             let theWidth = view.frame.size.width
             
-            cell.tweetImg.frame = CGRectMake(70, 70, theWidth-85, theWidth-85)
+            cell.tweetImg.frame = CGRectMake(70, 82, theWidth-85, theWidth-85)
+            println(cell.tweetImg.frame.height)
+            println(cell.tweetImg.frame.width)
             cell.tweetImg.hidden = false
             
             resultsTweetImageFiles[indexPath.row]?.getDataInBackgroundWithBlock({
