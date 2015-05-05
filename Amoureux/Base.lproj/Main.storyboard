@@ -1450,7 +1450,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gdn-ji-dvW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3054.375" y="3914.7887323943655"/>
+            <point key="canvasLocation" x="3002" y="3924"/>
         </scene>
         <!--UIKit Dynamics Catalog-->
         <scene sceneID="DkA-el-jlX">
@@ -1718,7 +1718,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w1L-F9-ISE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3046.5" y="4544"/>
+            <point key="canvasLocation" x="3002" y="4673"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wdI-X9-g16">
@@ -2606,6 +2606,9 @@
                                 <state key="normal" title="Apple Sample Trans" image="APPLESAMPLETRANS">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="tXC-qa-Nc2" kind="show" id="uZh-gr-PiI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ux-hI-t9p">
                                 <rect key="frame" x="100" y="353" width="117" height="30"/>
@@ -2618,6 +2621,10 @@
                                     <action selector="hiButtonClicked:" destination="Aap-zs-T8s" eventType="touchUpInside" id="fVe-FG-nYp"/>
                                 </connections>
                             </button>
+                            <view opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1oY-b8-I6r" customClass="RenderView" customModule="Amoureux" customModuleProvider="target">
+                                <rect key="frame" x="3" y="8" width="581" height="395"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XxQ-6n-YYR">
                                 <rect key="frame" x="56" y="405" width="647" height="82"/>
                                 <constraints>
@@ -2628,12 +2635,9 @@
                                 </state>
                                 <connections>
                                     <action selector="demoButtonClicked:" destination="Aap-zs-T8s" eventType="touchUpInside" id="D6f-vN-Nd6"/>
+                                    <segue destination="bbD-RR-5b2" kind="show" id="cEW-e7-GW5"/>
                                 </connections>
                             </button>
-                            <view opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1oY-b8-I6r" customClass="RenderView" customModule="Amoureux" customModuleProvider="target">
-                                <rect key="frame" x="3" y="8" width="581" height="395"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -2675,8 +2679,6 @@
                         <outlet property="hiButton" destination="7ux-hI-t9p" id="JHq-oA-bPI"/>
                         <outlet property="renderView" destination="1oY-b8-I6r" id="swu-PH-WTB"/>
                         <outlet property="swiftImg" destination="EVJ-ib-d3s" id="YRl-UZ-86U"/>
-                        <segue destination="bbD-RR-5b2" kind="show" id="zfY-5b-u5X"/>
-                        <segue destination="tXC-qa-Nc2" kind="show" id="3aY-ny-Llg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dyR-wb-YF2" sceneMemberID="firstResponder"/>

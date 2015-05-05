@@ -25,7 +25,8 @@ class Home: UIViewController, UIImagePickerControllerDelegate, UINavigationContr
     @IBOutlet weak var twitterButton: UIButton!
     @IBOutlet weak var facebookButton: UIButton!
     @IBOutlet weak var shareLabelsView: UIView!
-
+    
+    var comImage: CompressedImage?
     var resultsNameArray = [String]()
     var followArray = [String]()
     var oldnumber = -1

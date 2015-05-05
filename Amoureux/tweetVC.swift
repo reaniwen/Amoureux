@@ -21,7 +21,7 @@ class tweetVC: UIViewController, UITextViewDelegate, UINavigationControllerDeleg
     var hasImage = false
     var newMedia: Bool?
     var cimage : UIImage?
-    
+    var comImage: CompressedImage?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -135,6 +135,7 @@ class tweetVC: UIViewController, UITextViewDelegate, UINavigationControllerDeleg
             cimage = info[UIImagePickerControllerOriginalImage] as UIImage!
             //cimage = theInfo.objectForKey(UIImagePickerControllerEditedImage) as UIImage!
             hasImage = true
+            //cimage = comImage?.CompressedJpeg(self.cimage, compressionTimes: 2)
             tweetImg.image = self.cimage as UIImage!
             
             if (newMedia == true) {

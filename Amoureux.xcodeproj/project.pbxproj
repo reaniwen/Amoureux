@@ -207,6 +207,7 @@
 		63891106199EB24800B8998F /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63891105199EB24800B8998F /* Social.framework */; };
 		E010B5911AE34BEE005EA4BE /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E010B5901AE34BEE005EA4BE /* Photo.swift */; };
 		E010B5931AE356C2005EA4BE /* Phototest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E010B5921AE356C2005EA4BE /* Phototest.swift */; };
+		E02B17981AF9455A005C0C65 /* CompressedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02B17971AF9455A005C0C65 /* CompressedImage.swift */; };
 		E039A5E31AE30473008AF130 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E039A5DE1AE30473008AF130 /* BlurView.swift */; };
 		E039A5E41AE30473008AF130 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E039A5DF1AE30473008AF130 /* Data.swift */; };
 		E039A5E51AE30473008AF130 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E039A5E01AE30473008AF130 /* DesignableView.swift */; };
@@ -472,6 +473,7 @@
 		BA50B7B38993D87B5E4C1880 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E010B5901AE34BEE005EA4BE /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		E010B5921AE356C2005EA4BE /* Phototest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Phototest.swift; sourceTree = "<group>"; };
+		E02B17971AF9455A005C0C65 /* CompressedImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompressedImage.swift; sourceTree = "<group>"; };
 		E039A5DE1AE30473008AF130 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlurView.swift; path = font/Spring/BlurView.swift; sourceTree = "<group>"; };
 		E039A5DF1AE30473008AF130 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Data.swift; path = font/Spring/Data.swift; sourceTree = "<group>"; };
 		E039A5E01AE30473008AF130 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DesignableView.swift; path = font/Spring/DesignableView.swift; sourceTree = "<group>"; };
@@ -914,6 +916,7 @@
 				E0621EFE1AF7DF9D003740EE /* MyAnnotation.swift */,
 				E0E2D7A91AF9034B009B675B /* RenderView.swift */,
 				E0E2D7AB1AF9036C009B675B /* DBPathRecognizer.swift */,
+				E02B17971AF9455A005C0C65 /* CompressedImage.swift */,
 			);
 			path = Amoureux;
 			sourceTree = "<group>";
@@ -1471,6 +1474,7 @@
 				44B0743C1AF0518800C5DE06 /* FormViewController.swift in Sources */,
 				44B3DD011AF4526D00CE26A5 /* CVCalendarViewAnimator.swift in Sources */,
 				44B3DC191AF3667000CE26A5 /* CustomDynamicViewController.swift in Sources */,
+				E02B17981AF9455A005C0C65 /* CompressedImage.swift in Sources */,
 				17A1343B1AF41E5900A311C8 /* AddLoverVC.swift in Sources */,
 				44B0741D1AF0512D00C5DE06 /* SettingViewController.swift in Sources */,
 				44B3DCFF1AF4526D00CE26A5 /* CVCalendarTouchController.swift in Sources */,
