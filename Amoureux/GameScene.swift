@@ -237,7 +237,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
     
     func didBeginContact(contact: SKPhysicsContact) {
         if moving.speed > 0 {
-            if ( contact.bodyA.categoryBitMask & scoreCategory ) == scoreCategory || ( contact.bodyB.categoryBitMask & scoreCategory ) == scoreCategory {
+            if ( contact.bodyA.categoryBitMask & scoreCategory ) == scoreCategory || ( contact.bodyB.categoryBitMask & scoreCategory ) == scoreCategory || bird.position.y < self.frame.minY {
                 // Bird has contact with score entity
                 score++
                 scoreLabelNode.text = String(score)

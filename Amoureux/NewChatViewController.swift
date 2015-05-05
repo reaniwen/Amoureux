@@ -272,10 +272,13 @@ class NewChatViewController: UIViewController, UITableViewDataSource, UITableVie
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCellWithIdentifier(NSStringFromClass(MessageSentDateCell), forIndexPath: indexPath) as MessageSentDateCell
-            let message = loadedMessages[indexPath.section][0]
-            dateFormatter.dateStyle = .ShortStyle
-            dateFormatter.timeStyle = .ShortStyle
-            cell.sentDateLabel.text = dateFormatter.stringFromDate(message.sentDate)
+            if loadedMessages.count > 0 && loadedMessages[indexPath.section].count > 0 {
+                let message = loadedMessages[indexPath.section][0]
+                dateFormatter.dateStyle = .ShortStyle
+                dateFormatter.timeStyle = .ShortStyle
+                cell.sentDateLabel.text = dateFormatter.stringFromDate(message.sentDate)
+            }
+            //cell.sentDateLabel.text = dateFormatter.stringFromDate(message.sentDate)
             return cell
         } else {
             let cellIdentifier = NSStringFromClass(MessageBubbleCell)
@@ -290,8 +293,10 @@ class NewChatViewController: UIViewController, UITableViewDataSource, UITableVie
                 cell.bubbleImageView.addGestureRecognizer(doubleTapGestureRecognizer)
                 cell.bubbleImageView.addGestureRecognizer(UILongPressGestureRecognizer(target: self, action: action))
             }
-            let message = loadedMessages[indexPath.section][indexPath.row-1]
-            cell.configureWithMessage(message)
+            if loadedMessages.count > 0 && loadedMessages[indexPath.section].count > 0 {
+                let message = loadedMessages[indexPath.section][indexPath.row-1]
+                cell.configureWithMessage(message)
+            }
             return cell
         }
     }
