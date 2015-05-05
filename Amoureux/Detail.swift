@@ -82,7 +82,6 @@ class Detail: UIViewController {
     var recognizer:DBPathRecognizer?
     
     @IBOutlet weak var renderView: RenderView!
-    @IBOutlet weak var letter: UILabel!
     
     enum FilterOperation {
         case Maximum

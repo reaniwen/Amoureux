@@ -2630,6 +2630,10 @@
                                     <action selector="demoButtonClicked:" destination="Aap-zs-T8s" eventType="touchUpInside" id="D6f-vN-Nd6"/>
                                 </connections>
                             </button>
+                            <view opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1oY-b8-I6r" customClass="RenderView" customModule="Amoureux" customModuleProvider="target">
+                                <rect key="frame" x="3" y="8" width="581" height="395"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -2669,6 +2673,7 @@
                     <navigationItem key="navigationItem" title="Amoureux 1.0" id="u92-cd-EAb"/>
                     <connections>
                         <outlet property="hiButton" destination="7ux-hI-t9p" id="JHq-oA-bPI"/>
+                        <outlet property="renderView" destination="1oY-b8-I6r" id="swu-PH-WTB"/>
                         <outlet property="swiftImg" destination="EVJ-ib-d3s" id="YRl-UZ-86U"/>
                         <segue destination="bbD-RR-5b2" kind="show" id="zfY-5b-u5X"/>
                         <segue destination="tXC-qa-Nc2" kind="show" id="3aY-ny-Llg"/>
