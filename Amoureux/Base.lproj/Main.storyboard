@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="r5Y-Lo-wKv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C2055" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="r5Y-Lo-wKv">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -108,7 +108,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7tf-e8-rhb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="539.20000000000005" y="-596.39999999999964"/>
+            <point key="canvasLocation" x="539.20000000000005" y="-596.39999999999952"/>
         </scene>
         <!--Timeline View Controller-->
         <scene sceneID="Y7b-CV-hEU">
@@ -328,7 +328,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kxI-cT-S61" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1818" y="-1342.9999999999998"/>
+            <point key="canvasLocation" x="1818" y="-1342.9999999999995"/>
         </scene>
         <!--Other Nav Controller-->
         <scene sceneID="Io0-uK-icP">
@@ -768,7 +768,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="YrR-vx-MZc" kind="push" id="5EK-30-mqc"/>
+                                    <segue destination="YrR-vx-MZc" kind="modal" id="5EK-30-mqc"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aEo-AS-kTP">
@@ -893,7 +893,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cEh-eN-sMa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1113.3333333333333" y="-327.07333333333332"/>
+            <point key="canvasLocation" x="-1113.3333333333333" y="-327.07333333333327"/>
         </scene>
         <!--Sign UpVC-->
         <scene sceneID="HXo-V7-EkA">
@@ -999,7 +999,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SjV-8Z-bxF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1671.7333333333333" y="734.13999999999999"/>
+            <point key="canvasLocation" x="-1671.7333333333333" y="734.13999999999987"/>
         </scene>
         <!--Confirm LoverVC-->
         <scene sceneID="x5w-2K-hck">
@@ -1045,7 +1045,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zEU-r5-Dl5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1109.5" y="461.5"/>
+            <point key="canvasLocation" x="-1109.5" y="461.49999999999994"/>
         </scene>
         <!--TimeLine-->
         <scene sceneID="x3m-e6-HII">
@@ -1408,7 +1408,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6LL-bI-VkR" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="OYI-re-wZV" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1260.5" y="1036.5"/>
+            <point key="canvasLocation" x="1260.5" y="1036.4999999999998"/>
         </scene>
         <!--New Chat View Controller-->
         <scene sceneID="JNe-tS-CNh">
@@ -1434,7 +1434,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7EA-kQ-7e6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="762.66666666666663" y="-596.39999999999998"/>
+            <point key="canvasLocation" x="762.66666666666663" y="-596.39999999999986"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="srg-sr-nqd">
@@ -2225,7 +2225,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2564" y="3719.9999999999986"/>
+            <point key="canvasLocation" x="2564" y="3719.9999999999982"/>
         </scene>
         <!--Snap-->
         <scene sceneID="nus-BS-yM6">
@@ -2277,7 +2277,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2841" y="3719.9999999999986"/>
+            <point key="canvasLocation" x="2841" y="3719.9999999999982"/>
         </scene>
         <!--Continuous Push + Collision-->
         <scene sceneID="IiG-bi-NzX">
@@ -2393,7 +2393,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2782" y="3194.9999999999986"/>
+            <point key="canvasLocation" x="2782" y="3194.9999999999982"/>
         </scene>
         <!--Item Properties-->
         <scene sceneID="hif-QX-W88">
@@ -2441,7 +2441,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jHO-1a-SKj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3050" y="3194.9999999999986"/>
+            <point key="canvasLocation" x="3050" y="3194.9999999999982"/>
         </scene>
         <!--Custom Dynamic Item-->
         <scene sceneID="2u3-PR-Gfo">
@@ -2477,7 +2477,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kvY-dF-Gj2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3325" y="3194.9999999999986"/>
+            <point key="canvasLocation" x="3325" y="3194.9999999999982"/>
         </scene>
         <!--Pendulum(Composite Behavior)-->
         <scene sceneID="CmS-72-CKT">
@@ -2505,7 +2505,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3116" y="3714.9999999999986"/>
+            <point key="canvasLocation" x="3116" y="3714.9999999999982"/>
         </scene>
         <!--Collision+Gravity+Spring-->
         <scene sceneID="Pby-H0-8xV">
@@ -2533,7 +2533,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3386" y="3714.9999999999986"/>
+            <point key="canvasLocation" x="3386" y="3714.9999999999982"/>
         </scene>
         <!--Cal View Controller-->
         <scene sceneID="0OU-eL-fZZ">
@@ -2720,7 +2720,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G3D-zx-tIw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="347.19999999999999" y="220.57333333333332"/>
+            <point key="canvasLocation" x="347.19999999999999" y="220.5733333333333"/>
         </scene>
     </scenes>
     <resources>
@@ -2767,9 +2767,9 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="bG9-La-uzd"/>
-        <segue reference="ZBS-nv-DDX"/>
+        <segue reference="jl1-xg-lW6"/>
         <segue reference="lyl-qa-jCI"/>
+        <segue reference="ZBS-nv-DDX"/>
         <segue reference="rjb-FM-u0M"/>
         <segue reference="FBF-RM-Eb3"/>
     </inferredMetricsTieBreakers>

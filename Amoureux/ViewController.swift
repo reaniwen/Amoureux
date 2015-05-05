@@ -26,7 +26,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         passwordTxt.delegate = self
         println(PFUser.currentUser())
         
-        if (PFUser.currentUser().username == ""){
+        if (PFUser.currentUser() != nil && PFUser.currentUser().username == ""){
         let item1 = RMParallaxItem(image: UIImage(named: "item1")!, text: "SHARE LIGHTBOXES WITH YOUR TEAM")
         let item2 = RMParallaxItem(image: UIImage(named: "item2")!, text: "FOLLOW WORLD CLASS PHOTOGRAPHERS")
         let item3 = RMParallaxItem(image: UIImage(named: "item3")!, text: "EXPLORE OUR COLLECTION BY CATEGORY")
@@ -58,7 +58,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidAppear(animated: Bool){
         
-        if (PFUser.currentUser().username != ""){
+        if (PFUser.currentUser() != nil && PFUser.currentUser().username != ""){
         let context = LAContext()
         var error: NSError?
         // check if Touch ID is available

@@ -21,6 +21,7 @@
 		440168351AE1DA3C00BBFAFE /* NavigationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440168341AE1DA3C00BBFAFE /* NavigationCell.swift */; };
 		440168371AE1DA7D00BBFAFE /* TransitionOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440168361AE1DA7D00BBFAFE /* TransitionOperator.swift */; };
 		4401683A1AE1DDD500BBFAFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 440168381AE1DDD500BBFAFE /* Main.storyboard */; };
+		44178A7F1AF84FD200CF717D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44178A7E1AF84FD200CF717D /* MapKit.framework */; };
 		4430ED4C1AF5FC6000D8815F /* CVCalendarMonthContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4430ED4B1AF5FC6000D8815F /* CVCalendarMonthContentView.swift */; };
 		4430ED561AF7546D00D8815F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4430ED541AF7546D00D8815F /* LaunchScreen.xib */; };
 		4493D5461AE4A04B002136CB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4493D5401AE4A04B002136CB /* CoreGraphics.framework */; };
@@ -214,7 +215,6 @@
 		E039A5E71AE30473008AF130 /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E039A5E21AE30473008AF130 /* SpringAnimation.swift */; };
 		E039A5EB1AE30481008AF130 /* PhotoWall.swift in Sources */ = {isa = PBXBuildFile; fileRef = E039A5E91AE30481008AF130 /* PhotoWall.swift */; };
 		E039A5EF1AE30576008AF130 /* Amoureux.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E039A5ED1AE30576008AF130 /* Amoureux.xcdatamodeld */; };
-		E0621EFB1AF7DE56003740EE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0621EFA1AF7DE56003740EE /* MapKit.framework */; };
 		E0621EFD1AF7DF5C003740EE /* Findhotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0621EFC1AF7DF5C003740EE /* Findhotel.swift */; };
 		E0621EFF1AF7DF9D003740EE /* MyAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0621EFE1AF7DF9D003740EE /* MyAnnotation.swift */; };
 		E06BE7871AF0497900919D8D /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06BE7861AF0497900919D8D /* Detail.swift */; };
@@ -247,6 +247,7 @@
 		440168341AE1DA3C00BBFAFE /* NavigationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationCell.swift; sourceTree = "<group>"; };
 		440168361AE1DA7D00BBFAFE /* TransitionOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionOperator.swift; sourceTree = "<group>"; };
 		440168391AE1DDD500BBFAFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		44178A7E1AF84FD200CF717D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4430ED4B1AF5FC6000D8815F /* CVCalendarMonthContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCalendarMonthContentView.swift; sourceTree = "<group>"; };
 		4430ED551AF7546D00D8815F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4493D5401AE4A04B002136CB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -479,7 +480,6 @@
 		E039A5E91AE30481008AF130 /* PhotoWall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoWall.swift; sourceTree = "<group>"; };
 		E039A5EC1AE3048E008AF130 /* TipoType - Libertad.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TipoType - Libertad.otf"; path = "font/TipoType - Libertad.otf"; sourceTree = "<group>"; };
 		E039A5EE1AE30576008AF130 /* Amoureux.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Amoureux.xcdatamodel; sourceTree = "<group>"; };
-		E0621EFA1AF7DE56003740EE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		E0621EFC1AF7DF5C003740EE /* Findhotel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Findhotel.swift; sourceTree = "<group>"; };
 		E0621EFE1AF7DF9D003740EE /* MyAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAnnotation.swift; sourceTree = "<group>"; };
 		E06BE7861AF0497900919D8D /* Detail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
@@ -536,7 +536,7 @@
 				4493D54F1AE4A0B1002136CB /* Parse.framework in Frameworks */,
 				4493D5461AE4A04B002136CB /* CoreGraphics.framework in Frameworks */,
 				4493D5471AE4A04B002136CB /* CoreLocation.framework in Frameworks */,
-				E0621EFB1AF7DE56003740EE /* MapKit.framework in Frameworks */,
+				44178A7F1AF84FD200CF717D /* MapKit.framework in Frameworks */,
 				4493D5481AE4A04B002136CB /* libsqlite3.dylib in Frameworks */,
 				4493D5491AE4A04B002136CB /* libz.dylib in Frameworks */,
 				4493D54A1AE4A04B002136CB /* MobileCoreServices.framework in Frameworks */,
@@ -794,7 +794,7 @@
 		5F5814D5199E8D65000E0E87 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E0621EFA1AF7DE56003740EE /* MapKit.framework */,
+				44178A7E1AF84FD200CF717D /* MapKit.framework */,
 				E0F065641AEB0D3C00510604 /* AFNetworking.framework */,
 				E0F0653B1AEB0CAE00510604 /* AFNetworking */,
 				4493D54C1AE4A0B1002136CB /* Bolts.framework */,
@@ -1271,7 +1271,6 @@
 				TargetAttributes = {
 					5FFF76B8199C191F00AE0269 = {
 						CreatedOnToolsVersion = 6.0;
-						DevelopmentTeam = 6QN349HHUB;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
 								enabled = 0;
@@ -1691,8 +1690,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wei Feng Hou (MCDSJY34TT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Wei Feng Hou (MCDSJY34TT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1703,7 +1702,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = Amoureux;
-				PROVISIONING_PROFILE = "47beef3e-1d62-4d23-b202-c72d0b1afb00";
+				PROVISIONING_PROFILE = "51a0bbf7-92e5-4e1e-a4af-ae3306e43407";
 				SWIFT_OBJC_BRIDGING_HEADER = "Amoureux/FireChat-Swift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1716,8 +1715,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wei Feng Hou (MCDSJY34TT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Wei Feng Hou (MCDSJY34TT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1728,7 +1727,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = Amoureux;
-				PROVISIONING_PROFILE = "47beef3e-1d62-4d23-b202-c72d0b1afb00";
+				PROVISIONING_PROFILE = "51a0bbf7-92e5-4e1e-a4af-ae3306e43407";
 				SWIFT_OBJC_BRIDGING_HEADER = "Amoureux/FireChat-Swift-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
