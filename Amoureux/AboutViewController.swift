@@ -13,14 +13,14 @@ class AboutViewController: UIViewController {
     var rawPoints:[Int] = []
     var recognizer:DBPathRecognizer?
     @IBOutlet var swiftImg : UIImageView!
-    @IBOutlet var hiButton : UIButton!
-    @IBAction func hiButtonClicked(sender : AnyObject) {
-        if (flying) {
-            stopfly()
-        }else{
-            fly()
-        }
-    }
+//    @IBOutlet var hiButton : UIButton!
+//    @IBAction func hiButtonClicked(sender : AnyObject) {
+//        if (flying) {
+//            stopfly()
+//        }else{
+//            fly()
+//        }
+//    }
     @IBAction func demoButtonClicked(sender : AnyObject) {
         stopfly()
     }
@@ -50,12 +50,12 @@ class AboutViewController: UIViewController {
     }
     
     override func animationDidStart(anim: CAAnimation!){
-        hiButton.setTitle("Stop fly", forState:nil)
+        //hiButton.setTitle("Stop fly", forState:nil)
         flying = true
     }
     
     override func animationDidStop(anim: CAAnimation!, finished flag: Bool){
-        hiButton.setTitle("Touch to fly", forState:nil)
+        //hiButton.setTitle("Touch to fly", forState:nil)
         flying = false
     }
     
@@ -63,7 +63,7 @@ class AboutViewController: UIViewController {
         super.viewDidLoad()
         fly()
         // Do any additional setup after loading the view, typically from a nib.
-        hiButton.setTitle("Stop fly", forState:nil)
+        //hiButton.setTitle("Stop fly", forState:nil)
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named:"whiteleft.png"), landscapeImagePhone: UIImage(named:"whiteleft.png"), style: .Bordered, target: self, action: "back:")
         self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
         

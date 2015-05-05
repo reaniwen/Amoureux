@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="r5Y-Lo-wKv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="r5Y-Lo-wKv">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -2633,21 +2633,6 @@
                                     <segue destination="tXC-qa-Nc2" kind="show" id="uZh-gr-PiI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ux-hI-t9p">
-                                <rect key="frame" x="100" y="353" width="117" height="30"/>
-                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="10"/>
-                                <state key="normal">
-                                    <color key="titleColor" red="0.88235294119999996" green="0.1843137255" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="hiButtonClicked:" destination="Aap-zs-T8s" eventType="touchUpInside" id="fVe-FG-nYp"/>
-                                </connections>
-                            </button>
-                            <view opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1oY-b8-I6r" customClass="RenderView" customModule="Amoureux" customModuleProvider="target">
-                                <rect key="frame" x="3" y="8" width="581" height="395"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <button opaque="NO" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XxQ-6n-YYR">
                                 <rect key="frame" x="56" y="405" width="647" height="82"/>
                                 <constraints>
@@ -2661,6 +2646,10 @@
                                     <segue destination="bbD-RR-5b2" kind="show" id="cEW-e7-GW5"/>
                                 </connections>
                             </button>
+                            <view opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1oY-b8-I6r" customClass="RenderView" customModule="Amoureux" customModuleProvider="target">
+                                <rect key="frame" x="3" y="8" width="581" height="395"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -2678,7 +2667,6 @@
                             <constraint firstItem="F9E-zy-i4k" firstAttribute="leading" secondItem="4Xh-6i-hTf" secondAttribute="trailing" constant="20" id="NaS-bx-u7C"/>
                             <constraint firstItem="Znw-d9-oLb" firstAttribute="leading" secondItem="cHn-W5-2ar" secondAttribute="trailing" constant="6" id="Pkn-cg-rct"/>
                             <constraint firstItem="Znw-d9-oLb" firstAttribute="leading" secondItem="6Fu-09-Moo" secondAttribute="leadingMargin" constant="74" id="VMC-9Y-y3n"/>
-                            <constraint firstItem="XxQ-6n-YYR" firstAttribute="top" secondItem="7ux-hI-t9p" secondAttribute="bottom" constant="25" id="XWL-HN-n1a"/>
                             <constraint firstItem="jrq-Sb-T5j" firstAttribute="top" secondItem="7yT-yi-EFj" secondAttribute="bottom" constant="40" id="Yte-Yx-c7h"/>
                             <constraint firstItem="JEq-p4-WV5" firstAttribute="leading" secondItem="6Fu-09-Moo" secondAttribute="leadingMargin" constant="26" id="a8o-TU-1jg"/>
                             <constraint firstItem="fZe-DB-SFX" firstAttribute="top" secondItem="F9E-zy-i4k" secondAttribute="bottom" constant="20" id="bpN-hr-62v"/>
@@ -2699,7 +2687,6 @@
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" title="Amoureux 1.0" id="u92-cd-EAb"/>
                     <connections>
-                        <outlet property="hiButton" destination="7ux-hI-t9p" id="JHq-oA-bPI"/>
                         <outlet property="renderView" destination="1oY-b8-I6r" id="swu-PH-WTB"/>
                         <outlet property="swiftImg" destination="EVJ-ib-d3s" id="YRl-UZ-86U"/>
                     </connections>

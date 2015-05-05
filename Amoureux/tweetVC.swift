@@ -154,7 +154,7 @@ class tweetVC: UIViewController, UITextViewDelegate, UINavigationControllerDeleg
             //cimage = theInfo.objectForKey(UIImagePickerControllerEditedImage) as UIImage!
             hasImage = true
             //cimage = comImage?.CompressedJpeg(self.cimage, compressionTimes: 2)
-            (cimage as UIImage!).resize(CGSizeMake(150, 150), completionHandler: { [weak self](resizedImage, data) -> () in
+            (cimage as UIImage!).resize(CGSizeMake(640, 480), completionHandler: { [weak self](resizedImage, data) -> () in
                 
                 var comimage = resizedImage as UIImage!
                 var tvc: tweetVC
