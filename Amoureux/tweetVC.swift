@@ -9,6 +9,24 @@
 import UIKit
 import MobileCoreServices
 
+
+extension UIImage {
+    public func resize(size:CGSize, completionHandler:(resizedImage:UIImage, data:NSData)->()) {
+        dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0), { () -> Void in
+            var newSize:CGSize = size
+            let rect = CGRectMake(0, 0, newSize.width, newSize.height)
+            UIGraphicsBeginImageContextWithOptions(newSize, false, 1.0)
+            self.drawInRect(rect)
+            let newImage = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            let imageData = UIImageJPEGRepresentation(newImage, 0.5)
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                completionHandler(resizedImage: newImage, data:imageData)
+            })
+        })
+    }
+}
+
 class tweetVC: UIViewController, UITextViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
     @IBOutlet weak var cancelBtn: UIButton!
@@ -136,6 +154,16 @@ class tweetVC: UIViewController, UITextViewDelegate, UINavigationControllerDeleg
             //cimage = theInfo.objectForKey(UIImagePickerControllerEditedImage) as UIImage!
             hasImage = true
             //cimage = comImage?.CompressedJpeg(self.cimage, compressionTimes: 2)
+            (cimage as UIImage!).resize(CGSizeMake(150, 150), completionHandler: { [weak self](resizedImage, data) -> () in
+                
+                var comimage = resizedImage as UIImage!
+                var tvc: tweetVC
+                tvc = self!
+                tvc.tweetImg.image = comimage as UIImage!
+                
+                //self?.viewModel.imageData = data
+                
+            })
             tweetImg.image = self.cimage as UIImage!
             
             if (newMedia == true) {
@@ -192,3 +220,5 @@ class tweetVC: UIViewController, UITextViewDelegate, UINavigationControllerDeleg
     
 
 }
+
+
